@@ -1,0 +1,431 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToggleSwitch should render 1`] = `
+<DocumentFragment>
+  .c0 {
+  padding: 0 1em;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: none;
+  color: #222222;
+  font-weight: 600;
+}
+
+.c0:first-of-type {
+  padding-right: 0.5em;
+}
+
+.c0:last-of-type {
+  padding-left: 0.5em;
+}
+
+<div
+    class="c0"
+  >
+    Off
+  </div>
+  .c1 {
+  font-size: 1em;
+  border: thin solid #999999;
+  padding: 0.5em;
+  color: #222222;
+  display: block;
+  width: 100%;
+  -webkit-transition: outline-color 100ms ease-in,border-color 100ms ease-in;
+  transition: outline-color 100ms ease-in,border-color 100ms ease-in;
+  outline: thin solid transparent;
+  display: inline-block;
+  width: 1.1em;
+  height: 1.1em;
+  padding: 0;
+  margin: 0 1em 0 0;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 1em;
+}
+
+.c1:hover {
+  border-color: #3B7A9E;
+  box-shadow: 0 0 0 1pt #3B7A9E;
+}
+
+.c1:focus,
+.c1:focus-within {
+  border-color: transparent;
+  outline: 3px solid #FDBD56;
+  box-shadow: 0 0 0 3px #FDBD56;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #a3a3a3;
+}
+
+.c1::-moz-placeholder {
+  color: #a3a3a3;
+}
+
+.c1:-ms-input-placeholder {
+  color: #a3a3a3;
+}
+
+.c1::placeholder {
+  color: #a3a3a3;
+}
+
+.c1:focus {
+  outline: none;
+  border-style: solid;
+  border-color: #3B7A9E;
+}
+
+.c1[disabled] {
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.c1:checked {
+  background: url(SvgrURL) no-repeat center;
+  background-size: 0.8em auto;
+}
+
+.c4 {
+  height: 1em;
+  width: 1.5em;
+  top: 0.6000000000000001em;
+  background: #FFFFFF;
+  border-radius: 2em;
+  position: absolute;
+  border: 1px solid #666666;
+  -webkit-transition: background 100ms ease-out,border-color 100ms ease-in;
+  transition: background 100ms ease-out,border-color 100ms ease-in;
+  outline: 1px solid transparent;
+  cursor: pointer;
+}
+
+.c4:hover {
+  border-color: #3B7A9E;
+}
+
+.c5 {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  background: #FFFFFF;
+  top: calc(42% - 1em / 2);
+  left: calc(32% - 1em / 2);
+  position: relative;
+  will-change: transform;
+  -webkit-transform: translateX( 0em );
+  -ms-transform: translateX( 0em );
+  transform: translateX( 0em );
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 100ms ease-in-out;
+  -webkit-transition: transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out;
+  border: inherit;
+}
+
+.c2 {
+  opacity: 0;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+
+.c2:focus + .c3 {
+  box-shadow: 0 0 0 2px #FDBD56;
+}
+
+.c2:hover + .c3 {
+  border-color: #3B7A9E;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2em;
+  position: relative;
+}
+
+<div
+    aria-checked="false"
+    class="c0"
+    data-test="test"
+    role="switch"
+  >
+    <input
+      aria-checked="false"
+      class="c1 c2"
+      data-test="test-input"
+      id="test"
+      name="test"
+      role="checkbox"
+      type="checkbox"
+      value=""
+    />
+    <div
+      class="c3 c4"
+      role="presentation"
+    >
+      <div
+        class="c5"
+      />
+    </div>
+  </div>
+  .c0 {
+  padding: 0 1em;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: none;
+  color: #999999;
+  font-weight: 600;
+}
+
+.c0:first-of-type {
+  padding-right: 0.5em;
+}
+
+.c0:last-of-type {
+  padding-left: 0.5em;
+}
+
+<div
+    class="c0"
+  >
+    On
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ToggleSwitch should render a large toggle button 1`] = `
+<DocumentFragment>
+  .c0 {
+  padding: 0 1em;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: none;
+  color: #222222;
+  font-weight: 600;
+}
+
+.c0:first-of-type {
+  padding-right: 0.5em;
+}
+
+.c0:last-of-type {
+  padding-left: 0.5em;
+}
+
+<div
+    class="c0"
+  >
+    Off
+  </div>
+  .c1 {
+  font-size: 1em;
+  border: thin solid #999999;
+  padding: 0.5em;
+  color: #222222;
+  display: block;
+  width: 100%;
+  -webkit-transition: outline-color 100ms ease-in,border-color 100ms ease-in;
+  transition: outline-color 100ms ease-in,border-color 100ms ease-in;
+  outline: thin solid transparent;
+  display: inline-block;
+  width: 1.1em;
+  height: 1.1em;
+  padding: 0;
+  margin: 0 1em 0 0;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 1em;
+}
+
+.c1:hover {
+  border-color: #3B7A9E;
+  box-shadow: 0 0 0 1pt #3B7A9E;
+}
+
+.c1:focus,
+.c1:focus-within {
+  border-color: transparent;
+  outline: 3px solid #FDBD56;
+  box-shadow: 0 0 0 3px #FDBD56;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #a3a3a3;
+}
+
+.c1::-moz-placeholder {
+  color: #a3a3a3;
+}
+
+.c1:-ms-input-placeholder {
+  color: #a3a3a3;
+}
+
+.c1::placeholder {
+  color: #a3a3a3;
+}
+
+.c1:focus {
+  outline: none;
+  border-style: solid;
+  border-color: #3B7A9E;
+}
+
+.c1[disabled] {
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.c1:checked {
+  background: url(SvgrURL) no-repeat center;
+  background-size: 0.8em auto;
+}
+
+.c4 {
+  height: 1em;
+  width: 1.5em;
+  top: 0.6000000000000001em;
+  background: #FFFFFF;
+  border-radius: 2em;
+  position: absolute;
+  border: 1px solid #666666;
+  -webkit-transition: background 100ms ease-out,border-color 100ms ease-in;
+  transition: background 100ms ease-out,border-color 100ms ease-in;
+  outline: 1px solid transparent;
+  cursor: pointer;
+}
+
+.c4:hover {
+  border-color: #3B7A9E;
+}
+
+.c5 {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  background: #FFFFFF;
+  top: calc(42% - 1em / 2);
+  left: calc(32% - 1em / 2);
+  position: relative;
+  will-change: transform;
+  -webkit-transform: translateX( 0em );
+  -ms-transform: translateX( 0em );
+  transform: translateX( 0em );
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 100ms ease-in-out;
+  -webkit-transition: transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out;
+  border: inherit;
+}
+
+.c2 {
+  opacity: 0;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+
+.c2:focus + .c3 {
+  box-shadow: 0 0 0 2px #FDBD56;
+}
+
+.c2:hover + .c3 {
+  border-color: #3B7A9E;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2em;
+  position: relative;
+}
+
+<div
+    aria-checked="false"
+    class="c0"
+    data-test="toggle-3"
+    role="switch"
+  >
+    <input
+      aria-checked="false"
+      class="c1 c2"
+      data-test="toggle-3-input"
+      id="toggle-3"
+      name="toggle-3"
+      role="checkbox"
+      type="checkbox"
+      value=""
+    />
+    <div
+      class="c3 c4"
+      role="presentation"
+    >
+      <div
+        class="c5"
+      />
+    </div>
+  </div>
+  .c0 {
+  padding: 0 1em;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: none;
+  color: #999999;
+  font-weight: 600;
+}
+
+.c0:first-of-type {
+  padding-right: 0.5em;
+}
+
+.c0:last-of-type {
+  padding-left: 0.5em;
+}
+
+<div
+    class="c0"
+  >
+    On
+  </div>
+</DocumentFragment>
+`;

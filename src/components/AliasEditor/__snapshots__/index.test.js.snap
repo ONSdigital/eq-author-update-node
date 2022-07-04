@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AliasEditor should render 1`] = `
+<AliasEditor__Wrapper>
+  <AliasEditor__InputBox
+    autoComplete="off"
+    data-test="alias"
+    id="alias"
+    name="alias"
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder=""
+    type="text"
+    value="FooBar"
+  />
+  <CharacterCounter
+    limit={24}
+    value="FooBar"
+  />
+</AliasEditor__Wrapper>
+`;

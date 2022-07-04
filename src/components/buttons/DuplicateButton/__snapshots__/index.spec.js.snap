@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Duplicate Button should render 1`] = `
+<Button
+  data-test="foo"
+  onClick={[Function]}
+  small={true}
+  type="button"
+  variant="tertiary"
+  withText={true}
+>
+  <IconText
+    hideText={false}
+    icon={[Function]}
+  >
+    Duplicate
+  </IconText>
+</Button>
+`;
+
+exports[`Duplicate Button should render without duplicate text when asked to 1`] = `
+<Button
+  data-test="foo"
+  onClick={[Function]}
+  small={true}
+  type="button"
+  variant="tertiary"
+  withText={false}
+>
+  <IconText
+    hideText={false}
+    icon={[Function]}
+  >
+    Duplicate
+  </IconText>
+</Button>
+`;

@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterCounter should handle null value 1`] = `
+<DocumentFragment>
+  .c0 {
+  color: #d6d8da;
+  padding: 0 0.3em;
+  background: none;
+}
+
+<span
+    class="c0"
+  >
+    25
+  </span>
+</DocumentFragment>
+`;
+
+exports[`CharacterCounter should render 1`] = `
+<DocumentFragment>
+  .c0 {
+  color: #d6d8da;
+  padding: 0 0.3em;
+  background: none;
+}
+
+<span
+    class="c0"
+    value="FooBar"
+  >
+    19
+  </span>
+</DocumentFragment>
+`;
