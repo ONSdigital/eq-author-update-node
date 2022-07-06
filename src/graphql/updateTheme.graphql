@@ -1,0 +1,20 @@
+#import "graphql/fragments/validationErrorInfo.graphql"
+
+mutation UpdateTheme($input: UpdateThemeInput!) {
+  updateTheme(input: $input) {
+    id
+    shortName
+    eqId
+    legalBasisCode
+    formType
+    validationErrorInfo {
+      ...ValidationErrorInfo
+    }
+    themeSettings {
+      id
+      validationErrorInfo {
+        ...ValidationErrorInfo
+      }
+    }
+  }
+}

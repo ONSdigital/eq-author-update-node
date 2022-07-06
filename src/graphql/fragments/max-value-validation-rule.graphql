@@ -1,0 +1,20 @@
+fragment MaxValueValidationRule on MaxValueValidationRule {
+  id
+  custom
+  inclusive
+  entityType
+  previousAnswer {
+    id
+    displayName
+  }
+  validationErrorInfo {
+    id
+    errors {
+      id
+      type
+      field
+      errorCode
+    }
+    totalCount
+  }
+}

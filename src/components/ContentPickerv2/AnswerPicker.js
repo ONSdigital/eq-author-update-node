@@ -13,8 +13,8 @@ import { FlatSectionMenu } from "./Menu";
 import ScrollPane from "../../components/ScrollPane";
 import SearchBar from "../../components/SearchBar";
 
-// import searchByAnswerTitleQuestionTitleShortCode from "../../utils/searchFunctions/searchByAnswerTitleQuestionTitleShortCode";
-// import { getPages } from "utils/questionnaireUtils";
+import searchByAnswerTitleQuestionTitleShortCode from "../../utils/searchFunctions/searchByAnswerTitleQuestionTitleShortCode";
+import { getPages } from "utils/questionnaireUtils";
 
 const ModalTitle = styled.h2`
   font-weight: bold;
@@ -54,18 +54,18 @@ const AnswerPicker = ({ data, ...otherProps }) => {
 
   useEffect(() => {
     if (searchTerm && searchTerm !== "" && searchTerm !== " ") {
-      // const results = searchByAnswerTitleQuestionTitleShortCode(
-      //   data,
-      //   searchTerm
-      // );
+      const results = searchByAnswerTitleQuestionTitleShortCode(
+        data,
+        searchTerm
+      );
 
-      // setSearchResults(results);
+      setSearchResults(results);
     } else {
       setSearchResults(data);
     }
   }, [searchTerm, data]);
 
-  // const numOfResults = getPages({ sections: searchResults }).length;
+  const numOfResults = getPages({ sections: searchResults }).length;
 
   return (
     <>
@@ -80,12 +80,12 @@ const AnswerPicker = ({ data, ...otherProps }) => {
         </ModalToolbar>
       </ModalHeader>
       <MenuContainer>
-        {/* {option === OPTION_ANSWERS && data.length > 0 && numOfResults > 0 && (
+        {option === OPTION_ANSWERS && data.length > 0 && numOfResults > 0 && (
           <ScrollPane>
             <FlatSectionMenu data={searchResults} {...otherProps} />
           </ScrollPane>
-        )} */}
-        {/* {option === OPTION_SECTIONS && data.length > 0 && numOfResults > 0 && (
+        )}
+        {option === OPTION_SECTIONS && data.length > 0 && numOfResults > 0 && (
           <SectionMenu data={searchResults} {...otherProps} />
         )}
         {data.length > 0 && numOfResults === 0 && (
@@ -93,7 +93,7 @@ const AnswerPicker = ({ data, ...otherProps }) => {
             searchTerm={searchTerm}
             alertText="Please check the answer exists."
           />
-        )} */}
+        )}
         {data.length === 0 && ErrorMessage("answers")}
       </MenuContainer>
     </>

@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-// import { propType } from "graphql-anywhere";
-// import gql from "graphql-tag";
+import { propType } from "graphql-anywhere";
+import gql from "graphql-tag";
 import styled from "styled-components";
 
-import { SORT_ORDER } from "../../../constants/sort-order.js"; //"../../../constants/sort-order.js";
+import { SORT_ORDER } from "../../../constants/sort-order.js";
 
 import QuestionnaireTable from "../../../components-themed/HomepageQuestionnaireTable";
 import Panel from "../../../components/Panel/index.js";
 
 import tableHeadings from "../../../components-themed/HomepageQuestionnaireTable/tableHeadings.js";
 
-// import { useQuestionnaireLockingModal } from "../../../components/modals/QuestionnaireLockingModal";
+import { useQuestionnaireLockingModal } from "../../../components/modals/QuestionnaireLockingModal";
 
 const ScrollContainer = styled.div`
   overflow: auto;
@@ -34,12 +34,12 @@ const QuestionnairesTable = ({
   variant,
 }) => {
   const [targetQuestionnaire, setTargetQuestionnaire] = useState({});
-  // const { trigger: triggerLockModal, component: LockModal } =
-  //   useQuestionnaireLockingModal(targetQuestionnaire);
+  const { trigger: triggerLockModal, component: LockModal } =
+    useQuestionnaireLockingModal(targetQuestionnaire);
 
   const handleLock = (questionnaire) => {
     setTargetQuestionnaire(questionnaire);
-    // triggerLockModal();
+    triggerLockModal();
   };
 
   const ConditionalScroll = ({ questionnaireModal, wrapper, children }) =>
@@ -74,34 +74,33 @@ const QuestionnairesTable = ({
   );
 };
 
-// QuestionnairesTable.fragments = {
-//   QuestionnaireDetails: gql`
-//     fragment QuestionnaireDetails on Questionnaire {
-//       id
-//       title
-//       shortTitle
-//       displayName
-//       starred
-//       locked
-//       createdAt
-//       updatedAt
-//       createdBy {
-//         id
-//         name
-//         email
-//         displayName
-//       }
-//       permission
-//       publishStatus
-//     }
-//   `,
-// };
+QuestionnairesTable.fragments = {
+  QuestionnaireDetails: gql`
+    fragment QuestionnaireDetails on Questionnaire {
+      id
+      title
+      shortTitle
+      displayName
+      starred
+      locked
+      createdAt
+      updatedAt
+      createdBy {
+        id
+        name
+        email
+        displayName
+      }
+      permission
+      publishStatus
+    }
+  `,
+};
 
 QuestionnairesTable.propTypes = {
-  questionnaires: PropTypes
-    .arrayOf
-    // propType(QuestionnairesTable.fragments.QuestionnaireDetails)
-    (),
+  questionnaires: PropTypes.arrayOf(
+    propType(QuestionnairesTable.fragments.QuestionnaireDetails)
+  ),
   onDeleteQuestionnaire: PropTypes.func.isRequired,
   onDuplicateQuestionnaire: PropTypes.func,
   autoFocusId: PropTypes.string,

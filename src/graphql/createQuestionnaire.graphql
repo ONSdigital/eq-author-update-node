@@ -1,0 +1,22 @@
+mutation createQuestionnaire($input: CreateQuestionnaireInput!) {
+  createQuestionnaire(input: $input) {
+    id
+    displayName
+    createdAt
+    createdBy {
+      id
+      name
+    }
+    sections {
+      folders {
+        id
+        pages {
+          id
+        }
+      }
+    }
+    introduction {
+      id
+    }
+  }
+}

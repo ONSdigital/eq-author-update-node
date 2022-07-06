@@ -1,10 +1,10 @@
 import { useMutation } from "@apollo/react-hooks";
 
-// import TOGGLE_QUESTIONNAIRE_STARRED_MUTATION from "graphql/toggleQuestionnaireStarred.graphql";
+import TOGGLE_QUESTIONNAIRE_STARRED_MUTATION from "../graphql/toggleQuestionnaireStarred.graphql";
 
 const useToggleQuestionnaireStarred = () => {
   const [toggleQuestionnaireStarred] = useMutation(
-    // TOGGLE_QUESTIONNAIRE_STARRED_MUTATION
+    TOGGLE_QUESTIONNAIRE_STARRED_MUTATION
   );
 
   return (questionnaireId) =>

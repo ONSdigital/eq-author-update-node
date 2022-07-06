@@ -1,0 +1,15 @@
+fragment Page on QuestionPage {
+  id
+  title
+  alias
+  description
+  descriptionEnabled
+  guidance
+  guidanceEnabled
+  definitionLabel
+  definitionContent
+  definitionEnabled
+  additionalInfoLabel
+  additionalInfoContent
+  additionalInfoEnabled
+}
