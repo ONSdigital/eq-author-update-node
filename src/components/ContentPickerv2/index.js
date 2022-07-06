@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { colors } from "constants/theme";
-import Modal, { CloseButton } from "components/modals/Modal";
-import Button from "components/buttons/Button";
-import ButtonGroup from "components/buttons/ButtonGroup";
+import { colors } from "../../constants/theme";
+import Modal, { CloseButton } from "../../components/modals/Modal";
+import Button from "../../components/buttons/Button";
+import ButtonGroup from "../../components/buttons/ButtonGroup";
 import {
   ANSWER,
   METADATA,
   VARIABLES,
   DESTINATION,
-} from "components/ContentPickerSelect/content-types";
+} from "../../components/ContentPickerSelect/content-types";
 import AnswerPicker from "./AnswerPicker";
 import MetadataPicker from "./MetadataPicker";
 import VariablePicker from "./VariablePicker";

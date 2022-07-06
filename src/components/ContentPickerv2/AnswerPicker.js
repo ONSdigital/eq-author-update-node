@@ -14,7 +14,7 @@ import ScrollPane from "../../components/ScrollPane";
 import SearchBar from "../../components/SearchBar";
 
 import searchByAnswerTitleQuestionTitleShortCode from "../../utils/searchFunctions/searchByAnswerTitleQuestionTitleShortCode";
-import { getPages } from "utils/questionnaireUtils";
+import { getPages } from "../../utils/questionnaireUtils";
 
 const ModalTitle = styled.h2`
   font-weight: bold;
