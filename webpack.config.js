@@ -34,7 +34,11 @@ module.exports = {
     },
   },
   // ...add HowModuleReplacementPlugin and devServer
-  plugins: [new webpack.HotModuleReplacementPlugin(), new NodePolyfillPlugin()],
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new NodePolyfillPlugin(),
+    new webpack.ContextReplacementPlugin(/config/),
+  ],
   devServer: {
     static: path.resolve(__dirname, "./public"),
     hot: true,

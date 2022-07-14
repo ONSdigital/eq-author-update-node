@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import { colors } from "../../../constants/theme";
 
-import { ReactComponent as Icon } from "../../../assets/icon-close.svg";
+import Icon from "../../../assets/icon-close.svg";
 
 const sizes = {
   small: css`
