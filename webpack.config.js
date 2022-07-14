@@ -1,9 +1,10 @@
 const path = require("path");
 // add webpack import
 const webpack = require("webpack");
+const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: "./src/App.js",
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
@@ -33,9 +34,10 @@ module.exports = {
     },
   },
   // ...add HowModuleReplacementPlugin and devServer
-  plugins: [new webpack.HotModuleReplacementPlugin()],
+  plugins: [new webpack.HotModuleReplacementPlugin(), new NodePolyfillPlugin()],
   devServer: {
-    static: path.resolve(__dirname, "./dist"),
+    static: path.resolve(__dirname, "./public"),
     hot: true,
+    port: 3000,
   },
 };
