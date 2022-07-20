@@ -2,13 +2,18 @@ const path = require("path");
 // add webpack import
 const webpack = require("webpack");
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const paths = require("./config/paths");
 
 module.exports = {
-  entry: "./src/App.js",
+  entry: [
+    require.resolve("react-dev-utils/webpackHotDevClient"),
+    paths.appIndexJs,
+  ],
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: "/dist/",
+    publicPath: "/public/",
   },
   module: {
     rules: [
@@ -33,15 +38,21 @@ module.exports = {
       fs: false,
     },
   },
-  // ...add HowModuleReplacementPlugin and devServer
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new NodePolyfillPlugin(),
     new webpack.ContextReplacementPlugin(/config/),
+    // new HtmlWebpackPlugin({
+    //   inject: true,
+    //   template: paths.appHtml,
+    //   filename: "index.html",
+    // }),
   ],
   devServer: {
     static: path.resolve(__dirname, "./public"),
     hot: true,
     port: 3000,
+    // Redirects 404s to index.html
+    // historyApiFallback: true,
   },
 };
