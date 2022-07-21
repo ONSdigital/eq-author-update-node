@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import WarningIcon from "../../assets/icon-error.svg";
+import WarningIcon from "assets/icon-error.svg";
 
-import IconText from "../../components/IconText";
-import VisuallyHidden from "../../components/VisuallyHidden";
-import ErrorPanel from "../../components/Panel/ErrorPanel";
+import IconText from "components/IconText";
+import VisuallyHidden from "components/VisuallyHidden";
+import ErrorPanel from "components/Panel/ErrorPanel";
 
 const ErrorStyling = styled(IconText)`
   margin: 0.5em 1em 0.5em 0.5em;
