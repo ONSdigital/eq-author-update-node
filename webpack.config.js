@@ -37,7 +37,7 @@ module.exports = {
     fallback: {
       fs: false,
     },
-    // Allows imports using relative paths
+    // Allows imports using absolute paths
     modules: [path.resolve(__dirname, "src"), "node_modules"],
   },
   plugins: [
