@@ -37,6 +37,8 @@ module.exports = {
     fallback: {
       fs: false,
     },
+    // Allows imports using relative paths
+    modules: [path.resolve(__dirname, "src"), "node_modules"],
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
@@ -51,7 +53,5 @@ module.exports = {
     static: path.resolve(__dirname, "./dist"),
     hot: true,
     port: 3000,
-    // Redirects 404s to index.html
-    // historyApiFallback: true,
   },
 };
