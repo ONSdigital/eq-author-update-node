@@ -1,3 +1,4 @@
+import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import ContentPickerSelect from "./components/ContentPickerSelect";
@@ -5,13 +6,8 @@ import ContentPickerSelect from "./components/ContentPickerSelect";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <ContentPickerSelect></ContentPickerSelect>
-        <p>Hello world</p>
-        {/* <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p> */}
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -20,13 +16,12 @@ function App() {
         >
           Learn React
         </a>
-      </header>
-      <body>
-        <p>hello world</p>
-      </body>
+      </header> */}
+      <h1>Hello world</h1>
     </div>
   );
 }
 
 export default App;
+
 module.hot.accept();

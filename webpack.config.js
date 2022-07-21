@@ -11,9 +11,9 @@ module.exports = {
     paths.appIndexJs,
   ],
   output: {
-    filename: "bundle.js",
+    filename: "main.js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: "/public/",
+    publicPath: "/dist/",
   },
   module: {
     rules: [
@@ -42,14 +42,13 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new NodePolyfillPlugin(),
     new webpack.ContextReplacementPlugin(/config/),
-    // new HtmlWebpackPlugin({
-    //   inject: true,
-    //   template: paths.appHtml,
-    //   filename: "index.html",
-    // }),
+    new HtmlWebpackPlugin({
+      filename: "index.html",
+      template: path.resolve(__dirname, "public/index.html"),
+    }),
   ],
   devServer: {
-    static: path.resolve(__dirname, "./public"),
+    static: path.resolve(__dirname, "./dist"),
     hot: true,
     port: 3000,
     // Redirects 404s to index.html
