@@ -1,6 +1,6 @@
-import firebase from "firebase/app";
-import "firebase/auth";
-import firebaseui from "firebaseui";
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
+import * as firebaseui from "firebaseui";
 import config from "config";
 
 const PROJECT_ID = config.REACT_APP_FIREBASE_PROJECT_ID;
