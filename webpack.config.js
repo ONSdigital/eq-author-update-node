@@ -4,7 +4,6 @@ const webpack = require("webpack");
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const paths = require("./config/paths");
-var nodeExternals = require("webpack-node-externals");
 
 module.exports = {
   entry: [
@@ -16,7 +15,6 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     publicPath: "/dist/",
   },
-  externals: [nodeExternals()],
   module: {
     rules: [
       {
