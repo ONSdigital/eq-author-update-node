@@ -30,6 +30,11 @@ module.exports = {
         test: /\.svg$/,
         use: "file-loader",
       },
+      {
+        test: /\.(graphql|gql)$/,
+        exclude: /node_modules/,
+        loader: "graphql-tag/loader",
+      },
     ],
   },
   resolve: {
