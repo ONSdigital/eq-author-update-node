@@ -54,16 +54,17 @@ export const HeaderText = styled.div`
 `;
 
 const ContentContainer = ({ title, children }) => (
-    <Wrapper data-test="collapsible">
-      <Header className="content-header" data-test="content-header">
-        <Title className="content-title" data-test="content-title">
-          <HeaderText>{title}</HeaderText>
-        </Title>
-      </Header>
-      <Body className="collapsible-body" data-test="collapsible-body" isOpen>
-        {children}
-      </Body>
-    </Wrapper>);
+  <Wrapper data-test="collapsible">
+    <Header className="content-header" data-test="content-header">
+      <Title className="content-title" data-test="content-title">
+        <HeaderText>{title}</HeaderText>
+      </Title>
+    </Header>
+    <Body className="collapsible-body" data-test="collapsible-body" isOpen>
+      {children}
+    </Body>
+  </Wrapper>
+);
 
 ContentContainer.propTypes = {
   title: PropTypes.string.isRequired,
