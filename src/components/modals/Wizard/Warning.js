@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as WarningIcon } from "assets/icon-warning-circle.svg";
+import WarningIcon from "assets/icon-warning-circle.svg";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 

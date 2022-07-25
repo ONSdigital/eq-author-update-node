@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 import { colors } from "constants/theme";
 
-import { ReactComponent as iconAlert } from "assets/icon-alert.svg";
+import iconAlert from "assets/icon-alert.svg";
 
 import NoSearchResults from "components/NoSearchResults";
 

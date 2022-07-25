@@ -20,10 +20,10 @@ import * as Headings from "constants/table-headings";
 
 import FormattedDate from "./FormattedDate.js";
 import questionConfirmationIcon from "assets/icon-questionnaire.svg";
-import { ReactComponent as StarredIcon } from "assets/icon-starred.svg";
-import { ReactComponent as UnstarredIcon } from "assets/icon-unstarred.svg";
-import { ReactComponent as LockedIcon } from "assets/icon-locked.svg";
-import { ReactComponent as UnlockedIcon } from "assets/icon-unlocked.svg";
+import StarredIcon from "assets/icon-starred.svg";
+import UnstarredIcon from "assets/icon-unstarred.svg";
+import LockedIcon from "assets/icon-locked.svg";
+import UnlockedIcon from "assets/icon-unlocked.svg";
 
 import useToggleQuestionnaireStarred from "hooks/useToggleQuestionnaireStarred";
 
