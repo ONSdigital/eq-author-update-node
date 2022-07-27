@@ -1,6 +1,6 @@
 import React from "react";
 // import logo from "./logo.svg";
-import "./App.css";
+import "App.css";
 
 import Accordion from "components/Accordion";
 import AliasEditor from "components/AliasEditor";
@@ -334,10 +334,19 @@ import {
 import PipedValue from "components/RichTextEditor/entities/PipedValue";
 import LinkPlugin from "components/RichTextEditor/LinkPlugin";
 import LinkPluginToolbarButton from "components/RichTextEditor/LinkPlugin/ToolbarButton";
-import RichTextEditor from "components/RichTextEditor";
-import PipingMenu from "components/RichTextEditor/PipingMenu";
-import Toolbar from "components/RichTextEditor/Toolbar";
+// TODO: Currently does not work, missing utils/getContentBeforeEntity
+// import RichTextEditor from "components/RichTextEditor";
+// TODO: Currently does not work, missing utils/getContentBeforeEntity
+// import PipingMenu from "components/RichTextEditor/PipingMenu";
+// TODO: Currently does not work, missing utils/getContentBeforeEntity
+// import Toolbar from "components/RichTextEditor/Toolbar";
 import ToolbarButton from "components/RichTextEditor/ToolbarButton";
+// --------
+import convert from "components/RichTextEditor/utils/convert";
+import createFormatStripper from "components/RichTextEditor/utils/createFormatStripper";
+import findEntitiesByType from "components/RichTextEditor/utils/findEntitiesByType";
+import getEntities from "components/RichTextEditor/utils/getEntities";
+import replaceText from "components/RichTextEditor/utils/replaceEntityText";
 // ** --------------
 
 import { useCurrentPageId } from "components/RouterContext";
@@ -363,50 +372,6 @@ import ToastTransition from "components/Toasts/ToastContainer/Transition";
 import VerticalTabs from "components/VerticalTabs";
 // ** --------------
 
-// TODO START
-/*
-- AdditionalContent (directory is empty and should not need to be moved)
-- BaseLayout
-- datatable
-- Delay
-- DescribedText
-- Dummy (directory is empty and should not need to be moved)
-- EditorLayout
-- EditorToolbar
-- Error
-- GroupValidations (directory is empty and should not need to be moved)
-- InputWithConditionalError
-- ItemSelectModal
-- Layout
-- Link
-- Loading
-- Logo
-- MoveModal
-- NavigationCallbacks - this may need to be moved into its own directory
-- NavItem
-- OfflineBanner
-- PillTabs
-- Platform (directory is empty and should not need to be moved)
-- PositionModal
-- preview
-- PrivateRoute
-- QCodeContext
-- QuestionPicker
-- Radio
-- RedirectRoute
-- Reorder
-- RichTextEditor
-- RouterContext
-- SectionPicker
-- ShortCodeEditor
-- Toasts
-- VerticalTabs
-*/
-// TODO END
-
-// ! ---------------
-// TODO - RichTextEditor
-// ! ---------------
 function App() {
   return (
     <div>

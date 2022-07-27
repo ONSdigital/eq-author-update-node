@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PipingMenu should render 1`] = `
+<Fragment>
+  <PipingMenu__MenuButton
+    canFocus={true}
+    data-test="piping-button"
+    disabled={false}
+    modalVisible={false}
+    onClick={[Function]}
+    title="Pipe answer"
+  >
+    <Component />
+  </PipingMenu__MenuButton>
+  <PipingMenu__MenuButton
+    canFocus={true}
+    data-test="piping-button-metadata"
+    disabled={false}
+    modalVisible={false}
+    onClick={[Function]}
+    title="Pipe metadata"
+  >
+    <Component />
+  </PipingMenu__MenuButton>
+  <PipingMenu__MenuButton
+    canFocus={true}
+    data-test="piping-button-variable"
+    disabled={false}
+    modalVisible={false}
+    onClick={[Function]}
+    title="Pipe variable"
+  >
+    <Component />
+  </PipingMenu__MenuButton>
+  <ContentPicker
+    contentType="Custom"
+    data={
+      Array [
+        Object {
+          "displayName": "Section 1",
+          "folders": Array [
+            Object {
+              "alias": "Folder 1.1",
+              "displayName": "Folder 1.1",
+              "enabled": false,
+              "id": "1.1",
+              "pages": Array [
+                Object {
+                  "additionalInfoContent": "",
+                  "additionalInfoEnabled": false,
+                  "additionalInfoLabel": "",
+                  "alias": "1.1.1",
+                  "answers": Array [
+                    Object {
+                      "displayName": "Answer 1",
+                      "id": "answer-1",
+                      "label": "Answer 1",
+                      "type": "Number",
+                    },
+                  ],
+                  "definitionContent": "",
+                  "definitionEnabled": false,
+                  "definitionLabel": "",
+                  "description": "",
+                  "descriptionEnabled": false,
+                  "displayName": "Page 1.1.1",
+                  "folder": Object {
+                    "id": "1",
+                    "position": 0,
+                  },
+                  "guidance": "",
+                  "guidanceEnabled": false,
+                  "id": "1.1.1",
+                  "pageType": "QuestionPage",
+                  "position": 0,
+                  "section": Object {
+                    "displayName": "",
+                    "id": "1",
+                    "position": 0,
+                    "questionnaire": Object {
+                      "metadata": Array [],
+                    },
+                  },
+                  "title": "Page 1.1.1",
+                  "validationErrorInfo": Object {
+                    "errors": Array [],
+                    "totalCount": 2,
+                  },
+                },
+              ],
+              "position": 0,
+              "section": Object {
+                "id": "1",
+              },
+              "validationErrorInfo": Object {
+                "__typename": "ValidationErrorInfo",
+                "errors": Array [],
+                "id": "1.1-validationErrorInfo",
+                "totalCount": 0,
+              },
+            },
+          ],
+          "id": "1",
+          "position": 0,
+          "title": "Section 1",
+          "validationErrorInfo": Object {
+            "totalCount": 0,
+          },
+        },
+      ]
+    }
+    data-test="picker"
+    isOpen={false}
+    onClose={[Function]}
+    onSubmit={[Function]}
+    singleItemSelect={true}
+    startingSelectedAnswers={Array []}
+  />
+</Fragment>
+`;

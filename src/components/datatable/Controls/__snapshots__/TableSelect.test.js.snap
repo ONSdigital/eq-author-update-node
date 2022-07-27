@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableSelect should render 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-size: 1em;
+  border: thin solid #999999;
+  padding: 0.5em;
+  color: #222222;
+  display: block;
+  width: 100%;
+  -webkit-transition: outline-color 100ms ease-in,border-color 100ms ease-in;
+  transition: outline-color 100ms ease-in,border-color 100ms ease-in;
+  outline: thin solid transparent;
+  display: inline-block;
+  padding: 0.5em 2em 0.5em 0.75em;
+  background: white url("SvgrURL") no-repeat right center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  -webkit-transition: opacity 100ms ease-in-out;
+  transition: opacity 100ms ease-in-out;
+  border-radius: 4px;
+  border: thin solid #999999;
+  line-height: 1.2;
+}
+
+.c0:hover {
+  border-color: #3B7A9E;
+  box-shadow: 0 0 0 1pt #3B7A9E;
+}
+
+.c0:focus,
+.c0:focus-within {
+  border-color: transparent;
+  outline: 3px solid #FDBD56;
+  box-shadow: 0 0 0 3px #FDBD56;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #a3a3a3;
+}
+
+.c0::-moz-placeholder {
+  color: #a3a3a3;
+}
+
+.c0:-ms-input-placeholder {
+  color: #a3a3a3;
+}
+
+.c0::placeholder {
+  color: #a3a3a3;
+}
+
+.c0:focus {
+  outline: none;
+  border-style: solid;
+  border-color: #3B7A9E;
+}
+
+.c0[disabled] {
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.c0:hover {
+  outline: none;
+}
+
+.c0[disabled] {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.c1 {
+  border-radius: 0;
+  border-color: transparent;
+}
+
+.c1:hover {
+  outline: 1px solid #3B7A9E;
+}
+
+.c1:focus,
+.c1:focus-within {
+  outline: 3px solid #FDBD56;
+  box-shadow: none;
+}
+
+<select
+    class="c0 c1"
+  />
+</DocumentFragment>
+`;
