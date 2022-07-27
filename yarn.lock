@@ -5523,6 +5523,13 @@ downshift@^6.1.7:
     react-is "^17.0.2"
     tslib "^2.3.0"
 
+draft-js-block-breakout-plugin@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/draft-js-block-breakout-plugin/-/draft-js-block-breakout-plugin-2.0.1.tgz#a38e3bd68d9538d7af15d4d966844d6e6d2ad850"
+  integrity sha512-RR0zTD2368M3K9w/3EFZjFjGJCE0r7mZiZuB1VoPoLBUVGJLSqMvrH9ro3wBwqQGax9UOyhTaNjGfurAjjis/g==
+  dependencies:
+    immutable "~3.7.4"
+
 draft-js-plugins-editor@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/draft-js-plugins-editor/-/draft-js-plugins-editor-3.0.0.tgz#196d1e065e2c29faebaab4ec081b734fdef294a2"
