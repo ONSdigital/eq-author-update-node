@@ -3,11 +3,11 @@ import React from "react";
 import "./App.css";
 
 import Accordion from "components/Accordion";
-import AliasEditor from "./components/AliasEditor";
+import AliasEditor from "components/AliasEditor";
 
 // ** AnswerContent
 // ** --------------
-import AdvancedProperties from "./components/AnswerContent/AdvancedProperties";
+import AdvancedProperties from "components/AnswerContent/AdvancedProperties";
 import CheckboxProperties from "components/AnswerContent/AnswerProperties/CheckboxProperties";
 import DateProperties from "components/AnswerContent/AnswerProperties/DateProperties";
 import DateRangeProperties from "components/AnswerContent/AnswerProperties/DateRangeProperties";
@@ -39,25 +39,25 @@ import PopupTransition from "components/AnswerTypeSelector/PopupTransition";
 
 // ** buttons
 // ** --------------
-import Button from "./components/buttons/Button";
-import LinkButton from "./components/buttons/Button/LinkButton";
-import RouteButton from "./components/buttons/Button/RouteButton";
-import ButtonGroup from "./components/buttons/ButtonGroup";
-import CloseButton from "./components/buttons/CloseButton";
-import DeleteButton from "./components/buttons/DeleteButton";
-import DuplicateButton from "./components/buttons/DuplicateButton";
-import IconButton from "./components/buttons/IconButton";
-import IconButtonDelete from "./components/buttons/IconButtonDelete";
-import MoveButton from "./components/buttons/MoveButton";
-import MovePageButton from "./components/buttons/MovePageButton";
-import SidebarButton from "./components/buttons/SidebarButton";
-import Dropdown from "./components/buttons/SplitButton/Dropdown";
-import SplitButton from "./components/buttons/SplitButton";
-import MenuButton from "./components/buttons/SplitButton/MenuButton";
-import MenuItem from "./components/buttons/SplitButton/MenuItem";
-import TextButton from "./components/buttons/TextButton";
-import ToggleChip from "./components/buttons/ToggleChip";
-import ToggleSwitch from "./components/buttons/ToggleSwitch";
+import Button from "components/buttons/Button";
+import LinkButton from "components/buttons/Button/LinkButton";
+import RouteButton from "components/buttons/Button/RouteButton";
+import ButtonGroup from "components/buttons/ButtonGroup";
+import CloseButton from "components/buttons/CloseButton";
+import DeleteButton from "components/buttons/DeleteButton";
+import DuplicateButton from "components/buttons/DuplicateButton";
+import IconButton from "components/buttons/IconButton";
+import IconButtonDelete from "components/buttons/IconButtonDelete";
+import MoveButton from "components/buttons/MoveButton";
+import MovePageButton from "components/buttons/MovePageButton";
+import SidebarButton from "components/buttons/SidebarButton";
+import Dropdown from "components/buttons/SplitButton/Dropdown";
+import SplitButton from "components/buttons/SplitButton";
+import MenuButton from "components/buttons/SplitButton/MenuButton";
+import MenuItem from "components/buttons/SplitButton/MenuItem";
+import TextButton from "components/buttons/TextButton";
+import ToggleChip from "components/buttons/ToggleChip";
+import ToggleSwitch from "components/buttons/ToggleSwitch";
 // ** --------------
 
 // ! Broken - Auth uses config
@@ -207,6 +207,206 @@ import Pagination from "components/ImportContentQuestionnairesView/PaginationNav
 import QuestionnairesTable from "components/ImportContentQuestionnairesView/QuestionnairesTable";
 // ** --------------
 
+// ** BaseLayout
+// ** --------------
+// TODO: Currently these do not work, missing constants/publishStatus
+// import BaseLayout from "components/BaseLayout";
+// import PermissionsBanner from "components/BaseLayout/PermissionsBanner";
+// ** --------------
+
+// ** datatable
+// ** --------------
+import {
+  AddRowButton,
+  DeleteRowButton,
+  TableInput,
+  TableInputDate,
+  TableSelect,
+  TableTypeaheadInput,
+  TableTypeaheadMenu,
+} from "components/datatable/Controls";
+import {
+  Table,
+  TableBody,
+  TableColumn,
+  TableFoot,
+  TableHead,
+  TableHeadColumn,
+  TableRow,
+} from "components/datatable/Elements";
+// ** --------------
+
+import Delay from "components/Delay";
+import DescribedText from "components/DescribedText";
+
+// ** EditorLayout
+// ** --------------
+// ! Broken - EditorLayout uses MeContext, which causes an error due to using config
+// import EditorLayout from "components/EditorLayout";
+
+// TODO: Currently does not work, missing utils/urlUtils
+// import EditorLayoutTabs from "components/EditorLayout/Tabs";
+
+// TODO: Currently does not work, missing utils/timer
+// import EditorLayoutHeader from "components/EditorLayout/Header";
+import PageTitle from "components/EditorLayout/Header/PageTitle";
+// ** --------------
+
+// TODO: Currently does not work, missing App/page/Design/MoveEntityModal and App/page/Design/EditorToolbar
+// import EditorToolbar from "components/EditorToolbar";
+
+import Error from "components/Error";
+
+// TODO: Currently does not work, missing components-themed/Label, components-themed/panels and components-themed/Toolkit
+// import InputWithConditionalError from "components/InputWithConditionalError";
+
+// ** ItemSelectModal
+// ** --------------
+import ItemSelectModal from "components/ItemSelectModal";
+import ItemSelect from "components/ItemSelectModal/ItemSelect";
+import PlainModal from "components/ItemSelectModal/PlainModal";
+// ** --------------
+
+// TODO: Currently does not work, fixing the error in BaseLayout will fix this
+// import Layout from "components/Layout";
+import Link from "components/Link";
+import Loading from "components/Loading";
+import Logo from "components/Logo";
+import MoveModal from "components/MoveModal";
+// TODO: Currently does not work, missing hooks/useCreateQuestionPage and hooks/useCreateFolder
+// import {
+//   defaultCallbacks,
+//   CallbackContextProvider,
+//   useNavigationCallbacks,
+//   useSetNavigationCallbacks,
+//   useSetNavigationCallbacksForPage,
+// } from "components/NavigationCallbacks/NavigationCallbacks";
+import NavItem from "components/NavItem";
+import OfflineBanner from "components/OfflineBanner";
+import PillTabs from "components/PillTabs";
+import PositionModal from "components/PositionModal";
+
+// ** preview
+// ** --------------
+import {
+  Label as PreviewLabel,
+  Input as PreviewInput,
+  Field as PreviewField,
+  UnitInput as PreviewUnitInput,
+} from "components/preview/Answers/elements";
+import AnswerTrailingUnit from "components/preview/Answers/AnswerTrailingUnit";
+import CurrencyAnswer from "components/preview/Answers/CurrencyAnswer";
+import DateAnswer from "components/preview/Answers/DateAnswer";
+import DateRangeAnswer from "components/preview/Answers/DateRangeAnswer";
+import DurationAnswer from "components/preview/Answers/DurationAnswer";
+import MultipleChoiceAnswer from "components/preview/Answers/MultipleChoiceAnswer";
+import TextAnswer from "components/preview/Answers/TextAnswer";
+import TextAreaAnswer from "components/preview/Answers/TextAreaAnswer";
+import { Answer, answerComponents } from "components/preview/Answers";
+import Info from "components/preview/elements/Info";
+import PreviewPageTitle from "components/preview/elements/PageTitle";
+import PreviewError from "components/preview/Error";
+// ** --------------
+
+import QCodeContext from "components/QCodeContext";
+
+// ** QuestionPicker
+// ** --------------
+import QuestionPicker from "components/QuestionPicker";
+import Item from "components/QuestionPicker/Item";
+import List from "components/QuestionPicker/List";
+import SelectedPages from "components/QuestionPicker/SelectedPagesContext";
+// ** --------------
+
+import {
+  RadioField,
+  RadioLabel,
+  RadioTitle,
+  RadioDescription,
+} from "components/Radio";
+// TODO: Currently does not work, missing utils/UrlUtils
+// import RedirectRoute from "components/RedirectRoute";
+// TODO: Currently does not work, missing utils/getIdForObject
+// import Reorder from "components/Reorder";
+
+// ** RichTextEditor
+// ** --------------
+import PipedValue from "components/RichTextEditor/entities/PipedValue";
+import LinkPlugin from "components/RichTextEditor/LinkPlugin";
+import LinkPluginToolbarButton from "components/RichTextEditor/LinkPlugin/ToolbarButton";
+import RichTextEditor from "components/RichTextEditor";
+import PipingMenu from "components/RichTextEditor/PipingMenu";
+import Toolbar from "components/RichTextEditor/Toolbar";
+import ToolbarButton from "components/RichTextEditor/ToolbarButton";
+// ** --------------
+
+import { useCurrentPageId } from "components/RouterContext";
+
+// ** SectionPicker
+// ** --------------
+import SectionPicker from "components/SectionPicker";
+import SectionPickerItem from "components/SectionPicker/Item";
+import SectionPickerList from "components/SectionPicker/List";
+import SelectedSections from "components/SectionPicker/SelectedSectionsContext";
+// ** --------------
+
+import ShortCodeEditor from "components/ShortCodeEditor";
+
+// ** Toasts
+// ** --------------
+// TODO: Currently does not work, missing utils/timer in ToastContainerToast
+// import Toasts from "components/Toasts";
+// import ToastContainer from "components/Toasts/ToastContainer";
+// import ToastContainerToast from "components/Toasts/ToastContainer/Toast";
+import ToastList from "components/Toasts/ToastContainer/ToastList";
+import ToastTransition from "components/Toasts/ToastContainer/Transition";
+import VerticalTabs from "components/VerticalTabs";
+// ** --------------
+
+// TODO START
+/*
+- AdditionalContent (directory is empty and should not need to be moved)
+- BaseLayout
+- datatable
+- Delay
+- DescribedText
+- Dummy (directory is empty and should not need to be moved)
+- EditorLayout
+- EditorToolbar
+- Error
+- GroupValidations (directory is empty and should not need to be moved)
+- InputWithConditionalError
+- ItemSelectModal
+- Layout
+- Link
+- Loading
+- Logo
+- MoveModal
+- NavigationCallbacks - this may need to be moved into its own directory
+- NavItem
+- OfflineBanner
+- PillTabs
+- Platform (directory is empty and should not need to be moved)
+- PositionModal
+- preview
+- PrivateRoute
+- QCodeContext
+- QuestionPicker
+- Radio
+- RedirectRoute
+- Reorder
+- RichTextEditor
+- RouterContext
+- SectionPicker
+- ShortCodeEditor
+- Toasts
+- VerticalTabs
+*/
+// TODO END
+
+// ! ---------------
+// TODO - RichTextEditor
+// ! ---------------
 function App() {
   return (
     <div>
@@ -342,6 +542,81 @@ function App() {
       <PaginationNavTable />
       <Pagination />
       <QuestionnairesTable />
+      {/* <BaseLayout /> */}
+      {/* <PermissionsBanner /> */}
+      <AddRowButton />
+      <DeleteRowButton />
+      <TableInput />
+      <TableInputDate />
+      <TableSelect />
+      <TableTypeaheadInput />
+      <TableTypeaheadMenu />
+      <Table />
+      <TableBody />
+      <TableColumn />
+      <TableFoot />
+      <TableHead />
+      <TableHeadColumn />
+      <TableRow />
+      <Delay />
+      <DescribedText />
+      {/* <EditorLayout /> */}
+      {/* <EditorLayoutTabs /> */}
+      {/* <EditorLayoutHeader /> */}
+      <PageTitle />
+      {/* <EditorToolbar /> */}
+      <Error />
+      {/* <InputWithConditionalError /> */}
+      <ItemSelectModal />
+      <ItemSelect />
+      <PlainModal />
+      {/* <Layout /> */}
+      <Link />
+      <Loading />
+      <Logo />
+      <MoveModal />
+      <NavItem />
+      <OfflineBanner />
+      <PillTabs />
+      <PositionModal />
+      <PreviewLabel />
+      <PreviewInput />
+      <PreviewField />
+      <PreviewUnitInput />
+      <AnswerTrailingUnit />
+      <CurrencyAnswer />
+      <DateAnswer />
+      <DateRangeAnswer />
+      <DurationAnswer />
+      <MultipleChoiceAnswer />
+      <TextAnswer />
+      <TextAreaAnswer />
+      <Answer />
+      <Info />
+      <PreviewPageTitle />
+      <PreviewError />
+      <QCodeContext />
+      <QuestionPicker />
+      <Item />
+      <List />
+      <SelectedPages />
+      <RadioField />
+      <RadioLabel />
+      <RadioTitle />
+      <RadioDescription />
+      {/* <RedirectRoute /> */}
+      {/* <Reorder /> */}
+      <SectionPicker />
+      <SectionPickerItem />
+      <SectionPickerList />
+      <SelectedSections />
+      <ShortCodeEditor />
+      {/* <Toasts /> */}
+      {/* <ToastContainer /> */}
+      {/* <ToastContainerToast /> */}
+      <ToastList />
+      <ToastTransition />
+      <VerticalTabs />
     </div>
   );
 }
