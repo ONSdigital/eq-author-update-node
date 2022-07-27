@@ -39,6 +39,7 @@
     "react-router-dom": "5.2.0",
     "react-scripts": "5.0.1",
     "react-textarea-autosize": "^8.3.4",
+    "react-titled": "^1.0.1",
     "react-tooltip": "^4.2.21",
     "react-transition-group": "^4.4.2",
     "redux": "4.1.2",
