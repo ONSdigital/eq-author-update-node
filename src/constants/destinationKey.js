@@ -1,4 +1,4 @@
-import { enableOn } from "../utils/featureFlags";
+import { enableOn } from "utils/featureFlags";
 
 export const EndOfQuestionnaire = "EndOfQuestionnaire";
 export const NextPage = "NextPage";

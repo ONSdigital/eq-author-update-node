@@ -209,9 +209,8 @@ import QuestionnairesTable from "components/ImportContentQuestionnairesView/Ques
 
 // ** BaseLayout
 // ** --------------
-// TODO: Currently these do not work, missing constants/publishStatus
-// import BaseLayout from "components/BaseLayout";
-// import PermissionsBanner from "components/BaseLayout/PermissionsBanner";
+import BaseLayout from "components/BaseLayout";
+import PermissionsBanner from "components/BaseLayout/PermissionsBanner";
 // ** --------------
 
 // ** datatable
@@ -507,8 +506,8 @@ function App() {
       <PaginationNavTable />
       <Pagination />
       <QuestionnairesTable />
-      {/* <BaseLayout /> */}
-      {/* <PermissionsBanner /> */}
+      <BaseLayout />
+      <PermissionsBanner />
       <AddRowButton />
       <DeleteRowButton />
       <TableInput />
