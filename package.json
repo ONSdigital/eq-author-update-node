@@ -14,24 +14,40 @@
     "apollo-link": "^1.2.14",
     "apollo-link-context": "^1.0.20",
     "apollo-link-ws": "^1.0.20",
+    "babel": "^6.23.0",
     "config": "^3.3.7",
+    "downshift": "^6.1.7",
+    "draft-convert": "^2.1.12",
+    "draft-js": "^0.11.7",
+    "draft-js-block-breakout-plugin": "^2.0.1",
+    "draft-js-plugins-editor": "^3.0.0",
+    "draftjs-filters": "^3.0.1",
+    "firebase": "^9.9.0",
+    "firebaseui": "^6.0.1",
     "fs": "^0.0.1-security",
     "graphql": "^16.5.0",
+    "graphql-anywhere": "^4.2.7",
+    "graphql-tag": "^2.12.6",
     "history": "^5.3.0",
+    "jsonwebtoken": "^8.5.1",
     "jsutils": "^1.10.1",
+    "node-polyfill-webpack-plugin": "^2.0.0",
     "path": "^0.12.7",
     "polish": "^0.2.3",
     "polished": "^4.2.2",
     "react": "^18.1.0",
     "react-apollo": "^3.1.5",
-    "react-dom": "^18.1.0",
+    "react-dom": "^18.2.0",
     "react-modal": "^3.15.1",
+    "react-redux": "7.2.6",
     "react-router": "^6.3.0",
     "react-router-dom": "5.2.0",
     "react-scripts": "5.0.1",
+    "react-textarea-autosize": "^8.3.4",
+    "react-titled": "^1.0.1",
     "react-tooltip": "^4.2.21",
     "react-transition-group": "^4.4.2",
-    "redux": "^4.2.0",
+    "redux": "4.1.2",
     "sentry": "^0.1.2",
     "styled-components": "^5.3.5",
     "uncontrollable": "^7.2.1",
@@ -40,8 +56,8 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "webpack serve --config ./webpack.config.js --mode development",
+    "build": "webpack",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -62,5 +78,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.10.0"
   }
 }

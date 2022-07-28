@@ -22,7 +22,7 @@ const Container = styled.div`
   gap: 0.5em;
 `;
 
-const ImportQuestionReviewModal = ({
+const ImportContentModal = ({
   questionnaire,
   isOpen,
   onCancel,
@@ -70,7 +70,7 @@ const ImportQuestionReviewModal = ({
   </Wizard>
 );
 
-ImportQuestionReviewModal.propTypes = {
+ImportContentModal.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   onConfirm: PropTypes.func.isRequired,
   onCancel: PropTypes.func.isRequired,
@@ -83,4 +83,4 @@ ImportQuestionReviewModal.propTypes = {
   startingSelectedQuestions: PropTypes.array, // eslint-disable-line
 };
 
-export default ImportQuestionReviewModal;
+export default ImportContentModal;

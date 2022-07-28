@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
-import { enableOn } from "utils/featureFlags";
+import { enableOn } from "../../../utils/featureFlags";
 
-import { useQuestionnaire } from "components/QuestionnaireContext";
+import { useQuestionnaire } from "../../../components/QuestionnaireContext";
 
 import {
   MenuItemList,
@@ -13,11 +13,11 @@ import {
   MenuItemTitles,
   MenuItemTitle,
 } from "../Menu";
-import ScrollPane from "components/ScrollPane";
-import Truncated from "components/Truncated";
+import ScrollPane from "../../../components/ScrollPane";
+import Truncated from "../../../components/Truncated";
 
-import { keyCodes } from "constants/keyCodes";
-import { destinationKey } from "constants/destinationKey";
+import { keyCodes } from "../../../constants/keyCodes";
+import { destinationKey } from "../../../constants/destinationKey"
 
 const ColumnContainer = styled.div`
   display: flex;

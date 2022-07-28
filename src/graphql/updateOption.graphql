@@ -1,0 +1,29 @@
+#import "./fragments/option.graphql"
+#import "./fragments/validationErrorInfo.graphql"
+#import "./lists/list.graphql"
+
+mutation UpdateOption($input: UpdateOptionInput!) {
+  updateOption(input: $input) {
+    ...Option
+    additionalAnswer {
+      validationErrorInfo {
+        ...ValidationErrorInfo
+      }
+    }
+    validationErrorInfo {
+      ...ValidationErrorInfo
+    }
+    answer {
+      id
+      page {
+        id
+        validationErrorInfo {
+          ...ValidationErrorInfo
+        }
+      }
+      list {
+        ...List
+      }
+    }
+  }
+}

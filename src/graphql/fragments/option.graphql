@@ -1,0 +1,19 @@
+#import "./answer.graphql"
+#import "./validationErrorInfo.graphql"
+
+fragment Option on Option {
+  id
+  description
+  label
+  qCode
+  value
+  displayName
+  additionalAnswer {
+    ...Answer
+    ... on BasicAnswer {
+      validationErrorInfo {
+        ...ValidationErrorInfo
+      }
+    }
+  }
+}

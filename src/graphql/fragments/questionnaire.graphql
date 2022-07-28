@@ -1,0 +1,33 @@
+fragment Questionnaire on Questionnaire {
+  id
+  title
+  description
+  surveyId
+  theme
+  qcodes
+  navigation
+  hub
+  summary
+  collapsibleSummary
+  type
+  shortTitle
+  displayName
+  introduction {
+    id
+    showOnHub
+  }
+  createdBy {
+    id
+    picture
+    name
+    email
+  }
+  editors {
+    id
+    picture
+    name
+    email
+  }
+  isPublic
+  permission
+}

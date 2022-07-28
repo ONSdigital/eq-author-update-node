@@ -1,10 +1,10 @@
 import { useMutation } from "@apollo/react-hooks";
 
-// import SET_QUESTIONNAIRE_LOCKED_MUTATION from "graphql/setQuestionnaireLocked.graphql";
+import SET_QUESTIONNAIRE_LOCKED_MUTATION from "graphql/setQuestionnaireLocked.graphql";
 
 export const useSetQuestionnaireLocked = () => {
   const [setQuestionnaireLocked] = useMutation(
-    // SET_QUESTIONNAIRE_LOCKED_MUTATION
+    SET_QUESTIONNAIRE_LOCKED_MUTATION
   );
   return (input) => setQuestionnaireLocked({ variables: { input } });
 };

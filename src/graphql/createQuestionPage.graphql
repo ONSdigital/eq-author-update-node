@@ -1,0 +1,49 @@
+#import "./fragments/page.graphql"
+#import "./fragments/validationErrorInfo.graphql"
+#import "./fragments/folder.graphql"
+mutation createQuestionPage($input: CreateQuestionPageInput!) {
+  createQuestionPage(input: $input) {
+    ...Page
+    displayName
+    position
+    pageType
+    answers {
+      id
+      displayName
+      type
+    }
+    section {
+      id
+      folders {
+        ...Folder
+        pages {
+          ...Page
+          position
+          displayName
+          pageType
+          ... on QuestionPage {
+            guidance
+            answers {
+              id
+            }
+            confirmation {
+              id
+            }
+          }
+          ... on CalculatedSummaryPage {
+            id
+          }
+          validationErrorInfo {
+              ...ValidationErrorInfo
+          }
+        }
+      }
+    }
+    confirmation {
+      id
+    }
+    validationErrorInfo {
+      ...ValidationErrorInfo
+    }
+  }
+}

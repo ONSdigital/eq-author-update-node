@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import CustomPropTypes from "custom-prop-types";
+import CustomPropTypes from "../../custom-prop-types";
 import styled from "styled-components";
 import { find } from "lodash";
 
-import { getPages } from "utils/questionnaireUtils";
+import { getPages } from "../../utils/questionnaireUtils";
 
 import { Menu, SubMenu } from "./Menu";
-import ScrollPane from "components/ScrollPane";
+import ScrollPane from "../../components/ScrollPane";
 
 const ColumnContainer = styled.div`
   display: flex;

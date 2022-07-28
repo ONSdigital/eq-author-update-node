@@ -5,7 +5,7 @@ import Modal from "components/modals/Modal";
 import { colors, focusStyle, getTextHoverStyle } from "constants/theme";
 import DialogButtons from "components/Dialog/DialogButtons";
 import Warning from "./Warning";
-import { ReactComponent as Chevron } from "assets/icon-chevron-left.svg";
+import Chevron from "assets/icon-chevron-left.svg";
 
 const BackButton = styled.button`
   position: relative;

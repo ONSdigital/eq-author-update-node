@@ -1,0 +1,46 @@
+#import "./fragments/folder.graphql"
+#import "./fragments/page.graphql"
+#import "./fragments/validationErrorInfo.graphql"
+#import "./fragments/comment.graphql"
+
+mutation CreateFolder($input: CreateFolderInput!) {
+  createFolder(input: $input) {
+    ...Folder
+    section {
+      id
+      folders {
+        id
+        position
+        pages {
+          ...Page
+          position
+          displayName
+          title
+          alias
+          pageType
+          ... on QuestionPage {
+            guidance
+            answers {
+              id
+            }
+            confirmation {
+              id
+            }
+            comments {
+              ...Comment
+            }
+          }
+          ... on CalculatedSummaryPage {
+            id
+          }
+          ... on ListCollectorPage {
+            id
+          }
+          validationErrorInfo {
+            ...ValidationErrorInfo
+          }
+        }
+      }
+    }
+  }
+}

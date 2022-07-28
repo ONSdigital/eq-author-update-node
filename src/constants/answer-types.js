@@ -23,7 +23,7 @@ export const RADIO_OPTION = "RadioOption";
 export const CHECKBOX_OPTION = "CheckboxOption";
 export const MUTUALLY_EXCLUSIVE_OPTION = "MutuallyExclusiveOption";
 
-const exportedAnswerTypes = {
+const exportedAnswerTypes = [
   CHECKBOX,
   RADIO,
   TEXTFIELD,
@@ -35,6 +35,6 @@ const exportedAnswerTypes = {
   DATE_RANGE,
   UNIT,
   DURATION,
-};
+];
 
 export default exportedAnswerTypes;

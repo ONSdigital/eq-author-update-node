@@ -1,0 +1,52 @@
+#import "./fragments/section.graphql"
+#import "./fragments/validationErrorInfo.graphql"
+#import "./fragments/folder.graphql"
+#import "./fragments/questionnaire.graphql"
+#import "./fragments/comment.graphql"
+
+mutation CreateSection($input: CreateSectionInput!) {
+  createSection(input: $input) {
+    ...Section
+    position
+    displayName
+    folders {
+      ...Folder
+      position
+      pages {
+        id
+        title
+        position
+        ... on QuestionPage {
+          displayName
+          guidance
+          pageType
+          alias
+          answers {
+            id
+          }
+          confirmation {
+            id
+          }
+          validationErrorInfo {
+            ...ValidationErrorInfo
+          }
+          comments {
+            ...Comment
+          }
+        }
+      }
+    }
+    validationErrorInfo {
+      ...ValidationErrorInfo
+    }
+    questionnaire {
+      ...Questionnaire
+      sections {
+        ...Section
+      }
+      questionnaireInfo {
+        totalSectionCount
+      }
+    }
+  }
+}

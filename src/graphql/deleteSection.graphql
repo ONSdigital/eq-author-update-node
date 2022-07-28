@@ -1,0 +1,11 @@
+mutation DeleteSection($input: DeleteSectionInput!) {
+  deleteSection(input: $input) {
+    id
+    sections {
+      id
+      folders {
+        id
+      }
+    }
+  }
+}

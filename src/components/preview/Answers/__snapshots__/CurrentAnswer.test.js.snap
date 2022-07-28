@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Currency Answer should render 1`] = `
+<Field>
+  <Label
+    description="Description"
+  >
+    Label
+  </Label>
+  <InputWithUnit
+    unit="£"
+  />
+</Field>
+`;

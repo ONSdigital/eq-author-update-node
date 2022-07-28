@@ -1,0 +1,57 @@
+#import "./fragments/validationErrorInfo.graphql"
+#import "./fragments/folder.graphql"
+#import "./fragments/page.graphql"
+#import "./fragments/comment.graphql"
+#import "App/page/Logic/BinaryExpressionEditor/fragment.graphql"
+
+query GetSection($input: QueryInput!) {
+  section(input: $input) {
+    id
+    displayName
+    introductionTitle
+    introductionContent
+    position
+    displayConditions {
+      id
+      operator
+      expressions {
+        ...BinaryExpressionEditor
+      }
+    }
+    questionnaire {
+      id
+      hub
+    }
+    validationErrorInfo {
+      ...ValidationErrorInfo
+    }
+    comments {
+      ...Comment
+    }
+    folders {
+      id
+      ...Folder
+      pages {
+        ...Page
+        position
+        displayName
+        pageType
+        ... on QuestionPage {
+          guidance
+          answers {
+            id
+          }
+          confirmation {
+            id
+          }
+        }
+        ... on CalculatedSummaryPage {
+          id
+        }
+        validationErrorInfo {
+          ...ValidationErrorInfo
+        }
+      }
+    }
+  }
+}

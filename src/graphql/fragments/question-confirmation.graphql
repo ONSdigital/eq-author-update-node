@@ -1,0 +1,40 @@
+#import "./validationErrorInfo.graphql"
+fragment QuestionConfirmation on QuestionConfirmation {
+  id
+  title
+  displayName
+  qCode
+  positive {
+    id
+    label
+    description
+    validationErrorInfo {
+      ...ValidationErrorInfo
+    }
+  }
+  negative {
+    id
+    label
+    description
+    validationErrorInfo {
+      ...ValidationErrorInfo
+    }
+  }
+  page {
+    id
+    displayName
+    answers {
+      id
+      ... on MultipleChoiceAnswer {
+        options {
+          id
+          label
+        }
+        mutuallyExclusiveOption {
+          id
+          label
+        }
+      }
+    }
+  }
+}

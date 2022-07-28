@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import CharacterCounter from "../../components/CharacterCounter";
+import CharacterCounter from "components/CharacterCounter";
 import PropTypes from "prop-types";
 
-import { sharedStyles } from "../../components/Forms/css";
-import { colors } from "../../constants/theme";
+import { sharedStyles } from "components/Forms/css";
+import { colors } from "constants/theme";
 
 export const Wrapper = styled.div`
   ${sharedStyles};

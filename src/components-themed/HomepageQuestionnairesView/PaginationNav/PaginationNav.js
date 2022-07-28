@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-// import Theme from "contexts/themeContext";
-import Button from "../../../components-themed/buttons/button.js"
+import Theme from "../../../contexts/themeContext";
+import Button from "../../../components-themed/buttons/button.js";
 import VisuallyHidden from "../../../components/VisuallyHidden/index.js";
 import { colors } from "../../../constants/theme.js";
 
@@ -129,7 +129,7 @@ const Pagination = ({ currentPageIndex, onPageChange, pageCount }) => {
   };
 
   return (
-    // <Theme themeName={"ons"}>
+    <Theme themeName={"ons"}>
       <Container>
         <PrevButton
           variant="ghost-white"
@@ -174,7 +174,7 @@ const Pagination = ({ currentPageIndex, onPageChange, pageCount }) => {
           <VisuallyHidden>Go to next page</VisuallyHidden>
         </NextButton>
       </Container>
-    // </Theme>
+    </Theme>
   );
 };
 

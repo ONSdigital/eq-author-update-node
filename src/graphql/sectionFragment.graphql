@@ -1,0 +1,9 @@
+fragment MinimalSection on Section {
+  id
+  folders {
+    id
+    pages {
+      id
+    }
+  }
+}

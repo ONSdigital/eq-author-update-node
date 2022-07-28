@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableRow should render 1`] = `
+<DocumentFragment>
+  .c0 {
+  height: 2.4em;
+}
+
+.c0:not(:last-of-type) {
+  border-bottom: 1px solid #d6d8da;
+}
+
+<table>
+    <tbody>
+      <tr
+        class="c0"
+      />
+    </tbody>
+  </table>
+</DocumentFragment>
+`;

@@ -1,0 +1,18 @@
+#import "graphql/fragments/question-confirmation.graphql"
+#import "graphql/fragments/validationErrorInfo.graphql"
+
+mutation CreateQuestionConfirmation($input: CreateQuestionConfirmationInput!) {
+  createQuestionConfirmation(input: $input) {
+    ...QuestionConfirmation
+    page {
+      id
+      confirmation {
+        id
+        qCode
+      }
+    }
+    validationErrorInfo {
+      ...ValidationErrorInfo
+    }
+  }
+}

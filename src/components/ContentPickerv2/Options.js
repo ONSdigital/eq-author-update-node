@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import IconAnswers from "./icon-answers.svg?inline";
 import IconSections from "./icon-sections.svg?inline";
-import { colors } from "constants/theme";
+import { colors } from "../../constants/theme";
 
 export const OPTION_ANSWERS = "option-answers";
 export const OPTION_SECTIONS = "option-sections";

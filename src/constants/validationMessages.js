@@ -10,6 +10,21 @@ export const LIST_COLLECTOR_ERRORS = [
     message: "List required",
   },
   {
+    field: "drivingQuestion",
+    errorCode: "ERR_VALID_REQUIRED",
+    message: "Enter a driving question",
+  },
+  {
+    field: "drivingPositive",
+    errorCode: "ERR_VALID_REQUIRED",
+    message: "Enter a positive answer label",
+  },
+  {
+    field: "drivingPositive",
+    errorCode: "ERR_UNIQUE_REQUIRED",
+    message: "Enter a unique label for positive answer",
+  },
+  {
     field: "anotherTitle",
     errorCode: "ERR_VALID_REQUIRED",
     message: "Enter repeating list collector question",

@@ -1,0 +1,31 @@
+#import "graphql/fragments/validationErrorInfo.graphql"
+#import "./fragments/folder.graphql"
+mutation CreateCalculatedSummaryPage(
+  $input: CreateCalculatedSummaryPageInput!
+) {
+  createCalculatedSummaryPage(input: $input) {
+    id
+    title
+    alias
+    displayName
+    pageType
+    section {
+      id
+      folders {
+        ...Folder
+        pages {
+          id
+        }
+      }
+    }
+    position
+    summaryAnswers {
+      id
+    }
+    totalTitle
+    qCode
+    validationErrorInfo {
+      ...ValidationErrorInfo
+    }
+  }
+}

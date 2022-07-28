@@ -1,7 +1,7 @@
 import { useLockUnlockQuestionnaire } from "../../../hooks/useSetQuestionnaireLocked";
 import { useConfirmationModal } from "../../../components/modals/ConfirmationModal";
-import { ReactComponent as LockIcon } from "../../../assets/icon-locked.svg";
-import { ReactComponent as UnlockIcon } from "../../../assets/icon-unlocked.svg";
+import LockIcon from "../../../assets/icon-locked.svg";
+import UnlockIcon from "../../../assets/icon-unlocked.svg";
 
 export const useQuestionnaireLockingModal = ({ id, locked }) => {
   const [lockQuestionnaire, unlockQuestionnaire] = useLockUnlockQuestionnaire();

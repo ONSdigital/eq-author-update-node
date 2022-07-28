@@ -1,0 +1,16 @@
+fragment AvailableAnswers on Answer {
+  id
+  displayName
+  secondaryLabel
+  secondaryLabelDefault
+  type
+  properties
+  page {
+    id
+    displayName
+    section {
+      id
+      displayName
+    }
+  }
+}

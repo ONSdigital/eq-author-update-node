@@ -1,0 +1,14 @@
+export const SECTION = "section";
+export const PAGE = "page";
+export const FOLDER = "folder";
+export const QUESTION_CONFIRMATION = "question-confirmation";
+export const INTRODUCTION = "introduction";
+export const METADATA = "metadata";
+export const HISTORY = "history";
+export const COLLECTIONLISTS = "collectionLists";
+export const PUBLISH = "publish";
+export const QCODES = "qcodes";
+export const SHARING = "sharing";
+export const KEYBOARDSHORTCUTS = "keyboardShortcuts";
+export const SETTINGS = "settings";
+export const SUBMISSION = "submission";

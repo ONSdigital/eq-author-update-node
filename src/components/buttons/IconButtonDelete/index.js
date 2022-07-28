@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
-import { ReactComponent as IconDelete } from "../../../assets/icon-delete.svg";
-import { ReactComponent as IconDisabledDelete } from "../../../assets/icon-disabled-delete.svg";
+import IconDelete from "../../../assets/icon-delete.svg";
+import IconDisabledDelete from "../../../assets/icon-disabled-delete.svg";
 import Button from "../../../components/buttons/Button";
 import IconText from "../../../components/IconText";
 import Tooltip from "../../../components/Forms/Tooltip";
