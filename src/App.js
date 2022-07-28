@@ -269,14 +269,13 @@ import Link from "components/Link";
 import Loading from "components/Loading";
 import Logo from "components/Logo";
 import MoveModal from "components/MoveModal";
-// TODO: Currently does not work, missing hooks/useCreateQuestionPage and hooks/useCreateFolder
-// import {
-//   defaultCallbacks,
-//   CallbackContextProvider,
-//   useNavigationCallbacks,
-//   useSetNavigationCallbacks,
-//   useSetNavigationCallbacksForPage,
-// } from "components/NavigationCallbacks/NavigationCallbacks";
+import {
+  defaultCallbacks,
+  CallbackContextProvider,
+  useNavigationCallbacks,
+  useSetNavigationCallbacks,
+  useSetNavigationCallbacksForPage,
+} from "components/NavigationCallbacks/NavigationCallbacks";
 import NavItem from "components/NavItem";
 import OfflineBanner from "components/OfflineBanner";
 import PillTabs from "components/PillTabs";
