@@ -1,5 +1,6 @@
 // import config from "config";
 
+// ! Broken - original code uses config
 export const enableOn = (flags) => {
   // const enabledFlags = config.REACT_APP_FEATURE_FLAGS.split(",");
 

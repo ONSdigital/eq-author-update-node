@@ -8,7 +8,7 @@ import BaseLayout from "components/BaseLayout";
 import Theme from "contexts/themeContext";
 
 import Header from "components-themed/Header/index.js";
-import { ReactComponent as Logo } from "assets/ons-logo.svg";
+import Logo from "assets/ons-logo.svg";
 import Footer from "components-themed/Footer";
 import { Grid, Column } from "components/Grid";
 

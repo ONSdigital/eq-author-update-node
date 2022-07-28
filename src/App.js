@@ -198,7 +198,6 @@ import QuestionnairesView from "components/ImportContentQuestionnairesView";
 import NoResults from "components/ImportContentQuestionnairesView/NoResults";
 import NoResultsFiltered from "components/ImportContentQuestionnairesView/NoResultsFiltered";
 import reducer from "components/ImportContentQuestionnairesView/reducer";
-// TODO: ESLint expects default export to be an arrow function in this file
 import usePersistedReducer from "components/ImportContentQuestionnairesView/usePersistedReducer";
 import AccessFilter from "components/ImportContentQuestionnairesView/Header/AccessFilter";
 import Header from "components/ImportContentQuestionnairesView/Header";
@@ -243,11 +242,9 @@ import DescribedText from "components/DescribedText";
 // ! Broken - EditorLayout uses MeContext, which causes an error due to using config
 // import EditorLayout from "components/EditorLayout";
 
-// TODO: Currently does not work, missing utils/urlUtils
-// import EditorLayoutTabs from "components/EditorLayout/Tabs";
+import EditorLayoutTabs from "components/EditorLayout/Tabs";
 
-// TODO: Currently does not work, missing utils/timer
-// import EditorLayoutHeader from "components/EditorLayout/Header";
+import EditorLayoutHeader from "components/EditorLayout/Header";
 import PageTitle from "components/EditorLayout/Header/PageTitle";
 // ** --------------
 
@@ -266,7 +263,7 @@ import ItemSelect from "components/ItemSelectModal/ItemSelect";
 import PlainModal from "components/ItemSelectModal/PlainModal";
 // ** --------------
 
-// TODO: Currently does not work, fixing the error in BaseLayout will fix this
+// ! Broken - Layout uses MeContext, which causes an error due to using config
 // import Layout from "components/Layout";
 import Link from "components/Link";
 import Loading from "components/Loading";
@@ -323,22 +320,17 @@ import {
   RadioTitle,
   RadioDescription,
 } from "components/Radio";
-// TODO: Currently does not work, missing utils/UrlUtils
-// import RedirectRoute from "components/RedirectRoute";
-// TODO: Currently does not work, missing utils/getIdForObject
-// import Reorder from "components/Reorder";
+import RedirectRoute from "components/RedirectRoute";
+import Reorder from "components/Reorder";
 
 // ** RichTextEditor
 // ** --------------
 import PipedValue from "components/RichTextEditor/entities/PipedValue";
 import LinkPlugin from "components/RichTextEditor/LinkPlugin";
 import LinkPluginToolbarButton from "components/RichTextEditor/LinkPlugin/ToolbarButton";
-// TODO: Currently does not work, missing utils/getContentBeforeEntity
-// import RichTextEditor from "components/RichTextEditor";
-// TODO: Currently does not work, missing utils/getContentBeforeEntity
-// import PipingMenu from "components/RichTextEditor/PipingMenu";
-// TODO: Currently does not work, missing utils/getContentBeforeEntity
-// import Toolbar from "components/RichTextEditor/Toolbar";
+import RichTextEditor from "components/RichTextEditor";
+import PipingMenu from "components/RichTextEditor/PipingMenu";
+import Toolbar from "components/RichTextEditor/Toolbar";
 import ToolbarButton from "components/RichTextEditor/ToolbarButton";
 // --------
 import convert from "components/RichTextEditor/utils/convert";
@@ -362,10 +354,9 @@ import ShortCodeEditor from "components/ShortCodeEditor";
 
 // ** Toasts
 // ** --------------
-// TODO: Currently does not work, missing utils/timer in ToastContainerToast
-// import Toasts from "components/Toasts";
-// import ToastContainer from "components/Toasts/ToastContainer";
-// import ToastContainerToast from "components/Toasts/ToastContainer/Toast";
+import Toasts from "components/Toasts";
+import ToastContainer from "components/Toasts/ToastContainer";
+import ToastContainerToast from "components/Toasts/ToastContainer/Toast";
 import ToastList from "components/Toasts/ToastContainer/ToastList";
 import ToastTransition from "components/Toasts/ToastContainer/Transition";
 import VerticalTabs from "components/VerticalTabs";
@@ -525,8 +516,8 @@ function App() {
       <Delay />
       <DescribedText />
       {/* <EditorLayout /> */}
-      {/* <EditorLayoutTabs /> */}
-      {/* <EditorLayoutHeader /> */}
+      <EditorLayoutTabs />
+      <EditorLayoutHeader />
       <PageTitle />
       {/* <EditorToolbar /> */}
       <Error />
@@ -568,16 +559,23 @@ function App() {
       <RadioLabel />
       <RadioTitle />
       <RadioDescription />
-      {/* <RedirectRoute /> */}
-      {/* <Reorder /> */}
+      <RedirectRoute />
+      <Reorder />
+      <PipedValue />
+      <LinkPlugin />
+      <LinkPluginToolbarButton />
+      <RichTextEditor />
+      <PipingMenu />
+      <Toolbar />
+      <ToolbarButton />
       <SectionPicker />
       <SectionPickerItem />
       <SectionPickerList />
       <SelectedSections />
       <ShortCodeEditor />
-      {/* <Toasts /> */}
-      {/* <ToastContainer /> */}
-      {/* <ToastContainerToast /> */}
+      <Toasts />
+      <ToastContainer />
+      <ToastContainerToast />
       <ToastList />
       <ToastTransition />
       <VerticalTabs />

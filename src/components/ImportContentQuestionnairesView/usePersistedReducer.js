@@ -1,7 +1,7 @@
 import { useMemo, useReducer, useEffect } from "react";
 import { pick } from "lodash";
 
-export default (
+const usePersistedReducer = (
   storageKey,
   storedKeys,
   reducer,
@@ -31,3 +31,5 @@ export default (
   }, Object.values(pick(state, storedKeys)));
   return [state, dispatch];
 };
+
+export default usePersistedReducer;

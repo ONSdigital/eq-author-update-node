@@ -4,7 +4,7 @@ import {
   getFolderById,
   getPageById,
   removePageById,
-} from "../../utils/questionnaireUtils";
+} from "utils/questionnaireUtils";
 
 const searchByAnswerAndQuestionTitleShortCode = (data, searchTerm) => {
   if (!searchTerm || searchTerm === "") {
