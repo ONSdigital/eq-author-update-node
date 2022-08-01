@@ -2,11 +2,11 @@ import {
   setSentryUser,
   setSentryTag,
   sendSentryError,
-} from "../apollo/sentryUtils";
+} from "apollo/sentryUtils";
 import { onError } from "apollo-link-error";
 import { apiDownError } from "redux/saving/actions";
 
-import auth from "../../components/Auth";
+import auth from "components/components-original/Auth";
 
 export const errorHandler = (getStore, error) => {
   const { networkError, graphQLErrors } = error;

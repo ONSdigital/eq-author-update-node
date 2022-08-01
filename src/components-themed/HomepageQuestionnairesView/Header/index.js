@@ -3,12 +3,12 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { debounce } from "lodash";
 
-import Theme from "../../../contexts/themeContext";
-import Button from "../../../components-themed/buttons/button.js";
-import SearchBar from "../../../components/SearchBar/index.js";
-import { colors } from "../../../constants/theme.js";
+import Theme from "contexts/themeContext";
+import Button from "components-themed/buttons/button.js";
+import SearchBar from "components/components-original/SearchBar/index.js";
+import { colors } from "constants/theme.js";
 
-// import QuestionnaireSettingsModal from "../../../App/QuestionnaireSettingsModal";
+// import QuestionnaireSettingsModal from "App/QuestionnaireSettingsModal";
 
 const DEBOUNCE_TIMEOUT = 200;
 

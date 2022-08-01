@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import PropType from "prop-types";
-import  Grid from "../../components/Grid/Grid.js"//"../../components/Grid/index.js";
-import Column  from "../../components/Grid/Column.js"//"../../components/Grid/index.js";
+import Grid from "components/components-original/Grid/Grid.js"; //"components/components-original/Grid/index.js";
+import Column from "components/components-original/Grid/Column.js"; //"components/components-original/Grid/index.js";
 
-import logo from "../../assets/ons-logo.svg";
+import logo from "assets/ons-logo.svg";
 
 const DefaultFooter = styled.div`
   background-color: ${({ theme }) => theme.colors.textBannerLink};

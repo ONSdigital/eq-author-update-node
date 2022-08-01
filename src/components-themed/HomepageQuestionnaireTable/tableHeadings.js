@@ -1,4 +1,4 @@
-import * as Headings from "../../constants/table-headings";
+import * as Headings from "constants/table-headings";
 
 const tableHeadings = [
   {

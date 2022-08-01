@@ -16,7 +16,7 @@ import {
   KEYBOARDSHORTCUTS,
   FOLDER,
   SUBMISSION,
-} from "../constants/entities";
+} from "constants/entities";
 
 export const Routes = {
   HOME: "/",

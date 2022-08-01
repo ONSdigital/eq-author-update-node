@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import PropType from "prop-types";
-import CustomPropTypes from "../../custom-prop-types/index";
-import { Grid, Column } from "../../components/Grid";
-import UserProfile from "../../components/UserProfile";
-import { withMe } from "../../App/MeContext";
+import CustomPropTypes from "custom-prop-types/index";
+import { Grid, Column } from "components/components-original/Grid";
+import UserProfile from "components/components-original/UserProfile";
+import { withMe } from "App/MeContext";
 import { enableOn } from "utils/featureFlags";
 
 const HeaderTop = styled.div`

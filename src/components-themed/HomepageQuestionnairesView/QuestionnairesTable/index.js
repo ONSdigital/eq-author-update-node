@@ -4,14 +4,14 @@ import { propType } from "graphql-anywhere";
 import gql from "graphql-tag";
 import styled from "styled-components";
 
-import { SORT_ORDER } from "../../../constants/sort-order.js";
+import { SORT_ORDER } from "constants/sort-order.js";
 
-import QuestionnaireTable from "../../../components-themed/HomepageQuestionnaireTable";
-import Panel from "../../../components/Panel/index.js";
+import QuestionnaireTable from "components-themed/HomepageQuestionnaireTable";
+import Panel from "components/components-original/Panel/index.js";
 
-import tableHeadings from "../../../components-themed/HomepageQuestionnaireTable/tableHeadings.js";
+import tableHeadings from "components-themed/HomepageQuestionnaireTable/tableHeadings.js";
 
-import { useQuestionnaireLockingModal } from "../../../components/modals/QuestionnaireLockingModal";
+import { useQuestionnaireLockingModal } from "components/components-original/modals/QuestionnaireLockingModal";
 
 const ScrollContainer = styled.div`
   overflow: auto;

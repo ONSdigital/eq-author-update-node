@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import iconCheckbox from "assets/icon-checkbox-ons.svg";
-import withChangeHandler from "components/Forms/withChangeHandler";
+import withChangeHandler from "components/components-original/Forms/withChangeHandler";
 
 const checkBox = css`
   appearance: none;

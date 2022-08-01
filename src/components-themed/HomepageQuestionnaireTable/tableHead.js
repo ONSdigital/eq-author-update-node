@@ -2,12 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-import { colors, radius } from "../../constants/theme";
-import Button from "../../components/buttons/Button";
+import { colors, radius } from "constants/theme";
+import Button from "components/components-original/buttons/Button";
 
-import iconArrow from "../../assets/icon-arrow-down.svg";
+import iconArrow from "assets/icon-arrow-down.svg";
 
-import { SORT_ORDER } from "../../constants/sort-order";
+import { SORT_ORDER } from "constants/sort-order";
 import tableHeadings from "./tableHeadings";
 
 const Thead = styled.thead`
