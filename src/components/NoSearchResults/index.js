@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 import { colors } from "../../constants/theme";
 
-import { ReactComponent as IconAlert } from "../../assets/icon-alert.svg";
+import IconAlert from "../../assets/icon-alert.svg";
 
 const Alert = styled.div`
   background: white;

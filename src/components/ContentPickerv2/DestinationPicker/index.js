@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
-import { colors } from "constants/theme";
+import { colors } from "../../../constants/theme";
 
 import Menu from "./Menu";
 

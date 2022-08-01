@@ -1,0 +1,17 @@
+fragment MinDurationValidationRule on MinDurationValidationRule {
+  id
+  duration {
+    value
+    unit
+  }
+  validationErrorInfo {
+    id
+    errors {
+      id
+      type
+      field
+      errorCode
+    }
+    totalCount
+  }
+}

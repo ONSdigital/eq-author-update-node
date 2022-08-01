@@ -1,15 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
-import CustomPropTypes from "custom-prop-types";
+import CustomPropTypes from "../../custom-prop-types";
 
 import styled from "styled-components";
 
-import { colors } from "constants/theme";
+import { colors } from "../../constants/theme";
 
 import { ErrorMessage } from "./ErrorMessage";
 import { SubMenuItem, MenuItemType } from "./Menu";
 
-import ScrollPane from "components/ScrollPane";
+import ScrollPane from "../../components/ScrollPane";
 
 const ModalTitle = styled.div`
   font-weight: bold;

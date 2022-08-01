@@ -1,0 +1,51 @@
+#import "./fragments/questionnaire.graphql"
+#import "./lists/list.graphql"
+
+#import "graphql/fragments/comment.graphql"
+query GetQuestionnaire($input: QueryInput!) {
+  questionnaire(input: $input) {
+    ...Questionnaire
+    submission {
+      id
+      furtherContent
+      viewPrintAnswers
+      emailConfirmation
+      feedback
+      comments {
+        ...Comment
+      }
+    }
+    collectionLists {
+      id
+      lists {
+        ...List
+      }
+    }
+    sections {
+      id
+      title
+      alias
+      displayName
+      position
+      folders {
+        id
+        alias
+        displayName
+        position
+        pages {
+          id
+          title
+          alias
+          position
+          displayName
+        }
+      }
+      questionnaire {
+        id
+        questionnaireInfo {
+          totalSectionCount
+        }
+      }
+    }
+  }
+}

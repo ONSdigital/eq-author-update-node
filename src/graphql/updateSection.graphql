@@ -1,0 +1,20 @@
+#import "./fragments/validationErrorInfo.graphql"
+
+mutation UpdateSection($input: UpdateSectionInput!) {
+  updateSection(input: $input) {
+    id
+    title
+    alias
+    displayName
+    introductionTitle
+    introductionContent
+    requiredCompleted
+    showOnHub
+    sectionSummary
+    collapsibleSummary
+    summaryTitle
+    validationErrorInfo {
+      ...ValidationErrorInfo
+    }
+  }
+}

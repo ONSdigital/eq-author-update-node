@@ -1,0 +1,82 @@
+#import "./fragments/validationErrorInfo.graphql"
+#import "./fragments/folder.graphql"
+#import "./fragments/page.graphql"
+#import "./fragments/answer.graphql"
+#import "./fragments/option.graphql"
+#import "./fragments/comment.graphql"
+
+mutation duplicateFolder($input: DuplicateFolderInput!) {
+  duplicateFolder(input: $input) {
+    ...Folder
+    position
+    id
+    section {
+      id
+      folders {
+        id
+        pages {
+          ...Page
+          position
+          displayName
+          pageType
+          title
+          ... on QuestionPage {
+            alias
+            description
+            guidance
+            answers {
+              ...Answer
+              ... on BasicAnswer {
+                secondaryQCode
+              }
+              ... on MultipleChoiceAnswer {
+                options {
+                  ...Option
+                }
+                mutuallyExclusiveOption {
+                  id
+                  displayName
+                  label
+                  description
+                  value
+                  qCode
+                }
+              }
+            }
+            comments {
+              ...Comment
+            }
+            confirmation {
+              id
+              qCode
+              displayName
+              comments {
+                ...Comment
+              }
+              validationErrorInfo {
+                ...ValidationErrorInfo
+              }
+            }
+          }
+          ... on CalculatedSummaryPage {
+            id
+            alias
+            comments {
+              ...Comment
+            }
+          }
+          ... on ListCollectorPage {
+            id
+            alias
+            comments {
+              ...Comment
+            }
+          }
+          validationErrorInfo {
+            ...ValidationErrorInfo
+          }
+        }
+      }
+    }
+  }
+}

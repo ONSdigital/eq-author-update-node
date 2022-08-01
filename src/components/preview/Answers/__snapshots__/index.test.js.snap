@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Answers should render a component for each answer type: Checkbox 1`] = `
+<Answers__AnswerWrapper>
+  <MultipleChoiceAnswer
+    answer={
+      Object {
+        "options": Array [],
+        "properties": Object {},
+        "type": "Checkbox",
+      }
+    }
+  />
+  0
+</Answers__AnswerWrapper>
+`;
+
+exports[`Answers should render a component for each answer type: Currency 1`] = `
+<Answers__AnswerWrapper>
+  <CurrencyAnswer
+    answer={
+      Object {
+        "options": Array [],
+        "properties": Object {},
+        "type": "Currency",
+      }
+    }
+  />
+  0
+</Answers__AnswerWrapper>
+`;
+
+exports[`Answers should render a component for each answer type: Number 1`] = `
+<Answers__AnswerWrapper>
+  <TextAnswer
+    answer={
+      Object {
+        "options": Array [],
+        "properties": Object {},
+        "type": "Number",
+      }
+    }
+  />
+  0
+</Answers__AnswerWrapper>
+`;
+
+exports[`Answers should render a component for each answer type: Percentage 1`] = `
+<Answers__AnswerWrapper>
+  <AnswerTrailingUnit
+    answer={
+      Object {
+        "options": Array [],
+        "properties": Object {},
+        "type": "Percentage",
+      }
+    }
+  />
+  0
+</Answers__AnswerWrapper>
+`;
+
+exports[`Answers should render a component for each answer type: Radio 1`] = `
+<Answers__AnswerWrapper>
+  <MultipleChoiceAnswer
+    answer={
+      Object {
+        "options": Array [],
+        "properties": Object {},
+        "type": "Radio",
+      }
+    }
+  />
+  0
+</Answers__AnswerWrapper>
+`;
+
+exports[`Answers should render a component for each answer type: TextArea 1`] = `
+<Answers__AnswerWrapper>
+  <TextAreaAnswer
+    answer={
+      Object {
+        "options": Array [],
+        "properties": Object {},
+        "type": "TextArea",
+      }
+    }
+  />
+  0
+</Answers__AnswerWrapper>
+`;
+
+exports[`Answers should render a component for each answer type: TextField 1`] = `
+<Answers__AnswerWrapper>
+  <TextAnswer
+    answer={
+      Object {
+        "options": Array [],
+        "properties": Object {},
+        "type": "TextField",
+      }
+    }
+  />
+  0
+</Answers__AnswerWrapper>
+`;
+
+exports[`Answers should render a component for each answer type: Unit 1`] = `
+<Answers__AnswerWrapper>
+  <AnswerTrailingUnit
+    answer={
+      Object {
+        "options": Array [],
+        "properties": Object {},
+        "type": "Unit",
+      }
+    }
+  />
+  0
+</Answers__AnswerWrapper>
+`;
+
+exports[`Answers should render date answers 1`] = `
+<Answers__AnswerWrapper>
+  <DateAnswer
+    answer={
+      Object {
+        "properties": Object {
+          "format": "dd/mm/yyyy",
+        },
+        "type": "Date",
+      }
+    }
+  />
+</Answers__AnswerWrapper>
+`;
+
+exports[`Answers should render date range answers 1`] = `
+<Answers__AnswerWrapper>
+  <DateRangeAnswer
+    answer={
+      Object {
+        "properties": Object {},
+        "type": "DateRange",
+      }
+    }
+  />
+</Answers__AnswerWrapper>
+`;

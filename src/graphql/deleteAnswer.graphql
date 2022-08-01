@@ -1,0 +1,17 @@
+#import "./fragments/total-validation-rule.graphql"
+#import "./fragments/validationErrorInfo.graphql"
+
+mutation DeleteAnswer($input: DeleteAnswerInput!) {
+  deleteAnswer(input: $input) {
+    id
+    totalValidation {
+      ...TotalValidationRule
+    }
+    answers {
+      id
+    }
+    validationErrorInfo {
+      ...ValidationErrorInfo
+    }
+  }
+}

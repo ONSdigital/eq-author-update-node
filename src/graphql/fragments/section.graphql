@@ -1,0 +1,55 @@
+fragment Section on Section {
+  id
+  title
+  alias
+  introductionTitle
+  introductionContent
+  requiredCompleted
+  showOnHub
+  sectionSummary
+  collapsibleSummary
+  summaryTitle
+  questionnaire {
+    id
+    navigation
+    hub
+  }
+  validationErrorInfo {
+    id
+    errors {
+      id
+      type
+      field
+      errorCode
+    }
+    totalCount
+  }
+  comments {
+    id
+    commentText
+    user {
+      id
+      name
+      picture
+      email
+      displayName
+    }
+    createdTime
+    editedTime
+    replies {
+      id
+      commentText
+      createdTime
+      editedTime
+      user {
+        id
+        name
+        picture
+        email
+        displayName
+      }
+      readBy
+    }
+    readBy
+  }
+}

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { kebabCase } from "lodash";
 import styled from "styled-components";
-import { colors } from "../../constants/theme";
+import { colors } from "constants/theme";
 import chevron from "./icon-chevron.svg";
 
 const Header = styled.div`

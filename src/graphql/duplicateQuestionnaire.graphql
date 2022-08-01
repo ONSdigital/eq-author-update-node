@@ -1,0 +1,24 @@
+mutation duplicateQuestionnaire($input: DuplicateQuestionnaireInput!) {
+  duplicateQuestionnaire(input: $input) {
+    id
+    displayName
+    createdAt
+    createdBy {
+      id
+      name
+    }
+    sections {
+      folders {
+        id
+        alias
+        id
+        pages {
+          id
+        }
+      }
+    }
+    introduction {
+      id
+    }
+  }
+}

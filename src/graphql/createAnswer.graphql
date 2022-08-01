@@ -1,0 +1,111 @@
+#import "./fragments/answer.graphql"
+#import "./fragments/option.graphql"
+#import "./fragments/folder.graphql"
+#import "./fragments/section.graphql"
+#import "./fragments/min-value-validation-rule.graphql"
+#import "./fragments/max-value-validation-rule.graphql"
+#import "./fragments/earliest-date-validation-rule.graphql"
+#import "./fragments/latest-date-validation-rule.graphql"
+#import "./fragments/min-duration-validation-rule.graphql"
+#import "./fragments/max-duration-validation-rule.graphql"
+#import "./fragments/total-validation-rule.graphql"
+#import "./fragments/validationErrorInfo.graphql"
+#import "./fragments/page.graphql"
+
+mutation createAnswer($input: CreateAnswerInput!) {
+  createAnswer(input: $input) {
+    ...Answer
+    ... on BasicAnswer {
+      secondaryQCode
+      options {
+        ...Option
+        qCode
+        validationErrorInfo {
+          ...ValidationErrorInfo
+        }
+      }
+      validation {
+        ... on NumberValidation {
+          minValue {
+            enabled
+            ...MinValueValidationRule
+          }
+          maxValue {
+            enabled
+            ...MaxValueValidationRule
+          }
+        }
+        ... on DateValidation {
+          earliestDate {
+            enabled
+            ...EarliestDateValidationRule
+          }
+          latestDate {
+            enabled
+            ...LatestDateValidationRule
+          }
+        }
+        ... on DateRangeValidation {
+          earliestDate {
+            enabled
+            ...EarliestDateValidationRule
+          }
+          latestDate {
+            enabled
+            ...LatestDateValidationRule
+          }
+          minDuration {
+            enabled
+            ...MinDurationValidationRule
+          }
+          maxDuration {
+            enabled
+            ...MaxDurationValidationRule
+          }
+        }
+      }
+      validationErrorInfo {
+        ...ValidationErrorInfo
+      }
+    }
+    ... on MultipleChoiceAnswer {
+      options {
+        ...Option
+        qCode
+        validationErrorInfo {
+          ...ValidationErrorInfo
+        }
+      }
+      mutuallyExclusiveOption {
+        id
+        label
+        qCode
+      }
+      validationErrorInfo {
+        ...ValidationErrorInfo
+      }
+    }
+    page {
+      ...Page
+      title
+      displayName
+      position
+      pageType
+      folder {
+        ...Folder
+        section {
+          ...Section
+        }
+      }
+      totalValidation {
+        ...TotalValidationRule
+      }
+      answers {
+        ...Answer
+      }
+      validationErrorInfo {
+        ...ValidationErrorInfo
+      }
+    }
+  }
+}

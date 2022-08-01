@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-// import { useMe } from "App/MeContext";
+import { useMe } from "App/MeContext";
 
-import Tooltip from "../../components/Forms/Tooltip"; 
+import Tooltip from "../../components/Forms/Tooltip";
 import Button from "../../components/buttons/Button";
 
 import IconText from "../../components/IconText";
@@ -30,16 +30,16 @@ export const NavLogoutButton = styled(Button)`
 `;
 
 const UserProfile = ({ nav }) => {
-  // const { me, signOut } = useMe();
+  const { me, signOut } = useMe();
 
-  // if (!me) {
-  //   return null;
-  // }
+  if (!me) {
+    return null;
+  }
 
   return (
     <Tooltip content="Sign Out">
       {nav ? (
-        <NavLogoutButton /* onClick={signOut} */ variant="navigation" small>
+        <NavLogoutButton onClick={signOut} variant="navigation" small>
           <IconText nav icon={signOutIcon}>
             Sign out
           </IconText>
@@ -47,7 +47,7 @@ const UserProfile = ({ nav }) => {
       ) : (
         <LogoutButton
           data-test="signOut-btn"
-          // onClick={signOut}
+          onClick={signOut}
           variant="tertiary-light"
           medium
         >

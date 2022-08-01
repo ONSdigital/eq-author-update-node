@@ -1,0 +1,93 @@
+#import "./fragments/section.graphql"
+#import "./fragments/validationErrorInfo.graphql"
+#import "./fragments/folder.graphql"
+#import "./fragments/page.graphql"
+#import "./fragments/answer.graphql"
+#import "./fragments/option.graphql"
+#import "./fragments/comment.graphql"
+
+mutation duplicateSection($input: DuplicateSectionInput!) {
+  duplicateSection(input: $input) {
+    ...Section
+    position
+    displayName
+    folders {
+      ...Folder
+      pages {
+        ...Page
+        position
+        displayName
+        pageType
+        title
+        ... on QuestionPage {
+          alias
+          description
+          guidance
+          answers {
+            ...Answer
+            ... on BasicAnswer {
+              secondaryQCode
+            }
+            ... on MultipleChoiceAnswer {
+              options {
+                ...Option
+              }
+              mutuallyExclusiveOption {
+                id
+                displayName
+                label
+                description
+                value
+                qCode
+              }
+            }
+          }
+          confirmation {
+            id
+            qCode
+            displayName
+            comments {
+              ...Comment
+            }
+            validationErrorInfo {
+              ...ValidationErrorInfo
+            }
+          }
+          comments {
+            ...Comment
+          }
+        }
+        ... on CalculatedSummaryPage {
+          id
+          comments {
+            ...Comment
+          }
+        }
+        ... on ListCollectorPage {
+          id
+          comments {
+            ...Comment
+          }
+        }
+        validationErrorInfo {
+          ...ValidationErrorInfo
+        }
+      }
+    }
+    questionnaire {
+      id
+      questionnaireInfo {
+        totalSectionCount
+      }
+      sections {
+        id
+        folders {
+          id
+          pages {
+            id
+          }
+        }
+      }
+    }
+  }
+}
