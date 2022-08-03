@@ -25,7 +25,7 @@ const Layout = ({ title, children }) => (
       <Theme themeName={"ons"}>
         <ScrollPane>
           <Header
-            variant="Internal"
+            variant="internal"
             headerDescription="Questionnaire builder"
             logo={<Logo />}
             centerCols={9}

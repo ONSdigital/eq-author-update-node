@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PropType from "prop-types";
-import Grid from "components/components-original/Grid/Grid.js"; //"components/components-original/Grid/index.js";
-import Column from "components/components-original/Grid/Column.js"; //"components/components-original/Grid/index.js";
+import { Grid, Column } from "components/components-original/Grid";
 
 import logo from "assets/ons-logo.svg";
 

@@ -1,28 +1,28 @@
 import React, { useState, useRef, useEffect } from "react";
-import Tooltip from "components/components-original/Forms/Tooltip/index.js";
+import Tooltip from "components/components-original/Forms/Tooltip";
 
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { withRouter } from "react-router-dom";
 
-import CustomPropTypes from "custom-prop-types/index.js";
+import CustomPropTypes from "custom-prop-types";
 
-import IconButtonDelete from "components/components-original/buttons/IconButtonDelete/index.js";
-import DuplicateButton from "components/components-original/buttons/DuplicateButton/index.js";
-import DeleteConfirmDialog from "components/components-original/DeleteConfirmDialog/index.js";
-import Truncated from "components/components-original/Truncated/index.js";
-import Button from "components/components-original/buttons/Button/index.js";
+import IconButtonDelete from "components/components-original/buttons/IconButtonDelete";
+import DuplicateButton from "components/components-original/buttons/DuplicateButton";
+import DeleteConfirmDialog from "components/components-original/DeleteConfirmDialog";
+import Truncated from "components/components-original/Truncated";
+import Button from "components/components-original/buttons/Button";
 
-import { colors } from "constants/theme.js";
-import { WRITE } from "constants/questionnaire-permissions.js";
-import * as Headings from "constants/table-headings.js";
+import { colors } from "constants/theme";
+import { WRITE } from "constants/questionnaire-permissions";
+import * as Headings from "constants/table-headings";
 
 import FormattedDate from "./FormattedDate.js";
 import questionConfirmationIcon from "assets/icon-questionnaire.svg";
-import { ReactComponent as StarredIcon } from "assets/icon-starred.svg";
-import { ReactComponent as UnstarredIcon } from "assets/icon-unstarred.svg";
-import { ReactComponent as LockedIcon } from "assets/icon-locked.svg";
-import { ReactComponent as UnlockedIcon } from "assets/icon-unlocked.svg";
+import StarredIcon from "assets/icon-starred.svg";
+import UnstarredIcon from "assets/icon-unstarred.svg";
+import LockedIcon from "assets/icon-locked.svg";
+import UnlockedIcon from "assets/icon-unlocked.svg";
 
 import useToggleQuestionnaireStarred from "hooks/useToggleQuestionnaireStarred";
 

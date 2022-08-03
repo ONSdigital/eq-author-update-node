@@ -6,10 +6,10 @@ import styled from "styled-components";
 
 import { SORT_ORDER } from "constants/sort-order.js";
 
-import QuestionnaireTable from "components-themed/HomepageQuestionnaireTable";
-import Panel from "components/components-original/Panel/index.js";
+import QuestionnaireTable from "components/components-themed/HomepageQuestionnaireTable";
+import Panel from "components/components-original/Panel";
 
-import tableHeadings from "components-themed/HomepageQuestionnaireTable/tableHeadings.js";
+import tableHeadings from "components/components-themed/HomepageQuestionnaireTable/tableHeadings";
 
 import { useQuestionnaireLockingModal } from "components/components-original/modals/QuestionnaireLockingModal";
 
@@ -68,7 +68,7 @@ const QuestionnairesTable = ({
           questionnaireModal={questionnaireModal}
           variant={variant}
         />
-        {/* <LockModal /> */}
+        <LockModal />
       </Panel>
     </ConditionalScroll>
   );

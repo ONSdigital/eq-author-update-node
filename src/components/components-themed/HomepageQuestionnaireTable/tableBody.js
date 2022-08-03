@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Row from "./row.js";
+import Row from "./row";
 
 const TableBody = ({
   questionnaires,

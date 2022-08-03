@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Theme from "contexts/themeContext";
-import Button from "components-themed/buttons/button.js";
-import VisuallyHidden from "components/components-original/VisuallyHidden/index.js";
-import { colors } from "constants/theme.js";
+import Button from "components/components-themed/buttons/button.js";
+import VisuallyHidden from "components/components-original/VisuallyHidden";
+import { colors } from "constants/theme";
 
 const Container = styled.div`
   display: flex;

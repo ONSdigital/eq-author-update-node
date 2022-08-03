@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PropType from "prop-types";
-import CustomPropTypes from "custom-prop-types/index";
+import CustomPropTypes from "custom-prop-types";
 import { Grid, Column } from "components/components-original/Grid";
 import UserProfile from "components/components-original/UserProfile";
 import { withMe } from "App/MeContext";
@@ -9,7 +9,7 @@ import { enableOn } from "utils/featureFlags";
 
 const HeaderTop = styled.div`
   background-color: ${({ theme, variant }) =>
-    variant === "Internal"
+    variant === "internal"
       ? theme.colors.internalHeaderTop
       : theme.colors.externalHeaderTop};
   padding-top: 5px;
@@ -23,7 +23,7 @@ const HeaderTop = styled.div`
       fill: ${({ theme }) => theme.colors.onsLogoAccent};
     }
     fill: ${({ theme, variant }) =>
-      variant === "Internal"
+      variant === "internal"
         ? theme.colors.internalOnsLogo
         : theme.colors.externalOnsLogo};
   }
@@ -121,7 +121,7 @@ const Header = ({
               <Column cols={9}>
                 <HeaderTitle headerDescription={headerDescription}>
                   {children}
-                  {/* {enableOn(["gcp"]) ? " (GCP)" : " (AWS)"} */}
+                  {enableOn(["gcp"]) ? " (GCP)" : " (AWS)"}
                 </HeaderTitle>
                 {headerDescription && (
                   <HeaderDescription>{headerDescription}</HeaderDescription>
@@ -145,7 +145,7 @@ Header.propTypes = {
 };
 
 Header.defaultProps = {
-  variant: "Internal",
+  variant: "internal",
 };
 
-export default Header;
+export default withMe(Header);

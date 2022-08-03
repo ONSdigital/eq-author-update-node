@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
-import TableHead from "./tableHead.js";
-import TableBody from "./tableBody.js";
-import Panel from "components/components-original/Panel/index.js";
-import { colors } from "constants/theme.js";
-import MainCanvas from "components/components-original/MainCanvas/index.js";
+import TableHead from "./tableHead";
+import TableBody from "./tableBody";
+import Panel from "components/components-original/Panel";
+import { colors } from "constants/theme";
+import MainCanvas from "components/components-original/MainCanvas";
 
 const Border = styled(Panel)`
   border: 1px solid ${colors.black};

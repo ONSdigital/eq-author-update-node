@@ -4,11 +4,11 @@ import styled from "styled-components";
 import { debounce } from "lodash";
 
 import Theme from "contexts/themeContext";
-import Button from "components-themed/buttons/button.js";
-import SearchBar from "components/components-original/SearchBar/index.js";
-import { colors } from "constants/theme.js";
+import Button from "components/components-themed/buttons/button";
+import SearchBar from "components/components-original/SearchBar";
+import { colors } from "constants/theme";
 
-// import QuestionnaireSettingsModal from "App/QuestionnaireSettingsModal";
+import QuestionnaireSettingsModal from "App/QuestionnaireSettingsModal";
 
 const DEBOUNCE_TIMEOUT = 200;
 
@@ -63,12 +63,12 @@ const Header = ({
           </Theme>
         )}
       </Wrapper>
-      {/* <QuestionnaireSettingsModal
+      <QuestionnaireSettingsModal
         isOpen={isModalOpen}
         onClose={handleModalClose}
         onSubmit={onCreateQuestionnaire}
         confirmText="Create"
-      /> */}
+      />
     </>
   );
 };
