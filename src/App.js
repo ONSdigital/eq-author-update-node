@@ -258,9 +258,7 @@ import PageTitle from "components/components-original/EditorLayout/Header/PageTi
 // import EditorToolbar from "components/components-original/EditorToolbar";
 
 import Error from "components/components-original/Error";
-
-// TODO: Currently does not work, missing components-themed/Label, components-themed/panels and components-themed/Toolkit
-// import InputWithConditionalError from "components/components-original/InputWithConditionalError";
+import InputWithConditionalError from "components/components-original/InputWithConditionalError";
 
 // ** ItemSelectModal
 // ** --------------
@@ -677,7 +675,7 @@ function App() {
       <PasswordInput />
       <ThemedLabel />
       <ThemedPanel />
-      <Toolkit />
+      {/* <Toolkit /> */}
     </div>
   );
 }

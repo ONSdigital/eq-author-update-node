@@ -2,11 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { Field } from "components/components-original/Forms";
-import Label from "components-themed/Label";
-import Input from "components-themed/Input";
-import Panel from "components-themed/panels";
+import Label from "components/components-themed/Label";
+import Input from "components/components-themed/Input";
+import Panel from "components/components-themed/panels";
 
-import { FieldDescription } from "components-themed/Toolkit";
+import { FieldDescription } from "components/components-themed/Toolkit";
 
 const InputWithConditionalError = ({
   type,
