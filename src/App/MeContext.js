@@ -4,14 +4,14 @@ import { Query, withApollo } from "react-apollo";
 import { withRouter, useLocation } from "react-router-dom";
 import gql from "graphql-tag";
 import { get, flowRight } from "lodash";
-import auth from "components/Auth";
+import auth from "components/components-original/Auth";
 import config from "config";
 import CustomPropTypes from "custom-prop-types";
 import {
   setSentryUser,
   setSentryTag,
   sendSentryError,
-} from "../apollo/sentryUtils";
+} from "apollo/sentryUtils";
 
 const signIn = (setSignInSuccess, history, user) => {
   localStorage.setItem("accessToken", user.ra);

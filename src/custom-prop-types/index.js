@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
-import * as answerTypes from "../constants/answer-types";
+import * as answerTypes from "constants/answer-types";
 
-import * as metadataTypes from "../constants/metadata-types";
+import * as metadataTypes from "constants/metadata-types";
 
 const CustomPropTypes = {
   breadcrumb: PropTypes.shape({

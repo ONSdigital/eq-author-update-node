@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import { isEmpty } from "lodash";
 
-import VALIDATION_MESSAGES from "../constants/validationMessages";
+import VALIDATION_MESSAGES from "constants/validationMessages";
 
 const withValidationError = (entityPropName) => (WrappedComponent) => {
   class ValidationError extends React.Component {
