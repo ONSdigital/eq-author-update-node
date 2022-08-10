@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 import AnswerTypeButton from "./AnswerTypeButton";
-import { IconGridButton } from "components/IconGrid";
+import { IconGridButton } from "components/components-original/IconGrid";
 
 let component, handleClick;
 const answerType = "TextField";

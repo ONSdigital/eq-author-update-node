@@ -418,6 +418,9 @@ import {
   CheckboxInput,
 } from "components/components-themed/Toolkit";
 
+
+// import AccessDenied from "App/AccessDeniedPage";
+
 function App() {
   return (
     <div>
@@ -676,6 +679,7 @@ function App() {
       <ThemedLabel />
       <ThemedPanel />
       {/* <Toolkit /> */}
+      {/* <AccessDenied/> */}
     </div>
   );
 }

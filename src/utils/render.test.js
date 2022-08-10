@@ -1,5 +1,5 @@
 import React from "react";
-import render from "utils/render";
+import render from "src/utils/render";
 
 describe("render", () => {
   let target, props;
