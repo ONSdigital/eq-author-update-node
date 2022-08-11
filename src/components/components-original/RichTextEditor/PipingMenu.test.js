@@ -3,19 +3,19 @@ import { shallow } from "enzyme";
 import { byTestAttr } from "tests/utils/selectors";
 import PipingMenu, {
   splitDateRangeAnswers,
-} from "components/RichTextEditor/PipingMenu";
+} from "components/components-original/RichTextEditor/PipingMenu";
 
 import {
   ANSWER,
   METADATA,
   VARIABLES,
-} from "components/ContentPickerSelect/content-types";
+} from "components/components-original/ContentPickerSelect/content-types";
 
 import { DATE_RANGE, NUMBER } from "constants/answer-types";
 
 import { buildQuestionnaire } from "tests/utils/createMockQuestionnaire";
-import { useCurrentPageId } from "components/RouterContext";
-import { useQuestionnaire } from "components/QuestionnaireContext";
+import { useCurrentPageId } from "components/components-original/RouterContext";
+import { useQuestionnaire } from "components/components-original/QuestionnaireContext";
 
 jest.mock("components/RouterContext", () => ({
   useCurrentPageId: jest.fn(),

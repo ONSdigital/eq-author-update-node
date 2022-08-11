@@ -1,8 +1,8 @@
 import React from "react";
 import { render, fireEvent } from "tests/utils/rtl";
-import SplitButton from "components/buttons/SplitButton";
-import Button from "components/buttons/Button";
-import ButtonGroup from "components/buttons/ButtonGroup";
+import SplitButton from "components/components-original/buttons/SplitButton";
+import Button from "components/components-original/buttons/Button";
+import ButtonGroup from "components/components-original/buttons/ButtonGroup";
 
 const ref = React.createRef();
 

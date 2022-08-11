@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import Button from "components/components-original/buttons/Button";
 import { colors } from "constants/theme";
 
-import QuestionnaireSettingsModal from "App/QuestionnaireSettingsModal";
+import QuestionnaireSettingsModal from "components/components-original/QuestionnaireSettingsModal";
 
 import flag from "./flag.svg";
 

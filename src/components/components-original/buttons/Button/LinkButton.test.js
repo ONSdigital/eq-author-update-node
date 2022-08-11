@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "tests/utils/rtl";
 
-import LinkButton from "components/buttons/Button/LinkButton";
+import LinkButton from "components/components-original/buttons/Button/LinkButton";
 
 describe("components/Button/LinkButton", () => {
   it("should render", () => {

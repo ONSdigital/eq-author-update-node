@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { MockedProvider } from "@apollo/react-testing";
 import { Provider } from "react-redux";
-import Toasts from "components/Toasts";
+import Toasts from "components/components-original/Toasts";
 
 const TestProvider = ({ reduxProps, apolloProps, children }) => (
   <Provider store={reduxProps.store}>

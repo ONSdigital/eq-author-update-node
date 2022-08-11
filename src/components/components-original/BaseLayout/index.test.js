@@ -5,7 +5,7 @@ import { READ, WRITE } from "constants/questionnaire-permissions";
 
 import { MeContext } from "App/MeContext";
 
-import BaseLayout from "components/BaseLayout";
+import BaseLayout from "components/components-original/BaseLayout";
 
 import { AWAITING_APPROVAL } from "constants/publishStatus";
 

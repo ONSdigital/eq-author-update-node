@@ -1,5 +1,5 @@
 import React from "react";
-import ItemSelectModal from "components/ItemSelectModal";
+import ItemSelectModal from "components/components-original/ItemSelectModal";
 import { render, fireEvent } from "tests/utils/rtl";
 
 describe("ItemSelectModal", () => {

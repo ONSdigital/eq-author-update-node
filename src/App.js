@@ -419,7 +419,7 @@ import {
 } from "components/components-themed/Toolkit";
 
 
-// import AccessDenied from "App/AccessDeniedPage";
+import AccessDenied from "App/AccessDeniedPage";
 
 function App() {
   return (

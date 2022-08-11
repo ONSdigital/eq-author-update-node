@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "tests/utils/rtl";
-import Field from "components/Forms/Field";
-import { Label, Input } from "components/Forms";
+import Field from "components/components-original/Forms/Field";
+import { Label, Input } from "components/components-original/Forms";
 
 describe("components/Forms/Field", () => {
   it("should render correctly", () => {

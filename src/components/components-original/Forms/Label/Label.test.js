@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
 import Label from "./";
-import { RadioLabel } from "components/Radio";
+import { RadioLabel } from "components/components-original/Radio";
 
 let wrapper;
 

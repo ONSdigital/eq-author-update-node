@@ -2,7 +2,7 @@ import React from "react";
 import { render, flushPromises, fireEvent } from "tests/utils/rtl";
 import { MeProvider, CURRENT_USER_QUERY, withMe } from "./MeContext";
 import waitForExpect from "wait-for-expect";
-import auth from "components/Auth";
+import auth from "components/components-original/Auth";
 import {
   sendSentryError,
   setSentryTag,

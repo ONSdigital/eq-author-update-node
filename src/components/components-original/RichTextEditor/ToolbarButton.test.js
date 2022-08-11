@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "tests/utils/rtl";
 
-import ToolbarButton from "components/RichTextEditor/ToolbarButton";
+import ToolbarButton from "components/components-original/RichTextEditor/ToolbarButton";
 import { colors } from "constants/theme";
 
 describe("ToolbarButton", () => {
