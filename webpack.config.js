@@ -4,11 +4,8 @@ const webpack = require("webpack");
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const paths = require("./config/paths");
-const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
-  externalsPresets: { node: true }, // in order to ignore built-in modules like path, fs, etc.
-  externals: [nodeExternals()], // in order to ignore all modules in node_modules folder
   entry: [
     require.resolve("react-dev-utils/webpackHotDevClient"),
     paths.appIndexJs,
