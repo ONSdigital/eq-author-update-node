@@ -60,8 +60,7 @@ import ToggleChip from "components/components-original/buttons/ToggleChip";
 import ToggleSwitch from "components/components-original/buttons/ToggleSwitch";
 // ** --------------
 
-// ! Broken - Auth uses config
-// import Auth from "components/components-original/Auth";
+import Auth from "components/components-original/Auth";
 
 import { Autocomplete } from "components/components-original/Autocomplete";
 import Badge from "components/components-original/Badge";
@@ -74,8 +73,7 @@ import CollapsibleToggled from "components/components-original/CollapsibleToggle
 
 // ** Comments
 // ** --------------
-// ! Broken - Comment uses MeContext, which causes an error due to using config
-// import Comment from "components/components-original/Comments/Comment";
+import Comment from "components/components-original/Comments/Comment";
 import CommentEditor from "components/components-original/Comments/CommentEditor";
 import CommentHighlight from "components/components-original/Comments/CommentHighlight";
 import CommentNotification from "components/components-original/Comments/CommentNotification";
@@ -192,8 +190,7 @@ import SlideTransition from "components/components-original/transitions/SlideTra
 // ** --------------
 
 import Truncated from "components/components-original/Truncated";
-// ! Broken - UserProfile uses MeContext, which causes an error due to using config
-// import UserProfile from "components/components-original/UserProfile";
+import UserProfile from "components/components-original/UserProfile";
 import ValidationError from "components/components-original/ValidationError";
 import VisuallyHidden from "components/components-original/VisuallyHidden";
 import withEntityEditor from "components/components-original/withEntityEditor";
@@ -245,8 +242,7 @@ import DescribedText from "components/components-original/DescribedText";
 
 // ** EditorLayout
 // ** --------------
-// ! Broken - EditorLayout uses MeContext, which causes an error due to using config
-// import EditorLayout from "components/components-original/EditorLayout";
+import EditorLayout from "components/components-original/EditorLayout";
 
 import EditorLayoutTabs from "components/components-original/EditorLayout/Tabs";
 
@@ -267,8 +263,7 @@ import ItemSelect from "components/components-original/ItemSelectModal/ItemSelec
 import PlainModal from "components/components-original/ItemSelectModal/PlainModal";
 // ** --------------
 
-// ! Broken - Layout uses MeContext, which causes an error due to using config
-// import Layout from "components/components-original/Layout";
+import Layout from "components/components-original/Layout";
 import Link from "components/components-original/Link";
 import Loading from "components/components-original/Loading";
 import Logo from "components/components-original/Logo";
@@ -374,8 +369,7 @@ import VerticalTabs from "components/components-original/VerticalTabs";
 import ThemedButton from "components/components-themed/buttons";
 import Feedback from "components/components-themed/Feedback";
 import Footer from "components/components-themed/Footer";
-// ! Broken - ThemedHeader uses MeContext, which causes an error due to using config
-// import ThemedHeader from "components/components-themed/Header";
+import ThemedHeader from "components/components-themed/Header";
 
 // ** HomepageQuestionnairesView
 // ** --------------
@@ -419,7 +413,62 @@ import {
 } from "components/components-themed/Toolkit";
 
 
+// ** App/...
+// ** -------------- 
+
 import AccessDenied from "App/AccessDeniedPage";
+// TODO: needs enhancers folder
+// import CollectionListsPage from "App/collectionLists";
+import CommentsPanel from "App/Comments";
+import ErrorBoundary from "App/ErrorBoundary";
+// ! Broken - Can't resolve 'components/components-original/NavigationCallbacks' even though file path is correct
+// import FolderDesignPage from "App/folder/Design";
+import HistoryPageContent from "App/history/HistoryPage";
+// TODO: Could be within components folder instead?
+import ImportingContent from "App/importingContent";
+
+// ** introduction
+// ** -------------- 
+import IntroductionLayout from "App/introduction/IntroductionLayout";
+// TODO: needs enhancers folder
+// import IntroductionDesignWithData from "App/introduction/Design";
+// TODO: Needs settings folder from App folder
+// import IntroductionPreviewWithData from "App/introduction/Preview";
+// ** -------------- 
+
+// TODO: Needs sharing folder from App folder
+// import KeyboardShortcutsPage from "App/keyboardShortcuts/KeyboardShortcutsPage";
+import MetadataPage from "App/metadata/MetadataPage";
+import NotFound from "App/NotFoundPage"
+
+// ** Page
+// ** -------------- 
+
+// ** Page/Design
+// TODO: most of the commented out ones in Page/Design currently don't work as they need the enhancers folder which hasn't been copied over yet
+// import WrappedPageRoute from "App/page/Design";
+// import { StatelessBasicAnswer } from "App/page/Design/answers/BasicAnswer";
+// import { UnwrappedDate } from "./App/page/Design/answers/Date";
+// import DateRange from "./App/page/Design/answers/DateRange";
+// import DateSingle from "./App/page/Design/answers/DateSingle";
+// import { UnwrappedMultipleChoiceAnswer } from "App/page/Design/answers/MultipleChoiceAnswer";
+// TODO: needs assets folder and enhancers
+// import CalculatedSummaryPageEditor from "./App/page/Design/CalculatedSummaryPageEditor";
+// ! Broken - Can't resolve 'components/components-original/NavigationCallbacks' even though file path is correct
+// import UnwrappedListCollectorPageEditor from "./App/page/Design/ListCollectorPageEditor";
+import MoveEntityModal from "App/page/Design/MoveEntityModal";
+
+// import { UnwrappedQuestionPageEditor } from "./App/page/Design/QuestionPageEditor";
+
+// ** Page/Logic
+// TODO: Go through the Logic and preview folders in page folder
+
+// ** -------------- 
+
+
+// ** -------------- 
+
+
 
 function App() {
   return (

@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/RoutingRuleSet should render children 1`] = `
+<Fragment>
+  <Reorder
+    Transition={[Function]}
+    list={
+      Array [
+        Object {
+          "id": "2",
+        },
+      ]
+    }
+    onMove={[MockFunction]}
+  >
+    <Component />
+  </Reorder>
+  <RoutingEditor__AddRuleButton
+    data-test="btn-add-rule"
+    onClick={[Function]}
+    small={true}
+    type="button"
+    variant="secondary"
+  >
+    Add rule
+  </RoutingEditor__AddRuleButton>
+  <withRouter(UnwrappedDestinationSelector)
+    data-test="select-else"
+    id="else"
+    label="Else"
+    onChange={[Function]}
+    value={
+      Object {
+        "id": "4",
+        "logical": null,
+        "page": Object {
+          "displayName": "page",
+          "id": "3",
+        },
+        "section": null,
+        "validationErrorInfo": Object {
+          "errors": Array [],
+          "id": "test",
+          "totalCount": 0,
+        },
+      }
+    }
+  />
+</Fragment>
+`;

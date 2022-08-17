@@ -1,0 +1,16 @@
+#import "./RoutingEditor/fragment.graphql"
+#import "./RoutingEditor/RuleEditor/fragment.graphql"
+
+mutation createRouting2($input: CreateRouting2Input!) {
+  createRouting2(input: $input) {
+    ...RoutingEditor
+    page {
+      id
+      ... on Routable {
+        routing {
+          id
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BasicAnswer should render with description 1`] = `
+<div>
+  <Field
+    disabled={false}
+    last={false}
+  >
+    <Label
+      bold={true}
+      htmlFor="answer-label-ansID1"
+    >
+      Label
+    </Label>
+    <withChangeHandler(WrappingInput)
+      bold={true}
+      data-autofocus={true}
+      data-test="txt-answer-label"
+      id="answer-label-ansID1"
+      name="label"
+      onBlur={[MockFunction]}
+      onChange={[MockFunction]}
+      value=""
+    />
+  </Field>
+  <Field
+    disabled={false}
+    last={false}
+  >
+    <Label
+      bold={true}
+      htmlFor="answer-description-ansID1"
+    >
+      Description (optional)
+    </Label>
+    <withChangeHandler(WrappingInput)
+      cols="30"
+      data-test="txt-answer-description"
+      id="answer-description-ansID1"
+      name="description"
+      onBlur={[MockFunction]}
+      onChange={[MockFunction]}
+      rows="5"
+      value="Answer description"
+    />
+  </Field>
+  <AnswerProperties
+    answer={
+      Object {
+        "advancedProperties": true,
+        "description": "Answer description",
+        "id": "ansID1",
+        "label": "",
+        "options": Array [
+          Object {
+            "description": "option description",
+            "id": "option-1",
+            "label": "option-label",
+            "mutuallyExclusive": false,
+          },
+        ],
+        "properties": Object {
+          "required": false,
+        },
+        "title": "Answer title",
+        "type": "TextField",
+      }
+    }
+    updateAnswer={[MockFunction]}
+    updateAnswerOfType={[MockFunction]}
+  />
+  <AdvancedProperties
+    answer={
+      Object {
+        "advancedProperties": true,
+        "description": "Answer description",
+        "id": "ansID1",
+        "label": "",
+        "options": Array [
+          Object {
+            "description": "option description",
+            "id": "option-1",
+            "label": "option-label",
+            "mutuallyExclusive": false,
+          },
+        ],
+        "properties": Object {
+          "required": false,
+        },
+        "title": "Answer title",
+        "type": "TextField",
+      }
+    }
+    enableHorizontalRule={true}
+    updateAnswer={[MockFunction]}
+  />
+</div>
+`;
+
+exports[`BasicAnswer should render without description 1`] = `
+<div>
+  <Field
+    disabled={false}
+    last={false}
+  >
+    <Label
+      bold={true}
+      htmlFor="answer-label-ansID1"
+    >
+      Label
+    </Label>
+    <withChangeHandler(WrappingInput)
+      bold={true}
+      data-autofocus={true}
+      data-test="txt-answer-label"
+      id="answer-label-ansID1"
+      name="label"
+      onBlur={[MockFunction]}
+      onChange={[MockFunction]}
+      value=""
+    />
+  </Field>
+  <AnswerProperties
+    answer={
+      Object {
+        "advancedProperties": true,
+        "description": "Answer description",
+        "id": "ansID1",
+        "label": "",
+        "options": Array [
+          Object {
+            "description": "option description",
+            "id": "option-1",
+            "label": "option-label",
+            "mutuallyExclusive": false,
+          },
+        ],
+        "properties": Object {
+          "required": false,
+        },
+        "title": "Answer title",
+        "type": "TextField",
+      }
+    }
+    updateAnswer={[MockFunction]}
+    updateAnswerOfType={[MockFunction]}
+  />
+  <AdvancedProperties
+    answer={
+      Object {
+        "advancedProperties": true,
+        "description": "Answer description",
+        "id": "ansID1",
+        "label": "",
+        "options": Array [
+          Object {
+            "description": "option description",
+            "id": "option-1",
+            "label": "option-label",
+            "mutuallyExclusive": false,
+          },
+        ],
+        "properties": Object {
+          "required": false,
+        },
+        "title": "Answer title",
+        "type": "TextField",
+      }
+    }
+    enableHorizontalRule={true}
+    updateAnswer={[MockFunction]}
+  />
+</div>
+`;

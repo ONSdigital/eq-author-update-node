@@ -265,6 +265,12 @@ export const destinationErrors = {
   },
 };
 
+export const dynamicAnswer = {
+  ERR_VALID_REQUIRED: "Answer required",
+  ERR_REFERENCE_DELETED: "The selected answer has been deleted",
+  ERR_REFERENCE_MOVED: "Answer must be from a previous question",
+};
+
 export const SURVEY_ID_ERRORS = {
   ERR_VALID_REQUIRED: "Enter a survey ID",
   ERR_INVALID: "Enter a survey ID in the correct format",

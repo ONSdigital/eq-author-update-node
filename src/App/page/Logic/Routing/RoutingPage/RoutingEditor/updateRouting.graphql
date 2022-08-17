@@ -1,0 +1,17 @@
+mutation updateRouting2($input: UpdateRouting2Input!) {
+  updateRouting2(input: $input) {
+    id
+    else {
+      id
+      logical
+      page {
+        id
+        displayName
+      }
+      section {
+        id
+        displayName
+      }
+    }
+  }
+}

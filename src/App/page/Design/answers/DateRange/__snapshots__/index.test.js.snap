@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DateRange should render 1`] = `
+<DateRange__Wrapper
+  data-test="date-range-editor"
+>
+  <Connect(withEntityEditor(withValidationError(UnwrappedDate)))
+    answer={
+      Object {
+        "advancedProperties": true,
+        "description": "test",
+        "displayName": "Untitled answer",
+        "guidance": "",
+        "id": "1",
+        "label": "",
+        "properties": Object {
+          "required": false,
+        },
+        "qCode": "yuky",
+        "secondaryLabel": "",
+        "secondaryLabelDefault": "",
+        "type": "DateRange",
+        "validationErrorInfo": Object {
+          "errors": Array [],
+        },
+      }
+    }
+    key="from-1"
+    name="label"
+    onChange={[MockFunction]}
+    onUpdate={[MockFunction]}
+    showDay={true}
+    showMonth={true}
+    showYear={true}
+  />
+  <Connect(withEntityEditor(withValidationError(UnwrappedDate)))
+    answer={
+      Object {
+        "advancedProperties": true,
+        "description": "test",
+        "displayName": "Untitled answer",
+        "guidance": "",
+        "id": "1",
+        "label": "",
+        "properties": Object {
+          "required": false,
+        },
+        "qCode": "yuky",
+        "secondaryLabel": "",
+        "secondaryLabelDefault": "",
+        "type": "DateRange",
+        "validationErrorInfo": Object {
+          "errors": Array [],
+        },
+      }
+    }
+    key="to-1"
+    name="secondaryLabel"
+    onChange={[MockFunction]}
+    onUpdate={[MockFunction]}
+    showDay={true}
+    showMonth={true}
+    showYear={true}
+  />
+  <AnswerProperties
+    answer={
+      Object {
+        "advancedProperties": true,
+        "description": "test",
+        "displayName": "Untitled answer",
+        "guidance": "",
+        "id": "1",
+        "label": "",
+        "properties": Object {
+          "required": false,
+        },
+        "qCode": "yuky",
+        "secondaryLabel": "",
+        "secondaryLabelDefault": "",
+        "type": "DateRange",
+        "validationErrorInfo": Object {
+          "errors": Array [],
+        },
+      }
+    }
+    updateAnswer={[MockFunction]}
+  />
+  <AdvancedProperties
+    answer={
+      Object {
+        "advancedProperties": true,
+        "description": "test",
+        "displayName": "Untitled answer",
+        "guidance": "",
+        "id": "1",
+        "label": "",
+        "properties": Object {
+          "required": false,
+        },
+        "qCode": "yuky",
+        "secondaryLabel": "",
+        "secondaryLabelDefault": "",
+        "type": "DateRange",
+        "validationErrorInfo": Object {
+          "errors": Array [],
+        },
+      }
+    }
+    enableHorizontalRule={true}
+    updateAnswer={[MockFunction]}
+  >
+    <Memo(AnswerValidation)
+      answer={
+        Object {
+          "advancedProperties": true,
+          "description": "test",
+          "displayName": "Untitled answer",
+          "guidance": "",
+          "id": "1",
+          "label": "",
+          "properties": Object {
+            "required": false,
+          },
+          "qCode": "yuky",
+          "secondaryLabel": "",
+          "secondaryLabelDefault": "",
+          "type": "DateRange",
+          "validationErrorInfo": Object {
+            "errors": Array [],
+          },
+        }
+      }
+    />
+    <Fallback
+      answer={
+        Object {
+          "advancedProperties": true,
+          "description": "test",
+          "displayName": "Untitled answer",
+          "guidance": "",
+          "id": "1",
+          "label": "",
+          "properties": Object {
+            "required": false,
+          },
+          "qCode": "yuky",
+          "secondaryLabel": "",
+          "secondaryLabelDefault": "",
+          "type": "DateRange",
+          "validationErrorInfo": Object {
+            "errors": Array [],
+          },
+        }
+      }
+      metadata={Array []}
+      updateAnswer={[MockFunction]}
+    />
+  </AdvancedProperties>
+</DateRange__Wrapper>
+`;

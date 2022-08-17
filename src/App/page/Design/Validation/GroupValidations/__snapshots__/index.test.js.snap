@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GroupValidations should render 1`] = `
+<Fragment>
+  <GroupValidations__TotalButton
+    data-test="sidebar-button-total-value"
+    disabled={false}
+    hasError={true}
+    onClick={[Function]}
+  >
+    <GroupValidations__TotalIcon />
+    <GroupValidations__Details>
+      <SidebarButton__Title>
+        Total
+      </SidebarButton__Title>
+    </GroupValidations__Details>
+  </GroupValidations__TotalButton>
+  <ValidationError>
+    Value is required
+  </ValidationError>
+  <GroupValidations__GroupValidationModal
+    isOpen={false}
+    onClose={[Function]}
+  >
+    <Apollo(TotalValidation)
+      errors={
+        Array [
+          Object {
+            "errorCode": "ERR_NO_VALUE",
+            "field": "totalValidation",
+            "id": "pages-1-totalValidation",
+            "type": "pages",
+          },
+        ]
+      }
+      total={
+        Object {
+          "custom": 3,
+          "entityType": "Custom",
+          "id": "1",
+        }
+      }
+      type="Currency"
+    />
+    <GroupValidations__Buttons>
+      <Button
+        onClick={[Function]}
+        type="button"
+        variant="primary"
+      >
+        Done
+      </Button>
+    </GroupValidations__Buttons>
+  </GroupValidations__GroupValidationModal>
+</Fragment>
+`;
