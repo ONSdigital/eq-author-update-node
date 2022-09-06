@@ -4,9 +4,9 @@ import { includes, get } from "lodash";
 import propTypes from "prop-types";
 
 import CustomPropTypes from "custom-prop-types";
-import ScrollPane from "components/ScrollPane";
-import { Field, Label, Input } from "components/Forms";
-import Button from "components/buttons/Button";
+import ScrollPane from "components/components-original/ScrollPane";
+import { Field, Label, Input } from "components/components-original/Forms";
+import Button from "components/components-original/buttons/Button";
 
 const OptionField = styled(Field)`
   margin: 0;

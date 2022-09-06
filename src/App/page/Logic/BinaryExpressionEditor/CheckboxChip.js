@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 
 import { colors } from "constants/theme";
 import iconClose from "./icon-close.svg";
-import VisuallyHidden from "components/VisuallyHidden";
-import Truncated from "components/Truncated";
+import VisuallyHidden from "components/components-original/VisuallyHidden";
+import Truncated from "components/components-original/Truncated";
 
 const RemoveButton = styled.button`
   border-radius: 50%;

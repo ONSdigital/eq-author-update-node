@@ -1,11 +1,11 @@
 import React, { useMemo } from "react";
 import PropTypes from "prop-types";
 
-import ContentPickerSelect from "components/ContentPickerSelect";
-import { ANSWER } from "components/ContentPickerSelect/content-types";
+import ContentPickerSelect from "components/components-original/ContentPickerSelect";
+import { ANSWER } from "components/components-original/ContentPickerSelect/content-types";
 
-import { useCurrentPageId } from "components/RouterContext";
-import { useQuestionnaire } from "components/QuestionnaireContext";
+import { useCurrentPageId } from "components/components-original/RouterContext";
+import { useQuestionnaire } from "components/components-original/QuestionnaireContext";
 import getContentBeforeEntity from "utils/getContentBeforeEntity";
 
 import { ROUTING_ANSWER_TYPES } from "constants/answer-types";

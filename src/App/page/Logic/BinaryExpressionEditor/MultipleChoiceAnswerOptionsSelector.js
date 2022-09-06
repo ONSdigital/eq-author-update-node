@@ -8,7 +8,7 @@ import CheckboxChip from "./CheckboxChip";
 import CheckboxChipTransition from "./CheckboxChipTransition";
 import CheckboxOptionPicker from "./CheckboxOptionPicker";
 import Popover from "./CheckboxSelectorPopup";
-import ValidationError from "components/ValidationError";
+import ValidationError from "components/components-original/ValidationError";
 
 import {
   rightSideErrors,
@@ -17,10 +17,10 @@ import {
 } from "constants/validationMessages";
 import { colors } from "constants/theme";
 import { RADIO } from "constants/answer-types";
-import { Select } from "components/Forms";
+import { Select } from "components/components-original/Forms";
 
-import TextButton from "components/buttons/TextButton";
-import ToggleChip from "components/buttons/ToggleChip";
+import TextButton from "components/components-original/buttons/TextButton";
+import ToggleChip from "components/components-original/buttons/ToggleChip";
 import SecondaryConditionSelector from "./SecondaryConditionSelector";
 import { enableOn } from "utils/featureFlags";
 

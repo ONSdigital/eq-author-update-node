@@ -4,7 +4,7 @@ import { render, fireEvent } from "tests/utils/rtl";
 
 import { useCreateQuestionPage } from "hooks/useCreateQuestionPage";
 import { useCreatePageWithFolder } from "hooks/useCreateFolder";
-import { useSetNavigationCallbacks } from "components/components-original/NavigationCallbacks";
+import { useSetNavigationCallbacks } from "components/components-original/NavigationCallbacks/NavigationCallbacks";
 
 import FolderDesignPage from "./";
 import { buildQuestionnaire } from "tests/utils/createMockQuestionnaire";

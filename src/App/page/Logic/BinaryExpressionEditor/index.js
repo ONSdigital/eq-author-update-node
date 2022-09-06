@@ -2,7 +2,7 @@ import React from "react";
 import { PropTypes } from "prop-types";
 import { flow, some } from "lodash/fp";
 import { propType } from "graphql-anywhere";
-import Tooltip from "components/Forms/Tooltip";
+import Tooltip from "components/components-original/Forms/Tooltip";
 import { useMutation } from "@apollo/react-hooks";
 
 import {
@@ -24,13 +24,13 @@ import {
   leftSideErrors,
 } from "constants/validationMessages";
 
-import IconText from "components/IconText";
-import { Grid, Column } from "components/Grid";
+import IconText from "components/components-original/IconText";
+import { Grid, Column } from "components/components-original/Grid";
 
-import Transition from "components/transitions/BounceTransition";
+import Transition from "components/components-original/transitions/BounceTransition";
 
 import ContentPicker from "./RoutingAnswerContentPicker";
-import ValidationError from "components/ValidationError";
+import ValidationError from "components/components-original/ValidationError";
 import IconMinus from "./icon-minus.svg?inline";
 import IconPlus from "./icon-plus.svg?inline";
 import WarningIcon from "constants/icon-warning.svg?inline";

@@ -4,21 +4,21 @@ import React from "react";
 import { propType } from "graphql-anywhere";
 import styled from "styled-components";
 import { useQuery } from "@apollo/react-hooks";
-import IconText from "components/IconText";
-import Error from "components/preview/Error";
-import { Answer } from "components/preview/Answers";
-import PageTitle from "components/preview/elements/PageTitle";
-import EditorLayout from "components/EditorLayout";
+import IconText from "components/components-original/IconText";
+import Error from "components/components-original/preview/Error";
+import { Answer } from "components/components-original/preview/Answers";
+import PageTitle from "components/components-original/preview/elements/PageTitle";
+import EditorLayout from "components/components-original/EditorLayout";
 
 import { colors } from "constants/theme";
 import COLLECTION_LISTS from "graphql/lists/collectionLists.graphql";
 import ListCollectorPageEditor from "../Design/ListCollectorPageEditor";
 import CommentsPanel from "App/Comments";
-import Loading from "components/Loading";
+import Loading from "components/components-original/Loading";
 
 import IconInfo from "./icon-info.svg?inline";
 import IconChevron from "./icon-chevron.svg";
-import Panel from "components/Panel";
+import Panel from "components/components-original/Panel";
 
 const CollectorInfoTop = styled.div`
   width: 80%;

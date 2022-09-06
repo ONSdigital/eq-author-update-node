@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 import { get } from "lodash";
 
 import { colors } from "constants/theme";
-import { Number, Select, Label } from "components/Forms";
-import VisuallyHidden from "components/VisuallyHidden";
+import { Number, Select, Label } from "components/components-original/Forms";
+import VisuallyHidden from "components/components-original/VisuallyHidden";
 
 const conditions = {
   SELECT: null,

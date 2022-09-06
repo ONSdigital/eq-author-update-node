@@ -1,0 +1,12 @@
+mutation AddRemoveEditor($input: UpdateQuestionnaireInput!) {
+  updateQuestionnaire(input: $input) {
+    id
+    editors {
+      id
+      name
+      email
+      picture
+    }
+    permission
+  }
+}

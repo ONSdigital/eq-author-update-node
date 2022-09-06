@@ -9,7 +9,7 @@ import {
   PageContextProvider,
   useQuestionnaire,
 } from "components/components-original/QuestionnaireContext";
-import { useNavigationCallbacks } from "components/components-original/NavigationCallbacks";
+import { useNavigationCallbacks } from "components/components-original/NavigationCallbacks/NavigationCallbacks";
 
 import Loading from "components/components-original/Loading";
 import Error from "components/components-original/Error";

@@ -5,7 +5,7 @@ import { TransitionGroup } from "react-transition-group";
 import { propType } from "graphql-anywhere";
 import { flow } from "lodash/fp";
 
-import BounceTransition from "components/transitions/BounceTransition";
+import BounceTransition from "components/components-original/transitions/BounceTransition";
 import DestinationSelector from "App/page/Logic/Routing/DestinationSelector";
 import BinaryExpressionEditor from "App/page/Logic/BinaryExpressionEditor";
 
@@ -14,16 +14,16 @@ import withDeleteRule from "./withDeleteRule";
 import withUpdateRule from "./withUpdateRule";
 import withUpdateExpressionGroup from "./withUpdateExpressionGroup";
 
-import { Select, Label } from "components/Forms";
-import Tooltip from "components/Forms/Tooltip";
-import DeleteButton from "components/buttons/DeleteButton";
-import MoveButton, { IconUp, IconDown } from "components/buttons/MoveButton";
+import { Select, Label } from "components/components-original/Forms";
+import Tooltip from "components/components-original/Forms/Tooltip";
+import DeleteButton from "components/components-original/buttons/DeleteButton";
+import MoveButton, { IconUp, IconDown } from "components/components-original/buttons/MoveButton";
 
 import { colors } from "constants/theme";
 import { RADIO } from "constants/answer-types";
 
 import { expressionGroupErrors } from "constants/validationMessages";
-import ValidationError from "components/ValidationError";
+import ValidationError from "components/components-original/ValidationError";
 
 const LABEL_THEN = "Then";
 

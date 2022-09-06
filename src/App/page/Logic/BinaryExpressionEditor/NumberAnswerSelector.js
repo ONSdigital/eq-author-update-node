@@ -4,14 +4,14 @@ import PropTypes from "prop-types";
 import { get, some } from "lodash";
 
 import { colors, radius } from "constants/theme";
-import { Number, Select, Label } from "components/Forms";
-import VisuallyHidden from "components/VisuallyHidden";
+import { Number, Select, Label } from "components/components-original/Forms";
+import VisuallyHidden from "components/components-original/VisuallyHidden";
 
 import {
   rightSideErrors,
   OPERATOR_REQUIRED,
 } from "constants/validationMessages";
-import ValidationError from "components/ValidationError";
+import ValidationError from "components/components-original/ValidationError";
 
 const conditions = {
   SELECT: null,

@@ -16,7 +16,7 @@ import UPDATE_LIST_COLLECTOR_MUTATION from "graphql/updateListCollector.graphql"
 import COLLECTION_LISTS from "graphql/lists/collectionLists.graphql";
 import { buildCollectionListsPath } from "utils/UrlUtils";
 import PageHeader from "../PageHeader";
-import { useSetNavigationCallbacksForPage } from "components/components-original/NavigationCallbacks";
+import { useSetNavigationCallbacksForPage } from "components/components-original/NavigationCallbacks/NavigationCallbacks";
 import { LIST_COLLECTOR_ERRORS } from "constants/validationMessages";
 import { find, some } from "lodash";
 import ValidationError from "components/components-original/ValidationError";

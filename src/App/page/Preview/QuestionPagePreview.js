@@ -3,11 +3,11 @@ import React from "react";
 import { propType } from "graphql-anywhere";
 import styled from "styled-components";
 
-import IconText from "components/IconText";
-import Error from "components/preview/Error";
-import { Answer } from "components/preview/Answers";
-import PageTitle from "components/preview/elements/PageTitle";
-import EditorLayout from "components/EditorLayout";
+import IconText from "components/components-original/IconText";
+import Error from "components/components-original/preview/Error";
+import { Answer } from "components/components-original/preview/Answers";
+import PageTitle from "components/components-original/preview/elements/PageTitle";
+import EditorLayout from "components/components-original/EditorLayout";
 
 import { colors } from "constants/theme";
 
@@ -16,7 +16,7 @@ import CommentsPanel from "App/Comments";
 
 import IconInfo from "./icon-info.svg?inline";
 import IconChevron from "./icon-chevron.svg";
-import Panel from "components/Panel";
+import Panel from "components/components-original/Panel";
 
 const Container = styled.div`
   padding: 2em;

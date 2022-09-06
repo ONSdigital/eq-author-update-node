@@ -6,8 +6,8 @@ import PropTypes from "prop-types";
 
 import RoutingDestinationContentPicker from "./RoutingDestinationContentPicker";
 
-import { Grid, Column } from "components/Grid";
-import ValidationError from "components/ValidationError";
+import { Grid, Column } from "components/components-original/Grid";
+import ValidationError from "components/components-original/ValidationError";
 
 import { destinationErrors } from "constants/validationMessages";
 import { colors } from "constants/theme";

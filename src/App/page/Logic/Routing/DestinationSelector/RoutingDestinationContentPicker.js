@@ -5,10 +5,10 @@ import { takeRightWhile } from "lodash";
 import {
   ContentSelectButton,
   ContentSelected,
-} from "components/ContentPickerSelect";
-import ContentPicker from "components/ContentPickerv2";
+} from "components/components-original/ContentPickerSelect";
+import ContentPicker from "components/components-original/ContentPickerv2";
 
-import { useQuestionnaire, usePage } from "components/QuestionnaireContext";
+import { useQuestionnaire, usePage } from "components/components-original/QuestionnaireContext";
 
 import {
   logicalDestinations,

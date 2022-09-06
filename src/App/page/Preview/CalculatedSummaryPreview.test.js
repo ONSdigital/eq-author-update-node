@@ -7,7 +7,7 @@ import { MeContext } from "App/MeContext";
 import { byTestAttr } from "tests/utils/selectors";
 
 import CalculatedSummaryPreview from "./CalculatedSummaryPreview";
-import { publishStatusSubscription } from "components/EditorLayout/Header";
+import { publishStatusSubscription } from "components/components-original/EditorLayout/Header";
 
 describe("CalculatedSummaryPreview", () => {
   let page, me, mocks, questionnaireId;

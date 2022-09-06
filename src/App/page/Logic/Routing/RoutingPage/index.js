@@ -9,14 +9,14 @@ import NoRouting, {
   Title,
   Paragraph,
 } from "App/shared/Logic/Routing/NoRouting";
-import Transition from "components/transitions/BounceTransition";
+import Transition from "components/components-original/transitions/BounceTransition";
 
 import withCreateRouting from "./withCreateRouting";
 import fragment from "./fragment.graphql";
 import transformNestedFragments from "utils/transformNestedFragments";
-import Panel from "components/Panel";
+import Panel from "components/components-original/Panel";
 
-import { useQuestionnaire } from "components/QuestionnaireContext";
+import { useQuestionnaire } from "components/components-original/QuestionnaireContext";
 
 export const messages = {
   ROUTING_NOT_AVAILABLE: "Routing is not available for this question",

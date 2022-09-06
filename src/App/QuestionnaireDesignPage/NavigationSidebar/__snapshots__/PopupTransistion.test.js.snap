@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/PopupTransition should render 1`] = `
+<DocumentFragment>
+  .c0 {
+  opacity: 1;
+  -webkit-transform: translate(0,0%);
+  -ms-transform: translate(0,0%);
+  transform: translate(0,0%);
+  -webkit-transition: all 0.6s -0.1s;
+  transition: all 0.6s -0.1s;
+  -webkit-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+}
+
+.c0.popup-enter {
+  -webkit-transform: translate(0,-100%);
+  -ms-transform: translate(0,-100%);
+  transform: translate(0,-100%);
+  -webkit-transition: all 0.6s 0s;
+  transition: all 0.6s 0s;
+  -webkit-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+}
+
+.c0.popup-exit {
+  opacity: 0.9;
+  -webkit-transform: translate(0,-130%);
+  -ms-transform: translate(0,-130%);
+  transform: translate(0,-130%);
+  -webkit-transition: all 0.6s 0s;
+  transition: all 0.6s 0s;
+  -webkit-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+}
+
+<div
+    class="c0"
+  >
+    Content
+  </div>
+</DocumentFragment>
+`;

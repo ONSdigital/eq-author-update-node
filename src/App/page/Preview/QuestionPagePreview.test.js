@@ -7,8 +7,8 @@ import { MeContext } from "App/MeContext";
 import { byTestAttr } from "tests/utils/selectors";
 import { TEXTFIELD } from "constants/answer-types";
 
-import Error from "components/preview/Error";
-import { publishStatusSubscription } from "components/EditorLayout/Header";
+import Error from "components/components-original/preview/Error";
+import { publishStatusSubscription } from "components/components-original/EditorLayout/Header";
 
 import QuestionPagePreview, {
   DetailsContent,

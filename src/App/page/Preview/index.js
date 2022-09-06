@@ -5,8 +5,8 @@ import { withApollo, Query } from "react-apollo";
 import gql from "graphql-tag";
 import { propType } from "graphql-anywhere";
 
-import Loading from "components/Loading";
-import EditorLayout from "components/EditorLayout";
+import Loading from "components/components-original/Loading";
+import EditorLayout from "components/components-original/EditorLayout";
 
 import QuestionPageEditor from "App/page/Design/QuestionPageEditor";
 import CalculatedSummaryPageEditor from "App/page/Design/CalculatedSummaryPageEditor";
@@ -16,7 +16,7 @@ import CalculatedSummaryPreview from "./CalculatedSummaryPreview";
 
 import ListCollectorPagePreview from "./ListCollectorPagePreview";
 
-import Panel from "components/Panel";
+import Panel from "components/components-original/Panel";
 
 export const UnwrappedPreviewPageRoute = (props) => {
   const { loading, data } = props;

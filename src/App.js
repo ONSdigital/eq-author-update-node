@@ -22,8 +22,7 @@ import Decimal from "components/components-original/AnswerContent/Decimal";
 import Fallback from "components/components-original/AnswerContent/FallbackProperty/Fallback";
 import InlineField from "components/components-original/AnswerContent/Format/InlineField";
 import MultiLineField from "components/components-original/AnswerContent/Format/MultiLineField";
-// ! Broken - uses a scene file to be refactored and added later in development
-// import MutuallyExclusive from "components/components-original/AnswerContent/MutuallyExclusive";
+import MutuallyExclusive from "components/components-original/AnswerContent/MutuallyExclusive";
 import Required from "components/components-original/AnswerContent/Required";
 // ** --------------
 
@@ -250,8 +249,7 @@ import EditorLayoutHeader from "components/components-original/EditorLayout/Head
 import PageTitle from "components/components-original/EditorLayout/Header/PageTitle";
 // ** --------------
 
-// TODO: Currently does not work, missing App/page/Design/MoveEntityModal and App/page/Design/EditorToolbar
-// import EditorToolbar from "components/components-original/EditorToolbar";
+import EditorToolbar from "components/components-original/EditorToolbar";
 
 import Error from "components/components-original/Error";
 import InputWithConditionalError from "components/components-original/InputWithConditionalError";
@@ -416,56 +414,165 @@ import {
 // ** App/...
 // ** -------------- 
 
+// ** AccessDeniedPage
+// ** -------------- 
 import AccessDenied from "App/AccessDeniedPage";
-// TODO: needs enhancers folder
-// import CollectionListsPage from "App/collectionLists";
+// ** -------------- 
+
+// ** collectionLists
+// ** -------------- 
+import CollectionListsPage from "App/collectionLists";
+// ** -------------- 
+
+// ** Comments
+// ** -------------- 
 import CommentsPanel from "App/Comments";
+// ** -------------- 
+
+// ** ErrorBoundary
+// ** -------------- 
 import ErrorBoundary from "App/ErrorBoundary";
-// ! Broken - Can't resolve 'components/components-original/NavigationCallbacks' even though file path is correct
-// import FolderDesignPage from "App/folder/Design";
+// ** -------------- 
+
+// ** folder
+// ** -------------- 
+import FolderDesignPage from "App/folder/Design";
+// ** -------------- 
+
+// ** history
+// ** -------------- 
 import HistoryPageContent from "App/history/HistoryPage";
-// TODO: Could be within components folder instead?
+// ** -------------- 
+
+// ** importingContent
+// ** -------------- 
 import ImportingContent from "App/importingContent";
+// ** -------------- 
+
 
 // ** introduction
 // ** -------------- 
 import IntroductionLayout from "App/introduction/IntroductionLayout";
-// TODO: needs enhancers folder
-// import IntroductionDesignWithData from "App/introduction/Design";
-// TODO: Needs settings folder from App folder
-// import IntroductionPreviewWithData from "App/introduction/Preview";
+import IntroductionDesignWithData from "App/introduction/Design";
+import IntroductionPreviewWithData from "App/introduction/Preview";
 // ** -------------- 
 
-// TODO: Needs sharing folder from App folder
-// import KeyboardShortcutsPage from "App/keyboardShortcuts/KeyboardShortcutsPage";
+// ** keyboardShortcuts
+// ** -------------- 
+import KeyboardShortcutsPage from "App/keyboardShortcuts/KeyboardShortcutsPage";
+// ** -------------- 
+
+// ** MetadataPage
+// ** -------------- 
 import MetadataPage from "App/metadata/MetadataPage";
+// ** -------------- 
+
+// ** NotFoundPage
+// ** -------------- 
 import NotFound from "App/NotFoundPage"
+// ** -------------- 
 
 // ** Page
 // ** -------------- 
 
 // ** Page/Design
-// TODO: most of the commented out ones in Page/Design currently don't work as they need the enhancers folder which hasn't been copied over yet
-// import WrappedPageRoute from "App/page/Design";
-// import { StatelessBasicAnswer } from "App/page/Design/answers/BasicAnswer";
-// import { UnwrappedDate } from "./App/page/Design/answers/Date";
-// import DateRange from "./App/page/Design/answers/DateRange";
-// import DateSingle from "./App/page/Design/answers/DateSingle";
-// import { UnwrappedMultipleChoiceAnswer } from "App/page/Design/answers/MultipleChoiceAnswer";
-// TODO: needs assets folder and enhancers
-// import CalculatedSummaryPageEditor from "./App/page/Design/CalculatedSummaryPageEditor";
-// ! Broken - Can't resolve 'components/components-original/NavigationCallbacks' even though file path is correct
-// import UnwrappedListCollectorPageEditor from "./App/page/Design/ListCollectorPageEditor";
+import WrappedPageRoute from "App/page/Design";
+import { StatelessBasicAnswer } from "App/page/Design/answers/BasicAnswer";
+import { UnwrappedDate } from "./App/page/Design/answers/Date";
+import DateRange from "./App/page/Design/answers/DateRange";
+import DateSingle from "./App/page/Design/answers/DateSingle";
+import { UnwrappedMultipleChoiceAnswer } from "App/page/Design/answers/MultipleChoiceAnswer";
+import CalculatedSummaryPageEditor from "./App/page/Design/CalculatedSummaryPageEditor";
+import UnwrappedListCollectorPageEditor from "./App/page/Design/ListCollectorPageEditor";
 import MoveEntityModal from "App/page/Design/MoveEntityModal";
+import { UnwrappedQuestionPageEditor } from "./App/page/Design/QuestionPageEditor";
 
-// import { UnwrappedQuestionPageEditor } from "./App/page/Design/QuestionPageEditor";
+// ** Page/Logic/BinaryExpressionEditor
+import ChipBox from "./App/page/Logic/BinaryExpressionEditor/CheckboxChip"
+import CheckboxOptionPicker from "./App/page/Logic/BinaryExpressionEditor/CheckboxOptionPicker";
+import Popover from "./App/page/Logic/BinaryExpressionEditor/CheckboxSelectorPopup";
+import { UnwrappedBinaryExpressionEditor } from "./App/page/Logic/BinaryExpressionEditor";
+import MultipleChoiceAnswerOptionsSelector from "./App/page/Logic/BinaryExpressionEditor/MultipleChoiceAnswerOptionsSelector";
+import NumberAnswerSelector from "./App/page/Logic/BinaryExpressionEditor/NumberAnswerSelector";
+import RoutingAnswerContentPicker from "./App/page/Logic/BinaryExpressionEditor/RoutingAnswerContentPicker";
+import SecondaryConditionSelector from "./App/page/Logic/BinaryExpressionEditor/SecondaryConditionSelector";
 
-// ** Page/Logic
-// TODO: Go through the Logic and preview folders in page folder
+// ** Page/Logic/Routing
+import { UnwrappedDestinationSelector } from "./App/page/Logic/Routing/DestinationSelector";
+import QueryingRoute from "./App/page/Logic/Routing";
+// ** Page/Logic/Preview
+import { UnwrappedPreviewPageRoute } from "./App/page/Preview";
 
 // ** -------------- 
 
+// ** publish
+// ** -------------- 
+import PublishPage from "./App/publish/PublishPage";
+// ** -------------- 
 
+// ** qcodes
+// ** -------------- 
+import QcodesPage from "./App/qcodes/QcodesPage";
+// ** -------------- 
+
+// ** questionConfirmation
+// ** -------------- 
+import UnwrappedQuestionConfirmationRoute from "./App/questionConfirmation/Design/"
+import Routing from "./App/questionConfirmation/Logic/Routing";
+import { UnwrappedPreviewConfirmationRoute } from "./App/questionConfirmation/Preview";
+// ** -------------- 
+
+// ** QuestionnaireDesignPage
+// ** -------------- 
+import QuestionnaireDesignPage from "./App/QuestionnaireDesignPage";
+// ** -------------- 
+
+// ** QuestionnairesPage
+// ** -------------- 
+import QuestionnairesPage from "./App/QuestionnairesPage";
+// ** -------------- 
+
+// ** review
+// ** -------------- 
+import ReviewPage from "./App/review/ReviewPage";
+// ** -------------- 
+
+// ** section
+// ** -------------- 
+import LogicPage from "./App/section/Logic";
+import { UnwrappedPreviewSectionRoute } from "./App/section/Preview";
+import { UnwrappedSectionRoute } from "./App/section/Design";
+// ** -------------- 
+
+// ** settings
+// ** -------------- 
+import GeneralSettingsPage from "./App/settings/GeneralSettingsPage";
+import ThemesPage from "./App/settings/ThemesPage";
+// ** -------------- 
+
+// ** shared
+// ** -------------- 
+import NoDisplayLogic from "./App/shared/Logic/Display/NoDisplayLogic";
+import RoutingRuleSetMsg from "./App/shared/Logic/Routing/NoRouting";
+import SkipLogicRoute from "./App/shared/Logic/SkipLogic";
+// ! Broken - logic page has already been declared
+// import LogicPage from "./App/shared/Logic";
+// ** -------------- 
+
+// ** sharing
+// ** -------------- 
+import SharePage from "./App/sharing/SharePage";
+// ** -------------- 
+
+// ** SignInPage
+// ** -------------- 
+import SignInPage from "./App/SignInPage"
+// ** -------------- 
+
+// ** Submission
+// ** -------------- 
+import SubmissionDesign from "./App/Submission/Design";
+import Preview from "./App/Submission/Preview";
 // ** -------------- 
 
 
@@ -524,7 +631,7 @@ function App() {
       <CollapsibleMoveable />
       <CollapsibleNavItem />
       <CollapsibleToggled />
-      {/* <Comment /> */}
+      <Comment />
       <CommentEditor />
       <CommentHighlight />
       <CommentNotification />
@@ -591,7 +698,7 @@ function App() {
       <FadeTransition />
       <SlideTransition />
       <Truncated />
-      {/* <UserProfile /> */}
+      <UserProfile />
       <ValidationError />
       <ValidationError variant="destination" />
       <ValidationError variant="logic" />
@@ -623,17 +730,17 @@ function App() {
       <TableRow />
       <Delay />
       <DescribedText />
-      {/* <EditorLayout /> */}
+      <EditorLayout />
       <EditorLayoutTabs />
       <EditorLayoutHeader />
       <PageTitle />
-      {/* <EditorToolbar /> */}
+      <EditorToolbar />
       <Error />
-      {/* <InputWithConditionalError /> */}
+      <InputWithConditionalError />
       <ItemSelectModal />
       <ItemSelect />
       <PlainModal />
-      {/* <Layout /> */}
+      <Layout />
       <Link />
       <Loading />
       <Logo />
@@ -707,7 +814,7 @@ function App() {
       <Button noBorders />
       <Feedback />
       <Footer />
-      {/* <ThemedHeader /> */}
+      <ThemedHeader />
       <Header />
       <HomepageQuestionnairesViewHeader />
       <HomepageQuestionnairesViewPaginationNavIndex />
@@ -727,8 +834,62 @@ function App() {
       <PasswordInput />
       <ThemedLabel />
       <ThemedPanel />
-      {/* <Toolkit /> */}
-      {/* <AccessDenied/> */}
+      <Toolkit />
+
+      {/* App */}
+      <AccessDenied/>
+      <CollectionListsPage/>
+      <CommentsPanel/>
+      <ErrorBoundary/>
+      <FolderDesignPage/>
+      <HistoryPageContent/>
+      <ImportingContent/>
+      <IntroductionLayout/>
+      <IntroductionDesignWithData/>
+      <IntroductionPreviewWithData/>
+      <KeyboardShortcutsPage/>
+      <MetadataPage/>
+      <NotFound/>
+      <WrappedPageRoute/>
+      <StatelessBasicAnswer/>
+      <UnwrappedDate/>
+      <DateRange/>
+      <DateSingle/>
+      <UnwrappedMultipleChoiceAnswer/>
+      <CalculatedSummaryPageEditor/>
+      <UnwrappedListCollectorPageEditor/>
+      <MoveEntityModal/>
+      <UnwrappedQuestionPageEditor/>
+      <ChipBox/>
+      <CheckboxOptionPicker/>
+      <Popover/>
+      <UnwrappedBinaryExpressionEditor/>
+      <MultipleChoiceAnswerOptionsSelector/>
+      <NumberAnswerSelector/>
+      <RoutingAnswerContentPicker/>
+      <SecondaryConditionSelector/>
+      <UnwrappedDestinationSelector/>
+      <QueryingRoute/>
+      <UnwrappedPreviewPageRoute/>
+      <PublishPage/>
+      <QcodesPage/>
+      <UnwrappedQuestionConfirmationRoute/>
+      <Routing/>
+      <UnwrappedPreviewConfirmationRoute/>
+      <QuestionnaireDesignPage/>
+      <QuestionnairesPage/>
+      <ReviewPage/>
+      <LogicPage/>
+      <UnwrappedPreviewSectionRoute/>
+      <UnwrappedSectionRoute/>
+      <GeneralSettingsPage/>
+      <ThemesPage/>
+      <NoDisplayLogic/>
+      {/* <LogicPage/> */}
+      <SharePage/>
+      <SignInPage/>
+      <SubmissionDesign/>
+      <Preview/>
     </div>
   );
 }

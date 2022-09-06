@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 import { colors } from "constants/theme";
-import Label from "components/Forms/Label";
-import Button from "components/buttons/Button";
-import ButtonGroup from "components/buttons/ButtonGroup";
+import Label from "components/components-original/Forms/Label";
+import Button from "components/components-original/buttons/Button";
+import ButtonGroup from "components/components-original/buttons/ButtonGroup";
 
 import svgPath from "./path.svg";
 import svgPathEnd from "./path-end.svg";

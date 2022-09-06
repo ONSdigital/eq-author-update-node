@@ -4,8 +4,8 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import { flow } from "lodash/fp";
 
-import Button from "components/buttons/Button";
-import Reorder from "components/Reorder";
+import Button from "components/components-original/buttons/Button";
+import Reorder from "components/components-original/Reorder";
 
 import DestinationSelector from "App/page/Logic/Routing/DestinationSelector";
 

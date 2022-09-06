@@ -7,7 +7,7 @@ import {
   OPERATOR_REQUIRED,
 } from "constants/validationMessages";
 
-import { Number } from "components/Forms";
+import { Number } from "components/components-original/Forms";
 
 import NumberAnswerSelector, {
   ConditionSelector,

@@ -1,0 +1,44 @@
+#import "./SkipLogicPage/SkipLogicEditor/fragment.graphql"
+#import "graphql/fragments/validationErrorInfo.graphql"
+
+query GetSkipLogic($input: QueryInput!) {
+  skippable(input: $input) {
+    id
+    skipConditions {
+      ...SkipLogicEditor
+    }
+    ... on Page {
+      position
+      pageType
+      displayName
+      section {
+        id
+        position
+      }
+      folder {
+        id
+        position
+      }
+      validationErrorInfo {
+        ...ValidationErrorInfo
+      }
+    }
+    ... on QuestionConfirmation {
+      displayName
+      validationErrorInfo {
+        ...ValidationErrorInfo
+      }
+    }
+    ... on Folder {
+      displayName
+      validationErrorInfo {
+        ...ValidationErrorInfo
+      }
+      position
+      section {
+        id
+        position
+      }
+    }
+  }
+}

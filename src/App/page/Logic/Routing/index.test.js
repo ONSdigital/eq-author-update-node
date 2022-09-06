@@ -1,8 +1,8 @@
 import React from "react";
 import { shallow } from "enzyme";
 
-import Loading from "components/Loading";
-import Error from "components/Error";
+import Loading from "components/components-original/Loading";
+import Error from "components/components-original/Error";
 
 import RoutingPage from "./RoutingPage";
 

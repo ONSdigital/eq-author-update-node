@@ -6,7 +6,7 @@ import { byTestAttr } from "tests/utils/selectors";
 
 let wrapper, props;
 
-describe("components/RoutingRuleDestinationSelector", () => {
+describe("components/components-original/RoutingRuleDestinationSelector", () => {
   beforeEach(() => {
     props = {
       onChange: jest.fn(),

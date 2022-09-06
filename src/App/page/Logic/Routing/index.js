@@ -7,15 +7,15 @@ import { get } from "lodash";
 import PropTypes from "prop-types";
 import { propType } from "graphql-anywhere";
 
-import Loading from "components/Loading";
-import Error from "components/Error";
+import Loading from "components/components-original/Loading";
+import Error from "components/components-original/Error";
 
 import RoutingPage from "./RoutingPage";
 import transformNestedFragments from "utils/transformNestedFragments";
 import { buildPagePath } from "utils/UrlUtils";
 import Logic from "App/shared/Logic";
 
-import { PageContextProvider } from "components/QuestionnaireContext";
+import { PageContextProvider } from "components/components-original/QuestionnaireContext";
 import Comment from "graphql/fragments/comment.graphql";
 
 const ROUTING_PAGE_TYPES = [

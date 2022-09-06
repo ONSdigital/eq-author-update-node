@@ -3,7 +3,7 @@ import { shallow } from "enzyme";
 
 import { UnwrappedPreviewPageRoute as PreviewPageRoute } from "./";
 
-import Loading from "components/Loading";
+import Loading from "components/components-original/Loading";
 import CalculatedSummaryPreview from "./CalculatedSummaryPreview";
 import QuestionPagePreview from "./QuestionPagePreview";
 

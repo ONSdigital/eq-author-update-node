@@ -8,7 +8,7 @@ import { colors } from "constants/theme";
 import { CHECKBOX, RADIO } from "constants/answer-types";
 
 import MultipleChoiceAnswerOptionsSelector from "./MultipleChoiceAnswerOptionsSelector";
-import ToggleChip from "components/buttons/ToggleChip";
+import ToggleChip from "components/components-original/buttons/ToggleChip";
 import { enableOn } from "utils/featureFlags";
 
 describe("MultipleChoiceAnswerOptionsSelector", () => {

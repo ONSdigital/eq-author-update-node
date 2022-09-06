@@ -38,7 +38,7 @@ import {
   ERR_REFERENCE_DELETED,
 } from "constants/validationMessages";
 
-import { useSetNavigationCallbacksForPage } from "components/components-original/NavigationCallbacks";
+import { useSetNavigationCallbacksForPage } from "components/components-original/NavigationCallbacks/NavigationCallbacks";
 import ContentContainer from "components/components-original/ContentContainer";
 import ValidationError from "components/components-original/ValidationError";
 

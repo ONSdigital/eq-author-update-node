@@ -3,13 +3,13 @@ import React from "react";
 import { propType } from "graphql-anywhere";
 
 import styled from "styled-components";
-import Error from "components/preview/Error";
-import PageTitle from "components/preview/elements/PageTitle";
-import Info from "components/preview/elements/Info";
+import Error from "components/components-original/preview/Error";
+import PageTitle from "components/components-original/preview/elements/PageTitle";
+import Info from "components/components-original/preview/elements/Info";
 
-import EditorLayout from "components/EditorLayout";
-import Panel from "components/Panel";
-import { Grid, Column } from "components/Grid";
+import EditorLayout from "components/components-original/EditorLayout";
+import Panel from "components/components-original/Panel";
+import { Grid, Column } from "components/components-original/Grid";
 import CommentsPanel from "App/Comments";
 
 import { colors } from "constants/theme";

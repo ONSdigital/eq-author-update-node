@@ -9,7 +9,7 @@ import {
   useCreateCalculatedSummaryPage,
   useCreateListCollectorPage,
 } from "hooks/useCreateQuestionPage";
-import { useSetNavigationCallbacks } from "components/components-original/NavigationCallbacks";
+import { useSetNavigationCallbacks } from "components/components-original/NavigationCallbacks/NavigationCallbacks";
 
 import PropTypes from "prop-types";
 import styled from "styled-components";

@@ -11,7 +11,7 @@ import { colors } from "constants/theme";
 import RichTextEditor from "components/components-original/RichTextEditor";
 import withEntityEditor from "components/components-original/withEntityEditor";
 import PageHeader from "../PageHeader";
-import { useSetNavigationCallbacksForPage } from "components/components-original/NavigationCallbacks";
+import { useSetNavigationCallbacksForPage } from "components/components-original/NavigationCallbacks/NavigationCallbacks";
 
 import {
   ANSWER,
