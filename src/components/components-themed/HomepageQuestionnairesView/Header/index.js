@@ -8,7 +8,7 @@ import Button from "components/components-themed/buttons/button";
 import SearchBar from "components/components-original/SearchBar";
 import { colors } from "constants/theme";
 
-import QuestionnaireSettingsModal from "App/QuestionnaireSettingsModal";
+import QuestionnaireSettingsModal from "components/components-original/QuestionnaireSettingsModal";
 
 const DEBOUNCE_TIMEOUT = 200;
 

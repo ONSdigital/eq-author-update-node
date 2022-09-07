@@ -1,5 +1,5 @@
 import React from "react";
-import PlainModal from "components/ItemSelectModal/PlainModal";
+import PlainModal from "components/components-original/ItemSelectModal/PlainModal";
 import { render } from "tests/utils/rtl";
 
 describe("PositionModal/PlainModal", () => {

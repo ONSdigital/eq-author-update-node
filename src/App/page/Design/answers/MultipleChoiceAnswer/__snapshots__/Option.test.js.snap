@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Option shouldn't render delete button if not applicable 1`] = `
+<Option__StyledOption
+  duration={200}
+  id="Option1"
+  key="1"
+>
+  <div>
+    <Option__ButtonsContainer>
+      <Tooltip
+        content="Move answer up"
+        offset={
+          Object {
+            "bottom": 10,
+            "top": 0,
+          }
+        }
+        place="top"
+      >
+        <MoveButton
+          aria-label="Move option up"
+          color="secondary"
+          data-test="btn-move-answer-up"
+          disabled={true}
+          tabIndex={-1}
+        >
+          <Component />
+        </MoveButton>
+      </Tooltip>
+      <Tooltip
+        content="Move answer down"
+        offset={
+          Object {
+            "bottom": 10,
+            "top": 0,
+          }
+        }
+        place="top"
+      >
+        <MoveButton
+          aria-label="Move option down"
+          color="secondary"
+          data-test="btn-move-answer-down"
+          disabled={true}
+          tabIndex={-1}
+        >
+          <Component />
+        </MoveButton>
+      </Tooltip>
+      <Tooltip
+        content="Delete option"
+        offset={
+          Object {
+            "bottom": 10,
+          }
+        }
+        place="top"
+      >
+        <DeleteButton
+          aria-label="Delete option"
+          color="secondary"
+          data-test="btn-delete-option"
+          disabled={true}
+          onClick={[Function]}
+          size="medium"
+          tabIndex={-1}
+          type="button"
+        />
+      </Tooltip>
+    </Option__ButtonsContainer>
+    <Option__Flex>
+      <MultipleChoice
+        type="Radio"
+      />
+      <Option__OptionField>
+        <Label
+          bold={true}
+          htmlFor="option-label-1"
+        >
+          Label
+        </Label>
+        <withChangeHandler(WrappingInput)
+          bold={true}
+          data-autofocus={true}
+          data-test="option-label"
+          errorValidationMsg=""
+          id="option-label-1"
+          name="label"
+          onBlur={[Function]}
+          onChange={[MockFunction]}
+          onKeyDown={[Function]}
+          placeholder=""
+          value=""
+        />
+      </Option__OptionField>
+    </Option__Flex>
+    <Option__OptionField>
+      <Label
+        bold={true}
+        htmlFor="option-description-1"
+      >
+        Description (optional)
+      </Label>
+      <withChangeHandler(WrappingInput)
+        data-test="option-description"
+        id="option-description-1"
+        name="description"
+        onBlur={[MockFunction]}
+        onChange={[MockFunction]}
+        onKeyDown={[Function]}
+        value=""
+      />
+    </Option__OptionField>
+    <Option__LastOptionField>
+      <Label
+        bold={true}
+        htmlFor="option-otherLabel-additional1"
+      >
+        Other Label
+      </Label>
+      <withChangeHandler(WrappingInput)
+        data-test="other-answer"
+        id="option-otherLabel-additional1"
+        name="otherLabel"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        value=""
+      />
+    </Option__LastOptionField>
+  </div>
+</Option__StyledOption>
+`;

@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import MenuButton from "components/buttons/SplitButton/MenuButton";
+import MenuButton from "components/components-original/buttons/SplitButton/MenuButton";
 
 describe("SplitButton/MenuButton", () => {
   it("should render", () => {

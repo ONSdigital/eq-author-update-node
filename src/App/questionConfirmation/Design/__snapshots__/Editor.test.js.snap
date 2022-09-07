@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Editor Editor Component should autoFocus the title when there is not one 1`] = `
+<Editor__Wrapper>
+  <RichTextEditor
+    autoFocus={true}
+    controls={
+      Object {
+        "bold": true,
+        "emphasis": true,
+        "piping": true,
+      }
+    }
+    data-test="title-input"
+    disabled={false}
+    id="confirmation-title"
+    label="Confirmation question"
+    maxHeight={12}
+    multiline={false}
+    name="title"
+    onUpdate={[Function]}
+    placeholder=""
+    size="large"
+    testSelector="txt-confirmation-title"
+    value={null}
+  />
+  <Editor__OptionsWrapper>
+    <withValidationError(UnwrappedConfirmationOption)
+      confirmationoption={
+        Object {
+          "description": "Positive description",
+          "id": "1",
+          "label": "Positive label",
+          "validationErrorInfo": Array [],
+        }
+      }
+      data-test="positive-input"
+      enableValidationMessage={true}
+      label="Positive confirmation text"
+      name="positive"
+      onChange={[MockFunction]}
+      onUpdate={[MockFunction]}
+      value={
+        Object {
+          "description": "Positive description",
+          "id": "1",
+          "label": "Positive label",
+          "validationErrorInfo": Array [],
+        }
+      }
+    />
+    <Editor__MarginLessConfirmationOption
+      confirmationoption={
+        Object {
+          "description": "Negative description",
+          "id": "2",
+          "label": "Negative label",
+          "validationErrorInfo": Array [],
+        }
+      }
+      data-test="negative-input"
+      label="Negative confirmation text"
+      name="negative"
+      onChange={[MockFunction]}
+      onUpdate={[MockFunction]}
+      value={
+        Object {
+          "description": "Negative description",
+          "id": "2",
+          "label": "Negative label",
+          "validationErrorInfo": Array [],
+        }
+      }
+    />
+  </Editor__OptionsWrapper>
+</Editor__Wrapper>
+`;
+
+exports[`Editor Editor Component should render 1`] = `
+<Editor__Wrapper>
+  <RichTextEditor
+    autoFocus={false}
+    controls={
+      Object {
+        "bold": true,
+        "emphasis": true,
+        "piping": true,
+      }
+    }
+    data-test="title-input"
+    disabled={false}
+    id="confirmation-title"
+    label="Confirmation question"
+    maxHeight={12}
+    multiline={false}
+    name="title"
+    onUpdate={[Function]}
+    placeholder=""
+    size="large"
+    testSelector="txt-confirmation-title"
+    value="My first confirmation"
+  />
+  <Editor__OptionsWrapper>
+    <withValidationError(UnwrappedConfirmationOption)
+      confirmationoption={
+        Object {
+          "description": "Positive description",
+          "id": "1",
+          "label": "Positive label",
+          "validationErrorInfo": Array [],
+        }
+      }
+      data-test="positive-input"
+      enableValidationMessage={true}
+      label="Positive confirmation text"
+      name="positive"
+      onChange={[MockFunction]}
+      onUpdate={[MockFunction]}
+      value={
+        Object {
+          "description": "Positive description",
+          "id": "1",
+          "label": "Positive label",
+          "validationErrorInfo": Array [],
+        }
+      }
+    />
+    <Editor__MarginLessConfirmationOption
+      confirmationoption={
+        Object {
+          "description": "Negative description",
+          "id": "2",
+          "label": "Negative label",
+          "validationErrorInfo": Array [],
+        }
+      }
+      data-test="negative-input"
+      label="Negative confirmation text"
+      name="negative"
+      onChange={[MockFunction]}
+      onUpdate={[MockFunction]}
+      value={
+        Object {
+          "description": "Negative description",
+          "id": "2",
+          "label": "Negative label",
+          "validationErrorInfo": Array [],
+        }
+      }
+    />
+  </Editor__OptionsWrapper>
+</Editor__Wrapper>
+`;

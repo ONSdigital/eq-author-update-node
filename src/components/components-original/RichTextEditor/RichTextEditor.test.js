@@ -6,15 +6,15 @@ import Editor from "draft-js-plugins-editor";
 import Raw from "draft-js-raw-content-state";
 import { omit } from "lodash";
 
-import RichTextEditor from "components/RichTextEditor";
+import RichTextEditor from "components/components-original/RichTextEditor";
 import Toolbar, {
   STYLE_BLOCK,
   STYLE_INLINE,
   styleButtons,
-} from "components/RichTextEditor/Toolbar";
+} from "components/components-original/RichTextEditor/Toolbar";
 import findById from "utils/findById";
 
-import { createPipedEntity } from "components/RichTextEditor/entities/PipedValue";
+import { createPipedEntity } from "components/components-original/RichTextEditor/entities/PipedValue";
 
 // https://github.com/facebook/draft-js/issues/702
 jest.mock("draft-js/lib/generateRandomKey", () => () => "123");

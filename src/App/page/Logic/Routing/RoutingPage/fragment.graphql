@@ -1,0 +1,35 @@
+# import "./RoutingEditor/fragment.graphql"
+
+fragment RoutingPage on Page {
+  id
+  position
+  ... on Routable {
+    routing {
+      ...RoutingEditor
+    }
+  }
+  folder {
+    id
+    position
+    pages {
+      id
+    }
+  }
+  section {
+    id
+    position
+    folders {
+      id
+    }
+  }
+  validationErrorInfo {
+    id
+    errors {
+      id
+      type
+      field
+      errorCode
+    }
+    totalCount
+  }
+}

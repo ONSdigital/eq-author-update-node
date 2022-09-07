@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Duration should render 1`] = `
+<Grid
+  align="top"
+  fillHeight={true}
+  horizontalAlign="start"
+>
+  <Column
+    cols={2}
+  >
+    <Duration__DurationNumber
+      hasError={
+        Object {
+          "_typename": "ValidationError",
+          "errorCode": "ERR_NO_VALUE",
+          "field": "earliestDate",
+          "id": "dcd686db-91e5-453f-b809-9da401072db4",
+          "type": "validation",
+        }
+      }
+      id="foobar-value"
+      max={99999}
+      min={0}
+      name="foobar.value"
+      onBlur={[MockFunction]}
+      onChange={[MockFunction]}
+      value={null}
+    />
+  </Column>
+  <Column
+    cols={4}
+  >
+    <withChangeHandler(Select__SimpleSelect)
+      id="foobar-unit"
+      name="foobar.unit"
+      onBlur={[MockFunction]}
+      onChange={[MockFunction]}
+      value="Years"
+    >
+      <option
+        key="Days"
+        value="Days"
+      >
+        days
+      </option>
+      <option
+        key="Months"
+        value="Months"
+      >
+        months
+      </option>
+      <option
+        key="Years"
+        value="Years"
+      >
+        years
+      </option>
+    </withChangeHandler(Select__SimpleSelect)>
+  </Column>
+</Grid>
+`;

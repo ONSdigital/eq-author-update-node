@@ -1,0 +1,7 @@
+#import "./historyNoteFragment.graphql"
+
+query History($input: QueryInput!) {
+  history(input: $input) {
+    ...HistoryNoteInfo
+  }
+}

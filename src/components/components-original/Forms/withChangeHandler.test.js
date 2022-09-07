@@ -1,5 +1,5 @@
 import React from "react";
-import withChangeHandler from "components/Forms/withChangeHandler";
+import withChangeHandler from "components/components-original/Forms/withChangeHandler";
 import { shallow } from "enzyme";
 
 describe("withChangeHandler", () => {

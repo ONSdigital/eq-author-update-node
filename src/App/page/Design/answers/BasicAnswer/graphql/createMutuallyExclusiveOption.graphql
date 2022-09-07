@@ -1,0 +1,26 @@
+#import "graphql/fragments/validationErrorInfo.graphql"
+
+mutation createMutuallyExclusiveOption(
+  $input: CreateMutuallyExclusiveOptionInput!
+) {
+  createMutuallyExclusiveOption(input: $input) {
+    id
+    mutuallyExclusive
+    label
+    description
+    answer {
+      id
+      ... on BasicAnswer {
+        options {
+          id
+          mutuallyExclusive
+          label
+          description
+        }
+      }
+    }
+    validationErrorInfo {
+      ...ValidationErrorInfo
+    }
+  }
+}

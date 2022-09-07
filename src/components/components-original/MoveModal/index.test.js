@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import MoveModal from "components/MoveModal";
+import MoveModal from "components/components-original/MoveModal";
 
 const createWrapper = (props = {}, render = shallow, children = undefined) => {
   return render(<MoveModal {...props}>{children}</MoveModal>);

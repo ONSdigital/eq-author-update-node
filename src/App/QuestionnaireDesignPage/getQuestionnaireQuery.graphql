@@ -1,0 +1,266 @@
+#import "graphql/fragments/validationErrorInfo.graphql"
+#import "graphql/lists/list.graphql"
+#import "graphql/fragments/comment.graphql"
+
+query GetQuestionnaire($input: QueryInput!) {
+  questionnaire(input: $input) {
+    introduction {
+      id
+      validationErrorInfo {
+        ...ValidationErrorInfo
+      }
+    }
+    publishStatus
+    locked
+    totalErrorCount
+    ...NavigationSidebar
+    hub
+    collectionLists {
+      id
+      lists {
+        ...List
+      }
+    }
+    metadata {
+      id
+      displayName
+      type
+      key
+      dateValue
+      regionValue
+      languageValue
+      textValue
+    }
+    themeSettings {
+      id
+      validationErrorInfo {
+        ...ValidationErrorInfo
+      }
+    }
+    submission {
+      id
+      furtherContent
+      viewPrintAnswers
+      emailConfirmation
+      feedback
+      comments {
+        ...Comment
+      }
+    }
+    validationErrorInfo {
+      ...ValidationErrorInfo
+    }
+  }
+}
+fragment NavigationSidebar on Questionnaire {
+  id
+  ...SectionNav
+  ...NavigationHeader
+  ...Introduction
+}
+fragment NavigationHeader on Questionnaire {
+  ...QuestionnaireSettingsModal
+}
+fragment QuestionnaireSettingsModal on Questionnaire {
+  ...Questionnaire
+}
+fragment Questionnaire on Questionnaire {
+  id
+  title
+  description
+  surveyId
+  theme
+  qcodes
+  navigation
+  summary
+  collapsibleSummary
+  type
+  shortTitle
+  displayName
+  createdBy {
+    id
+    picture
+    name
+    email
+  }
+  editors {
+    id
+    picture
+    name
+    email
+  }
+  isPublic
+  permission
+}
+fragment SectionNav on Questionnaire {
+  id
+  sections {
+    ...Sections
+  }
+}
+fragment Sections on Section {
+  id
+  title
+  displayName
+  position
+  questionnaire {
+    id
+  }
+  validationErrorInfo {
+    id
+    totalCount
+  }
+  comments {
+    ...Comment
+  }
+  ...PageNav
+}
+fragment PageNav on Section {
+  id
+  folders {
+    id
+    alias
+    displayName
+    position
+    pages {
+      ...Pages
+      ...ConfirmationPages
+      ...ListCollectorPages
+    }
+    validationErrorInfo {
+      id
+      totalCount
+    }
+  }
+}
+fragment Pages on Page {
+  id
+  alias
+  title
+  position
+  displayName
+  pageType
+  validationErrorInfo {
+    id
+    errors {
+      id
+      type
+      field
+      errorCode
+    }
+    totalCount
+  }
+  ... on CalculatedSummaryPage {
+    totalTitle
+    type
+    summaryAnswers {
+      id
+    }
+    comments {
+      ...Comment
+    }
+  }
+  ... on QuestionPage {
+    answers {
+      ...Answers
+    }
+    confirmation {
+      id
+    }
+    comments {
+      ...Comment
+    }
+  }
+}
+
+fragment ListCollectorPages on ListCollectorPage {
+  id
+  alias
+  title
+  position
+  displayName
+  pageType
+  validationErrorInfo {
+    id
+    errors {
+      id
+      type
+      field
+      errorCode
+    }
+    totalCount
+  }
+  comments {
+    ...Comment
+  }
+}
+
+fragment Answers on Answer {
+  id
+  displayName
+  description
+  guidance
+  qCode
+  label
+  secondaryLabel
+  secondaryLabelDefault
+  type
+  properties
+  ... on BasicAnswer {
+    secondaryQCode
+  }
+  ... on MultipleChoiceAnswer {
+    options {
+      id
+      displayName
+      label
+      description
+      value
+      qCode
+      additionalAnswer {
+        id
+        description
+        label
+        qCode
+        type
+      }
+    }
+    mutuallyExclusiveOption {
+      id
+      displayName
+      label
+      description
+      value
+      qCode
+    }
+  }
+}
+
+fragment ConfirmationPages on QuestionPage {
+  id
+  confirmation {
+    id
+    displayName
+    qCode
+    validationErrorInfo {
+      id
+      totalCount
+    }
+    comments {
+      ...Comment
+    }
+  }
+}
+fragment Introduction on Questionnaire {
+  id
+  introduction {
+    id
+    validationErrorInfo {
+      id
+      totalCount
+    }
+    comments {
+      ...Comment
+    }
+  }
+}

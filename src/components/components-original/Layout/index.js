@@ -7,9 +7,9 @@ import ScrollPane from "components/components-original/ScrollPane";
 import BaseLayout from "components/components-original/BaseLayout";
 import Theme from "contexts/themeContext";
 
-import Header from "components-themed/Header/index.js";
+import Header from "components/components-themed/Header/index.js";
 import Logo from "assets/ons-logo.svg";
-import Footer from "components-themed/Footer";
+import Footer from "components/components-themed/Footer";
 import { Grid, Column } from "components/components-original/Grid";
 
 const GridAuto = styled(Grid)`

@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 
-import RouteButton from "components/buttons/Button/RouteButton";
+import RouteButton from "components/components-original/buttons/Button/RouteButton";
 
 describe("components/Button/RouteButton", () => {
   it("should render", () => {

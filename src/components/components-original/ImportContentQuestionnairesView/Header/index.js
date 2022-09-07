@@ -7,7 +7,7 @@ import Button from "components/components-original/buttons/Button";
 import SearchBar from "components/components-original/SearchBar";
 import AccessFilter from "./AccessFilter";
 
-import QuestionnaireSettingsModal from "App/QuestionnaireSettingsModal";
+import QuestionnaireSettingsModal from "components/components-original/QuestionnaireSettingsModal";
 
 const DEBOUNCE_TIMEOUT = 200;
 

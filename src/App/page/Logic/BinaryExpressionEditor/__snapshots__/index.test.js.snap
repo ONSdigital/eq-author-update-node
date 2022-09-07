@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BinaryExpressionEditor should render consistently 1`] = `
+<Fragment>
+  <Grid
+    align="center"
+    fillHeight={true}
+    horizontalAlign="start"
+  >
+    <Column
+      cols={1.5}
+      gutters={false}
+    >
+      <components__StyledLabel
+        data-test="routing-binary-expression-if-label"
+        inline={true}
+      >
+        If
+      </components__StyledLabel>
+    </Column>
+    <Column
+      cols={8}
+      gutters={false}
+    >
+      <RoutingAnswerContentPicker
+        data-test="routing-answer-picker"
+        hasError={false}
+        onSubmit={[Function]}
+        selectedId="2"
+      />
+    </Column>
+    <Column
+      cols={2.5}
+      gutters={false}
+    >
+      <components__ActionButtons
+        data-test="action-btns"
+        horizontal={true}
+      >
+        <Tooltip
+          content="Remove condition"
+          place="top"
+        >
+          <components__RemoveButton
+            data-test="btn-remove"
+            disabled={true}
+            onClick={[Function]}
+            small={true}
+            type="button"
+            variant="primary"
+          >
+            <IconText
+              hideText={true}
+              icon={[Function]}
+            >
+              Remove condition
+            </IconText>
+          </components__RemoveButton>
+        </Tooltip>
+        <Tooltip
+          content="Add condition"
+          place="top"
+        >
+          <components__AddButton
+            data-test="btn-add"
+            disabled={false}
+            onClick={[Function]}
+            small={true}
+            type="button"
+            variant="primary"
+          >
+            <IconText
+              hideText={true}
+              icon={[Function]}
+            >
+              Add condition
+            </IconText>
+          </components__AddButton>
+        </Tooltip>
+      </components__ActionButtons>
+    </Column>
+  </Grid>
+  <Grid
+    align="top"
+    fillHeight={true}
+    horizontalAlign="start"
+  >
+    <Column
+      cols={1.5}
+      gutters={false}
+    >
+      <components__ConnectedPath
+        pathEnd={true}
+      />
+    </Column>
+    <Column
+      cols={8}
+      gutters={false}
+    >
+      <Transition
+        in={true}
+        mountOnEnter={true}
+        timeout={400}
+        unmountOnExit={true}
+      >
+        <MultipleChoiceAnswerOptionsSelector
+          expression={
+            Object {
+              "condition": "Equal",
+              "expressionGroup": Object {
+                "__typename": "ExpressionGroup2",
+                "id": "1",
+                "validationErrorInfo": Object {
+                  "errors": Array [],
+                  "id": "1",
+                  "totalCount": 0,
+                },
+              },
+              "id": "1",
+              "left": Object {
+                "id": "2",
+                "type": "Radio",
+              },
+              "right": null,
+              "secondaryCondition": null,
+              "validationErrorInfo": Object {
+                "errors": Array [],
+                "id": "6dd",
+                "totalCount": 0,
+              },
+            }
+          }
+          onConditionChange={[Function]}
+          onRightChange={[Function]}
+        />
+      </Transition>
+    </Column>
+    <Column
+      cols={2.5}
+    />
+  </Grid>
+  <Grid
+    align="top"
+    fillHeight={true}
+    horizontalAlign="start"
+  >
+    <Column
+      cols={1.5}
+    />
+    <Column
+      cols={8}
+    />
+    <Column
+      cols={2.5}
+    />
+  </Grid>
+</Fragment>
+`;

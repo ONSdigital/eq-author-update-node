@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RuleEditor should render 1`] = `
+<RuleEditor__Rule
+  data-test="routing-rule"
+>
+  <RuleEditor__Header>
+    <RuleEditor__HeaderPanel>
+      <RuleEditor__HeaderLabel
+        inline={true}
+      >
+         Routing logic rule 
+      </RuleEditor__HeaderLabel>
+      <Tooltip
+        content="Move rule up"
+        offset={
+          Object {
+            "bottom": 10,
+            "top": 0,
+          }
+        }
+        place="top"
+      >
+        <MoveButton
+          aria-label="Move rule up"
+          color="white"
+          data-test="btn-move-routing-rule-up"
+          disabled={false}
+          onClick={[MockFunction]}
+        >
+          <Component />
+        </MoveButton>
+      </Tooltip>
+      <Tooltip
+        content="Move rule down"
+        offset={
+          Object {
+            "bottom": 10,
+            "top": 0,
+          }
+        }
+        place="top"
+      >
+        <MoveButton
+          aria-label="Move rule down"
+          color="white"
+          data-test="btn-move-routing-rule-down"
+          disabled={false}
+          onClick={[MockFunction]}
+        >
+          <Component />
+        </MoveButton>
+      </Tooltip>
+      <Tooltip
+        content="Delete rule"
+        offset={
+          Object {
+            "bottom": 10,
+            "top": 0,
+          }
+        }
+        place="top"
+      >
+        <DeleteButton
+          aria-label="Delete routing rule"
+          color="white"
+          data-test="btn-delete-routing-rule"
+          onClick={[Function]}
+          size="medium"
+          type="button"
+        />
+      </Tooltip>
+    </RuleEditor__HeaderPanel>
+  </RuleEditor__Header>
+  <RuleEditor__Expressions>
+    <TransitionGroup
+      childFactory={[Function]}
+      component="div"
+    />
+  </RuleEditor__Expressions>
+  <withRouter(UnwrappedDestinationSelector)
+    data-test="select-then"
+    id="ruleId"
+    label="Then"
+    onChange={[Function]}
+    value={
+      Object {
+        "id": "1",
+        "logical": null,
+        "page": Object {
+          "displayName": "Page",
+          "id": "pageId",
+        },
+        "section": null,
+        "validationErrorInfo": Object {
+          "__typename": "ValidationErrorInfo",
+          "errors": Array [],
+          "id": "1",
+          "totalCount": 0,
+        },
+      }
+    }
+  />
+</RuleEditor__Rule>
+`;

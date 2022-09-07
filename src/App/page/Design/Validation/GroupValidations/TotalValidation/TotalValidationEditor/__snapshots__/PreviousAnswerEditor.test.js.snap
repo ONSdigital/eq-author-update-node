@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TotalValidation: Previous Answer Editor should render 1`] = `
+<Field
+  disabled={false}
+  last={false}
+>
+  <PreviousAnswerContentPicker
+    allowedAnswerTypes={
+      Array [
+        undefined,
+      ]
+    }
+    data-test="content-picker-select"
+    hasError={false}
+    onSubmit={[MockFunction]}
+    selectedContentDisplayName="My answer"
+  />
+</Field>
+`;

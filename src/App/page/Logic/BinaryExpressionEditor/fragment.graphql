@@ -1,0 +1,75 @@
+fragment BinaryExpressionEditor on BinaryExpression2 {
+  id
+  left {
+    ... on BasicAnswer {
+      id
+      displayName
+      type
+      properties
+      page {
+        id
+        alias
+        displayName
+        title
+      }
+    }
+    ... on MultipleChoiceAnswer {
+      id
+      displayName
+      type
+      page {
+        id
+        alias
+        displayName
+        title
+      }
+      mutuallyExclusiveOption {
+        id
+        label
+      }
+      options {
+        id
+        label
+      }
+    }
+    ... on NoLeftSide {
+      reason
+    }
+  }
+  condition
+  secondaryCondition
+  right {
+    ... on SelectedOptions2 {
+      options {
+        id
+        label
+      }
+    }
+    ... on CustomValue2 {
+      number
+    }
+  }
+  validationErrorInfo {
+    id
+    errors {
+      id
+      type
+      field
+      errorCode
+    }
+    totalCount
+  }
+  expressionGroup {
+    id
+    validationErrorInfo {
+      id
+      errors {
+        id
+        type
+        field
+        errorCode
+      }
+      totalCount
+    }
+  }
+}

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Metadata Editor Should render 1`] = `
+<Fragment>
+  <MetadataContentPicker
+    answerId="1"
+    data-test="metadata-date-editor"
+    hasError={false}
+    onSubmit={[MockFunction]}
+    selectedContentDisplayName="test"
+  />
+</Fragment>
+`;

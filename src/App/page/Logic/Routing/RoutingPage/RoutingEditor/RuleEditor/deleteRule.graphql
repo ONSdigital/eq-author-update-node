@@ -1,0 +1,11 @@
+mutation deleteRoutingRule2($input: DeleteRoutingRule2Input!) {
+  deleteRoutingRule2(input: $input) {
+    id
+    routing {
+      id
+      rules {
+        id
+      }
+    }
+  }
+}

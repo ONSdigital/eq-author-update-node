@@ -1,0 +1,12 @@
+#import "graphql/fragments/validationErrorInfo.graphql"
+
+query GetFolderPageInfo($input: QueryInput!) {
+  folder(input: $input) {
+    id
+    displayName
+    title
+    validationErrorInfo {
+      ...ValidationErrorInfo
+    }
+  }
+}

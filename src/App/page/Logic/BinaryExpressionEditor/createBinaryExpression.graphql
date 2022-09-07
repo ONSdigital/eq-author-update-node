@@ -1,0 +1,13 @@
+#import "./fragment.graphql"
+
+mutation createBinaryExpression2($input: CreateBinaryExpression2Input!) {
+  createBinaryExpression2(input: $input) {
+    id
+    expressionGroup {
+      id
+      expressions {
+        ...BinaryExpressionEditor
+      }
+    }
+  }
+}

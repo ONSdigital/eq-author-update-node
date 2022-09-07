@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ValidationPills should render 1`] = `
+<ValidationPills__Pills
+  onChange={[Function]}
+  options={
+    Array [
+      Object {
+        "id": "Now",
+        "render": [Function],
+        "title": "Start date",
+      },
+      Object {
+        "id": "PreviousAnswer",
+        "render": [Function],
+        "title": "Previous answer",
+      },
+      Object {
+        "id": "Metadata",
+        "render": [Function],
+        "title": "Metadata",
+      },
+      Object {
+        "id": "Custom",
+        "render": [Function],
+        "title": "Custom",
+      },
+    ]
+  }
+  value="PreviousAnswer"
+/>
+`;
+
+exports[`ValidationPills should render custom 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "ValidationPills__PillTabContent-sc-1biktv0-1",
+        "isStatic": false,
+        "rules": Array [
+          "margin-top:3em;margin-bottom:0;width:100%;",
+        ],
+      },
+      "displayName": "ValidationPills__PillTabContent",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "ValidationPills__PillTabContent-sc-1biktv0-1",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+>
+  <Custom />
+</StyledComponent>
+`;
+
+exports[`ValidationPills should render if missing an option component 1`] = `
+<ValidationPills__Pills
+  onChange={[Function]}
+  options={
+    Array [
+      Object {
+        "id": "Now",
+        "render": [Function],
+        "title": "Start date",
+      },
+      Object {
+        "id": "PreviousAnswer",
+        "render": [Function],
+        "title": "Previous answer",
+      },
+      Object {
+        "id": "Custom",
+        "render": [Function],
+        "title": "Custom",
+      },
+    ]
+  }
+  value="PreviousAnswer"
+/>
+`;
+
+exports[`ValidationPills should render metadata 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "ValidationPills__PillTabContent-sc-1biktv0-1",
+        "isStatic": false,
+        "rules": Array [
+          "margin-top:3em;margin-bottom:0;width:100%;",
+        ],
+      },
+      "displayName": "ValidationPills__PillTabContent",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "ValidationPills__PillTabContent-sc-1biktv0-1",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+>
+  <Metadata />
+</StyledComponent>
+`;
+
+exports[`ValidationPills should render previous answer 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "ValidationPills__PillTabContent-sc-1biktv0-1",
+        "isStatic": false,
+        "rules": Array [
+          "margin-top:3em;margin-bottom:0;width:100%;",
+        ],
+      },
+      "displayName": "ValidationPills__PillTabContent",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "ValidationPills__PillTabContent-sc-1biktv0-1",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+>
+  <PreviousAnswer />
+</StyledComponent>
+`;
+
+exports[`ValidationPills should render startDate 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "ValidationPills__PillTabContent-sc-1biktv0-1",
+        "isStatic": false,
+        "rules": Array [
+          "margin-top:3em;margin-bottom:0;width:100%;",
+        ],
+      },
+      "displayName": "ValidationPills__PillTabContent",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "ValidationPills__PillTabContent-sc-1biktv0-1",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+>
+  <Now />
+</StyledComponent>
+`;

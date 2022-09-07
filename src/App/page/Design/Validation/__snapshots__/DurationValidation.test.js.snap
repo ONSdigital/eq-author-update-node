@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Duration Validation should render 1`] = `
+<div>
+  <Grid
+    align="top"
+    fillHeight={true}
+    horizontalAlign="start"
+  >
+    <AlignedColumn
+      cols={3}
+    >
+      <EmphasisedText>
+        Some date
+         is
+      </EmphasisedText>
+    </AlignedColumn>
+    <Column
+      cols={9}
+    >
+      <Duration
+        duration={
+          Object {
+            "unit": "Months",
+            "value": null,
+          }
+        }
+        hasError={
+          Object {
+            "errorCode": "ERR_NO_VALUE",
+            "field": "minDuration",
+            "id": "0efd3ed1-8e0d-4b0c-9e39-59010751dbdf",
+            "type": "validation",
+          }
+        }
+        name="duration"
+        onChange={[MockFunction]}
+        onUpdate={[MockFunction]}
+        units={
+          Array [
+            "Days",
+            "Months",
+            "Years",
+          ]
+        }
+      />
+    </Column>
+  </Grid>
+  <Grid
+    align="top"
+    fillHeight={true}
+    horizontalAlign="start"
+  >
+    <Column
+      cols={3}
+    />
+    <Column
+      cols={9}
+    >
+      <DurationValidation__StyledError>
+        Value is required
+      </DurationValidation__StyledError>
+    </Column>
+  </Grid>
+</div>
+`;

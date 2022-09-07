@@ -3,7 +3,7 @@ import { shallow } from "enzyme";
 import { render, fireEvent } from "tests/utils/rtl";
 
 import * as Headings from "constants/table-headings";
-import DeleteConfirmDialog from "components/DeleteConfirmDialog";
+import DeleteConfirmDialog from "components/components-original/DeleteConfirmDialog";
 
 import { colors } from "constants/theme";
 import { UNPUBLISHED } from "constants/publishStatus";

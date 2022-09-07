@@ -1,0 +1,20 @@
+mutation deleteBinaryExpression2($input: DeleteBinaryExpression2Input!) {
+  deleteBinaryExpression2(input: $input) {
+      id
+      expressions {
+          ... on BinaryExpression2 {
+              id
+          }
+      }
+      validationErrorInfo {
+        id
+        errors {
+          id
+          type
+          field
+          errorCode
+        }
+        totalCount
+      }
+  }
+}

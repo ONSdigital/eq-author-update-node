@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "components/buttons/Button";
+import Button from "components/components-original/buttons/Button";
 import { render } from "tests/utils/rtl";
 
 describe("components/Button", () => {

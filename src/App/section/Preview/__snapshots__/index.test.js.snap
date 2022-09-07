@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PreviewSectionRoute should redirect to design if section introduction is not enabled 1`] = `
+<Redirect
+  to="/q/1/section/2/design"
+/>
+`;
+
+exports[`PreviewSectionRoute should render as loading when loading 1`] = `
+<EditorLayout>
+  <Loading
+    height="38rem"
+  >
+    Preview loading…
+  </Loading>
+</EditorLayout>
+`;
+
+exports[`PreviewSectionRoute should show the section intro preview when it is finished loading and has a section 1`] = `
+<EditorLayout
+  design={true}
+  logic={false}
+  preview={true}
+  renderPanel={[Function]}
+  validationErrorInfo={
+    Object {
+      "__typename": "ValidationErrorInfo",
+      "errors": Array [],
+      "id": "4",
+      "totalCount": 0,
+    }
+  }
+>
+  <SectionIntroPreview
+    section={
+      Object {
+        "alias": "",
+        "collapsibleSummary": false,
+        "id": "1",
+        "introductionContent": "intro content",
+        "introductionTitle": "intro title",
+        "questionnaire": Object {
+          "hub": false,
+          "id": "2",
+          "navigation": true,
+        },
+        "requiredCompleted": false,
+        "sectionSummary": false,
+        "showOnHub": false,
+        "title": "",
+        "validationErrorInfo": Object {
+          "__typename": "ValidationErrorInfo",
+          "errors": Array [],
+          "id": "4",
+          "totalCount": 0,
+        },
+      }
+    }
+  />
+</EditorLayout>
+`;

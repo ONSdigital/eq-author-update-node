@@ -1,4 +1,4 @@
-import { colors } from "constants/theme";
+import { colors } from "src/constants/theme";
 import { values } from "lodash";
 
 describe("constants/theme", () => {
