@@ -555,8 +555,7 @@ import ThemesPage from "./App/settings/ThemesPage";
 import NoDisplayLogic from "./App/shared/Logic/Display/NoDisplayLogic";
 import RoutingRuleSetMsg from "./App/shared/Logic/Routing/NoRouting";
 import SkipLogicRoute from "./App/shared/Logic/SkipLogic";
-// ! Broken - logic page has already been declared
-// import LogicPage from "./App/shared/Logic";
+import SharedLogicPage from "./App/shared/Logic";
 // ** -------------- 
 
 // ** sharing
@@ -837,6 +836,7 @@ function App() {
       <Toolkit />
 
       {/* App */}
+
       <AccessDenied/>
       <CollectionListsPage/>
       <CommentsPanel/>
@@ -885,7 +885,7 @@ function App() {
       <GeneralSettingsPage/>
       <ThemesPage/>
       <NoDisplayLogic/>
-      {/* <LogicPage/> */}
+      <SharedLogicPage/>
       <SharePage/>
       <SignInPage/>
       <SubmissionDesign/>
