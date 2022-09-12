@@ -63,7 +63,7 @@
   "scripts": {
     "start": "webpack serve --config ./webpack.config.js --mode development",
     "build": "webpack",
-    "test": "node scripts/test.js",
+    "test": "node scripts/test.js --env=./src/tests/environments/custom-test-env.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -106,12 +106,14 @@
     "webpack-cli": "^4.10.0"
   },
   "jest": {
+    "testEnvironment": "jsdom",
     "setupFiles": [
       "<rootDir>/src/tests/setup/throwOnConsole.js",
       "<rootDir>/src/tests/setup/mockLocalStorage.js"
     ],
     "setupFilesAfterEnv": [
-      "<rootDir>/src/tests/setup/JestTestSetup.js"
+      "<rootDir>/src/tests/setup/JestTestSetup.js",
+      "<rootDir>/src/tests/setup/TextEncoderSetup.js"
     ],
     "snapshotSerializers": [
       "<rootDir>/node_modules/enzyme-to-json/serializer"
