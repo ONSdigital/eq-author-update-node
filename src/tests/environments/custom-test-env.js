@@ -4,8 +4,8 @@
  * jsdom doesn't have TextEncoder defined in global for node version 16.
  */
 
-const Environment = require("jest-environment-jsdom");
-module.exports = class CustomTestEnvironment extends Environment {
+import Environment from "jest-environment-jsdom";
+export default class CustomTestEnvironment extends Environment {
   async setup() {
     await super.setup();
     if (typeof this.global.TextEncoder === "undefined") {
@@ -13,4 +13,4 @@ module.exports = class CustomTestEnvironment extends Environment {
       this.global.TextEncoder = TextEncoder;
     }
   }
-};
+}
