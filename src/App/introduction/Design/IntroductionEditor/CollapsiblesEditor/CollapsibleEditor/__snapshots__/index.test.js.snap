@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CollapsibleEditor should render 1`] = `
-<CollapsibleEditor__Detail
+<styled.div
   data-test="collapsible-editor"
   id="1"
 >
-  <CollapsibleEditor__DetailHeader>
+  <styled.div>
     <MoveButton
       color="secondary"
       data-test="move-up-btn"
@@ -22,12 +22,12 @@ exports[`CollapsibleEditor should render 1`] = `
     >
       <Component />
     </MoveButton>
-    <CollapsibleEditor__DetailDeleteButton
+    <Styled(DeleteButton)
       data-test="delete-collapsible-btn"
       disabled={false}
       onClick={[Function]}
     />
-  </CollapsibleEditor__DetailHeader>
+  </styled.div>
   <Field
     disabled={false}
     last={false}
@@ -38,7 +38,7 @@ exports[`CollapsibleEditor should render 1`] = `
     >
       Title
     </Label>
-    <withChangeHandler(WrappingInput)
+    <withChangeHandler(undefined)
       bold={true}
       data-test="txt-collapsible-title"
       id="details-title-1"
@@ -51,7 +51,7 @@ exports[`CollapsibleEditor should render 1`] = `
   <RichTextEditor
     autoFocus={false}
     controls={
-      Object {
+      {
         "bold": true,
         "emphasis": true,
         "link": true,
@@ -70,5 +70,5 @@ exports[`CollapsibleEditor should render 1`] = `
     testSelector="txt-collapsible-description"
     value="description"
   />
-</CollapsibleEditor__Detail>
+</styled.div>
 `;

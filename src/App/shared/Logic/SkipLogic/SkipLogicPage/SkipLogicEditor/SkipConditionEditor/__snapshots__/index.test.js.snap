@@ -1,20 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SkipConditionEditor should render 1`] = `
-<SkipConditionEditor__SkipCondition
+<styled.div
   data-test="skip-condition"
 >
-  <SkipConditionEditor__Header>
-    <SkipConditionEditor__HeaderPanel>
-      <SkipConditionEditor__HeaderLabel
+  <styled.div>
+    <styled.span>
+      <Styled(Label)
         inline={true}
       >
         Skip this question
-      </SkipConditionEditor__HeaderLabel>
+      </Styled(Label)>
       <Tooltip
         content="Delete rule"
         offset={
-          Object {
+          {
             "bottom": 10,
             "top": 0,
           }
@@ -30,13 +30,13 @@ exports[`SkipConditionEditor should render 1`] = `
           type="button"
         />
       </Tooltip>
-    </SkipConditionEditor__HeaderPanel>
-  </SkipConditionEditor__Header>
-  <SkipConditionEditor__Expressions>
+    </styled.span>
+  </styled.div>
+  <styled.div>
     <TransitionGroup
       childFactory={[Function]}
       component="div"
     />
-  </SkipConditionEditor__Expressions>
-</SkipConditionEditor__SkipCondition>
+  </styled.div>
+</styled.div>
 `;

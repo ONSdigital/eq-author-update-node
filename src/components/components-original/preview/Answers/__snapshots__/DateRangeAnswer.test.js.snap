@@ -4,9 +4,9 @@ exports[`DateRangeAnswer should render 1`] = `
 <div>
   <DateAnswer
     answer={
-      Object {
+      {
         "label": "from",
-        "properties": Object {
+        "properties": {
           "format": "dd/mm/yyyy",
         },
       }
@@ -14,9 +14,9 @@ exports[`DateRangeAnswer should render 1`] = `
   />
   <DateAnswer
     answer={
-      Object {
+      {
         "label": "to",
-        "properties": Object {
+        "properties": {
           "format": "dd/mm/yyyy",
         },
       }

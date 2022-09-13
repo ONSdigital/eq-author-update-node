@@ -6,13 +6,13 @@ exports[`ModalDialog should render when closed 1`] = `
   isOpen={false}
   onClose={[MockFunction]}
 >
-  <Dialog
+  <styled.div
     onClose={[MockFunction]}
   >
     <div>
       Modal dialog content
     </div>
-  </Dialog>
+  </styled.div>
 </Modal>
 `;
 
@@ -22,12 +22,12 @@ exports[`ModalDialog should render when open 1`] = `
   isOpen={true}
   onClose={[MockFunction]}
 >
-  <Dialog
+  <styled.div
     onClose={[MockFunction]}
   >
     <div>
       Modal dialog content
     </div>
-  </Dialog>
+  </styled.div>
 </Modal>
 `;

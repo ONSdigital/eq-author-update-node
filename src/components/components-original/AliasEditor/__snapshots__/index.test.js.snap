@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AliasEditor should render 1`] = `
-<AliasEditor__Wrapper>
-  <AliasEditor__InputBox
+<styled.div>
+  <styled.input
     autoComplete="off"
     data-test="alias"
     id="alias"
@@ -17,5 +17,5 @@ exports[`AliasEditor should render 1`] = `
     limit={24}
     value="FooBar"
   />
-</AliasEditor__Wrapper>
+</styled.div>
 `;

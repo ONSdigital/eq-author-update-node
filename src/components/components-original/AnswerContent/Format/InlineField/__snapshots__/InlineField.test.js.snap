@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`InlineLabel should render 1`] = `
-<InlineField__StyledInlineField
+<Styled(Field)
   key="1"
 >
-  <InlineField__StyledLabel
+  <Styled(Label)
     bold={true}
     htmlFor="1"
     inline={true}
   >
     Label
-  </InlineField__StyledLabel>
+  </Styled(Label)>
   <input
     type="text"
   />
-</InlineField__StyledInlineField>
+</Styled(Field)>
 `;

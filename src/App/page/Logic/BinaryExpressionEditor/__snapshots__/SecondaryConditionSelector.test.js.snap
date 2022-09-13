@@ -2,8 +2,8 @@
 
 exports[`secondaryConditionSelector should render 1`] = `
 <Fragment>
-  <SecondaryConditionSelector__SecondaryConditionRoutingSelector>
-    <SecondaryConditionSelector__Selector
+  <styled.div>
+    <Styled(withChangeHandler(styled.select))
       aria-label="Operator"
       data-test="secondaryCondition-selector"
       id="expression-secondaryCondition-1"
@@ -45,17 +45,17 @@ exports[`secondaryConditionSelector should render 1`] = `
       >
         (≤) Less than or equal to
       </option>
-    </SecondaryConditionSelector__Selector>
-    <SecondaryConditionSelector__Value>
-      <VisuallyHidden>
+    </Styled(withChangeHandler(styled.select))>
+    <styled.div>
+      <styled.span>
         <Label
           bold={true}
           htmlFor="expression-right-1"
         >
           Value
         </Label>
-      </VisuallyHidden>
-      <SecondaryConditionSelector__StyledNumber
+      </styled.span>
+      <Styled(Number)
         data-test="secondaryCondition-number-input"
         default={null}
         id="expression-right-1"
@@ -66,7 +66,7 @@ exports[`secondaryConditionSelector should render 1`] = `
         onChange={[Function]}
         placeholder="Value"
         style={
-          Object {
+          {
             "padding": "0.3em",
           }
         }
@@ -74,7 +74,7 @@ exports[`secondaryConditionSelector should render 1`] = `
         unit={null}
         value={null}
       />
-    </SecondaryConditionSelector__Value>
-  </SecondaryConditionSelector__SecondaryConditionRoutingSelector>
+    </styled.div>
+  </styled.div>
 </Fragment>
 `;

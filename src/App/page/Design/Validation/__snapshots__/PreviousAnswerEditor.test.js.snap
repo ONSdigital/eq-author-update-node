@@ -10,7 +10,7 @@ exports[`Custom Editor should render 1`] = `
   >
     <PreviousAnswerContentPicker
       allowedAnswerTypes={
-        Array [
+        [
           "Number",
         ]
       }

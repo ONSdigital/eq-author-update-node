@@ -1,25 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AnswerValidation should render 1`] = `
-<withChangeUpdate(UnwrappedNumericValidation)
+<withChangeUpdate(undefined)
   answer={
-    Object {
+    {
       "id": "1",
       "type": "Number",
-      "validation": Object {
-        "maxValue": Object {
+      "validation": {
+        "maxValue": {
           "enabled": false,
-          "validationErrorInfo": Object {
-            "errors": Array [],
+          "validationErrorInfo": {
+            "errors": [],
           },
         },
-        "minValue": Object {
+        "minValue": {
           "enabled": true,
           "entityType": "Custom",
           "previousAnswer": null,
-          "validationErrorInfo": Object {
-            "errors": Array [
-              Object {
+          "validationErrorInfo": {
+            "errors": [
+              {
                 "errorCode": "ERR_NO_VALUE",
                 "field": "custom",
                 "id": "minValue-0efd3ed1-8e0d-4b0c-9e39-59010751dbdf-custom",
@@ -28,9 +28,9 @@ exports[`AnswerValidation should render 1`] = `
             ],
           },
         },
-        "validationErrorInfo": Object {
-          "errors": Array [
-            Object {
+        "validationErrorInfo": {
+          "errors": [
+            {
               "errorCode": "ERR_NO_VALUE",
               "field": "custom",
               "id": "minValue-0efd3ed1-8e0d-4b0c-9e39-59010751dbdf-custom",

@@ -2,18 +2,18 @@
 
 exports[`FieldWithInclude should render 1`] = `
 <Fragment>
-  <VisuallyHidden>
+  <styled.span>
     <Label
       bold={true}
       hidden={true}
     >
       Value
     </Label>
-  </VisuallyHidden>
+  </styled.span>
   <div>
     Children
   </div>
-  <FieldWithInclude__InlineField>
+  <Styled(Field)>
     <ToggleSwitch
       checked={false}
       hideLabels={true}
@@ -28,6 +28,6 @@ exports[`FieldWithInclude should render 1`] = `
     >
       Include this number
     </Label>
-  </FieldWithInclude__InlineField>
+  </Styled(Field)>
 </Fragment>
 `;

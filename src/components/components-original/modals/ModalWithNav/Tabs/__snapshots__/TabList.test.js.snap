@@ -1,23 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tab List should render the sidebar with title and children 1`] = `
-<Column
+<styled.div
   cols={3}
   gutters={false}
 >
-  <TabList__Sidebar>
-    <TabList__SidebarHeader>
-      <TabList__SidebarTitle
+  <styled.div>
+    <styled.div>
+      <styled.h2
         data-test="sidebar-title"
       >
         hello world
-      </TabList__SidebarTitle>
-    </TabList__SidebarHeader>
-    <TabList__ChildList>
+      </styled.h2>
+    </styled.div>
+    <styled.ul>
       <h1>
         hello
       </h1>
-    </TabList__ChildList>
-  </TabList__Sidebar>
-</Column>
+    </styled.ul>
+  </styled.div>
+</styled.div>
 `;

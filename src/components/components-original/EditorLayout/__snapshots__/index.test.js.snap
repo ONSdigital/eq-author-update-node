@@ -4,7 +4,7 @@ exports[`Editor Layout should render 1`] = `
 <GetContext
   title={[Function]}
 >
-  <EditorLayout__Container>
+  <styled.div>
     <Component>
       <withRouter(UnwrappedTabs)
         design={true}
@@ -15,43 +15,43 @@ exports[`Editor Layout should render 1`] = `
     <ScrollPane
       scrollToTop={true}
     >
-      <EditorLayout__StyledGrid
+      <Styled(styled.div)
         align="top"
         fillHeight={true}
         horizontalAlign="start"
         page={
-          Object {
-            "answers": Array [],
+          {
+            "answers": [],
             "displayName": "Foo",
             "id": "1",
           }
         }
         routing={true}
       >
-        <EditorLayout__StyledColumn
+        <Styled(styled.div)
           className="keyNav"
           cols={9}
           gutters={false}
           tabIndex="-1"
         >
-          <EditorLayout__Margin>
-            <MainCanvas
+          <styled.div>
+            <styled.main
               maxWidth="70em"
             >
               Content
-            </MainCanvas>
-          </EditorLayout__Margin>
-        </EditorLayout__StyledColumn>
-        <Column
+            </styled.main>
+          </styled.div>
+        </Styled(styled.div)>
+        <styled.div
           cols={3}
           gutters={false}
         >
-          <EditorLayout__PanelWrapper
+          <styled.div
             data-test="right-hand-panel"
           />
-        </Column>
-      </EditorLayout__StyledGrid>
+        </styled.div>
+      </Styled(styled.div)>
     </ScrollPane>
-  </EditorLayout__Container>
+  </styled.div>
 </GetContext>
 `;

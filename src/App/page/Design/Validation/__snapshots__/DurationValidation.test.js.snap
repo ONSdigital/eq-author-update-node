@@ -2,31 +2,31 @@
 
 exports[`Duration Validation should render 1`] = `
 <div>
-  <Grid
+  <styled.div
     align="top"
     fillHeight={true}
     horizontalAlign="start"
   >
-    <AlignedColumn
+    <Styled(styled.div)
       cols={3}
     >
-      <EmphasisedText>
+      <styled.p>
         Some date
          is
-      </EmphasisedText>
-    </AlignedColumn>
-    <Column
+      </styled.p>
+    </Styled(styled.div)>
+    <styled.div
       cols={9}
     >
       <Duration
         duration={
-          Object {
+          {
             "unit": "Months",
             "value": null,
           }
         }
         hasError={
-          Object {
+          {
             "errorCode": "ERR_NO_VALUE",
             "field": "minDuration",
             "id": "0efd3ed1-8e0d-4b0c-9e39-59010751dbdf",
@@ -37,30 +37,30 @@ exports[`Duration Validation should render 1`] = `
         onChange={[MockFunction]}
         onUpdate={[MockFunction]}
         units={
-          Array [
+          [
             "Days",
             "Months",
             "Years",
           ]
         }
       />
-    </Column>
-  </Grid>
-  <Grid
+    </styled.div>
+  </styled.div>
+  <styled.div
     align="top"
     fillHeight={true}
     horizontalAlign="start"
   >
-    <Column
+    <styled.div
       cols={3}
     />
-    <Column
+    <styled.div
       cols={9}
     >
-      <DurationValidation__StyledError>
+      <Styled(ValidationError)>
         Value is required
-      </DurationValidation__StyledError>
-    </Column>
-  </Grid>
+      </Styled(ValidationError)>
+    </styled.div>
+  </styled.div>
 </div>
 `;

@@ -7,12 +7,12 @@ exports[`components/SlideTransition should render 1`] = `
   exit={false}
   timeout={300}
 >
-  <SlideTransition__AnimatedSection
+  <styled.div
     duration={300}
   >
     <div>
       Content
     </div>
-  </SlideTransition__AnimatedSection>
+  </styled.div>
 </CSSTransition>
 `;

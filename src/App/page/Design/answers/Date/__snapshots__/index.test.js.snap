@@ -1,23 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Date should render 1`] = `
-<Memo(Connect(withEntityEditor(withValidationError(UnwrappedDate))))
+<Memo(Connect(withEntityEditor(withValidationError(undefined))))
   answer={
-    Object {
+    {
       "advancedProperties": true,
       "description": "date description",
       "displayName": "",
       "guidance": "Guidance",
       "id": "ansID1",
       "label": "",
-      "options": Array [
-        Object {
+      "options": [
+        {
           "id": "option-1",
           "label": "option-label",
           "mutuallyExclusive": false,
         },
       ],
-      "properties": Object {},
+      "properties": {},
       "qCode": "",
       "secondaryLabel": null,
       "secondaryLabelDefault": "",

@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TextAnswer should render 1`] = `
-<Field>
+<styled.div>
   <Label
     description="description"
   >
     label
   </Label>
-  <TextAreaAnswer__Textarea
+  <Styled(styled.textarea)
     cols="60"
     rows="8"
   />
-</Field>
+</styled.div>
 `;

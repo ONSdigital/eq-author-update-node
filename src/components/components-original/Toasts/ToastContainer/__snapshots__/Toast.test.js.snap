@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Toast should render 1`] = `
-<Toast__StyledToast
+<styled.div
   data-test="toast"
   id="1"
   onBlur={[Function]}
@@ -15,5 +15,5 @@ exports[`Toast should render 1`] = `
   >
     hello
   </span>
-</Toast__StyledToast>
+</styled.div>
 `;

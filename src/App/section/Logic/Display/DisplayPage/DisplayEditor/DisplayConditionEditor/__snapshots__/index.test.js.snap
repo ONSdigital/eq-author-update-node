@@ -4,27 +4,27 @@ exports[`DisplayConditionEditor should render 1`] = `
 <div
   data-test="display-condition"
 >
-  <DisplayConditionEditor__Header>
+  <styled.div>
     <Label
       bold={true}
       inline={true}
     >
       Display this section
     </Label>
-    <DisplayConditionEditor__RemoveDisplayConditionButton
+    <Styled(styled.button)
       data-test="btn-remove-display-conditions"
       onClick={[Function]}
       type="button"
       variant="primary"
     >
       Remove logic rule
-    </DisplayConditionEditor__RemoveDisplayConditionButton>
-  </DisplayConditionEditor__Header>
-  <DisplayConditionEditor__Expressions>
+    </Styled(styled.button)>
+  </styled.div>
+  <styled.div>
     <TransitionGroup
       childFactory={[Function]}
       component="div"
     />
-  </DisplayConditionEditor__Expressions>
+  </styled.div>
 </div>
 `;

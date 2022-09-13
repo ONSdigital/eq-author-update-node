@@ -1,30 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Content Wrapper should wrap the tab content with a column, transition and close button 1`] = `
-<Column
+<styled.div
   cols={9}
   gutters={false}
 >
-  <ContentWrapper__MainContainer>
-    <ContentWrapper__Content>
-      <ContentWrapper__TabPanel>
+  <styled.div>
+    <styled.div>
+      <styled.div>
         <TransitionGroup
           childFactory={[Function]}
           component={
-            Object {
+            {
               "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "ContentWrapper__Content-sc-1lrx4ed-1",
+              "attrs": [],
+              "componentStyle": e {
+                "baseHash": -1106060427,
+                "baseStyle": undefined,
+                "componentId": "sc-jSMfEi",
                 "isStatic": false,
-                "rules": Array [
-                  "flex:1 1 auto;display:flex;",
+                "rules": [
+                  "
+  flex: 1 1 auto;
+  display: flex;
+",
                 ],
+                "staticRulesId": "",
               },
-              "displayName": "ContentWrapper__Content",
-              "foldedComponentIds": Array [],
+              "foldedComponentIds": [],
               "render": [Function],
-              "styledComponentId": "ContentWrapper__Content-sc-1lrx4ed-1",
+              "shouldForwardProp": undefined,
+              "styledComponentId": "sc-jSMfEi",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -32,7 +38,7 @@ exports[`Content Wrapper should wrap the tab content with a column, transition a
             }
           }
         >
-          <FadeTransition
+          <Styled(CSSTransition)
             appear={true}
             enter={true}
             exit={false}
@@ -42,20 +48,20 @@ exports[`Content Wrapper should wrap the tab content with a column, transition a
             <h1>
               hello
             </h1>
-          </FadeTransition>
+          </Styled(CSSTransition)>
         </TransitionGroup>
-      </ContentWrapper__TabPanel>
-    </ContentWrapper__Content>
-    <ContentWrapper__Buttons>
-      <Button
+      </styled.div>
+    </styled.div>
+    <styled.div>
+      <styled.button
         data-test="btn-done"
         onClick={[Function]}
         type="button"
         variant="primary"
       >
         Done
-      </Button>
-    </ContentWrapper__Buttons>
-  </ContentWrapper__MainContainer>
-</Column>
+      </styled.button>
+    </styled.div>
+  </styled.div>
+</styled.div>
 `;

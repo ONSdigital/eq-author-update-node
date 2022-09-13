@@ -1,29 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PageTitle should render 1`] = `
-<PageTitle__Title
+<styled.h1
   data-test="page-title"
 >
   <div
     dangerouslySetInnerHTML={
-      Object {
+      {
         "__html": "foobar",
       }
     }
   />
-</PageTitle__Title>
+</styled.h1>
 `;
 
 exports[`PageTitle should render a warning there is no title 1`] = `
-<PageTitle__Title
+<styled.h1
   data-test="page-title"
 >
-  <Error
+  <styled.div
     data-test="no-title"
     large={true}
     margin={true}
   >
     Missing Page Title
-  </Error>
-</PageTitle__Title>
+  </styled.div>
+</styled.h1>
 `;

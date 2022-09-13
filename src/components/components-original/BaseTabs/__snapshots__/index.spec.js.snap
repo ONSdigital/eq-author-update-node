@@ -2,7 +2,7 @@
 
 exports[`Base Tabs should allow the user to provide their own styled list wrapper and button wrapper 1`] = `
 <Fragment>
-  <indexspec__wrapper>
+  <styled.ul>
     <li
       aria-controls={1}
       aria-selected={true}
@@ -27,7 +27,7 @@ exports[`Base Tabs should allow the user to provide their own styled list wrappe
     >
       Example 3
     </li>
-  </indexspec__wrapper>
+  </styled.ul>
   <div
     aria-labelledby={1}
   >

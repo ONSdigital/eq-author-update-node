@@ -18,20 +18,20 @@ exports[`QuestionProperties should render 1`] = `
       Question description
     </Label>
   </Property>
-  <QuestionProperties__Caption>
+  <styled.p>
     The description is used to provide added context to the question.
-  </QuestionProperties__Caption>
-  <withChangeUpdate(StatelessAdditionalInfo)
+  </styled.p>
+  <withChangeUpdate(undefined)
     onChange={[MockFunction]}
     onUpdate={[MockFunction]}
     option="description"
     page={
-      Object {
+      {
         "id": "1",
       }
     }
   />
-  <QuestionProperties__HorizontalSeparator />
+  <styled.hr />
   <Property
     data-test="definitionEnabled"
     id="definitionEnabled"
@@ -43,20 +43,20 @@ exports[`QuestionProperties should render 1`] = `
       Question definition
     </Label>
   </Property>
-  <QuestionProperties__Caption>
+  <styled.p>
     Only to be used to define word(s) or acronym(s) within the question.
-  </QuestionProperties__Caption>
-  <withChangeUpdate(StatelessAdditionalInfo)
+  </styled.p>
+  <withChangeUpdate(undefined)
     onChange={[MockFunction]}
     onUpdate={[MockFunction]}
     option="definition"
     page={
-      Object {
+      {
         "id": "1",
       }
     }
   />
-  <QuestionProperties__HorizontalSeparator />
+  <styled.hr />
   <Property
     data-test="guidanceEnabled"
     id="guidanceEnabled"
@@ -68,20 +68,20 @@ exports[`QuestionProperties should render 1`] = `
       Include/exclude
     </Label>
   </Property>
-  <QuestionProperties__Caption>
+  <styled.p>
     Only to be used to state what should be included or excluded from the answer.
-  </QuestionProperties__Caption>
-  <withChangeUpdate(StatelessAdditionalInfo)
+  </styled.p>
+  <withChangeUpdate(undefined)
     onChange={[MockFunction]}
     onUpdate={[MockFunction]}
     option="guidance"
     page={
-      Object {
+      {
         "id": "1",
       }
     }
   />
-  <QuestionProperties__HorizontalSeparator />
+  <styled.hr />
   <Property
     data-test="additionalInfoEnabled"
     id="additionalInfoEnabled"
@@ -93,15 +93,15 @@ exports[`QuestionProperties should render 1`] = `
       Additional information
     </Label>
   </Property>
-  <QuestionProperties__Caption>
+  <styled.p>
     Information regarding why we are asking this question.
-  </QuestionProperties__Caption>
-  <withChangeUpdate(StatelessAdditionalInfo)
+  </styled.p>
+  <withChangeUpdate(undefined)
     onChange={[MockFunction]}
     onUpdate={[MockFunction]}
     option="additionalInfo"
     page={
-      Object {
+      {
         "id": "1",
       }
     }

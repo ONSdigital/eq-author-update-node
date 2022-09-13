@@ -4,7 +4,7 @@ exports[`Typeahead should render 1`] = `
 <Downshift
   defaultHighlightedIndex={null}
   defaultIsOpen={false}
-  environment={Object {}}
+  environment={{}}
   getA11yStatusMessage={[Function]}
   id="keyList"
   itemToString={[Function]}
@@ -22,251 +22,251 @@ exports[`Typeahead should render 1`] = `
 `;
 
 exports[`TypeaheadMenu should handle the currently highlighted item 1`] = `
-<TypeaheadMenu__Menu>
-  <TypeaheadMenu__MenuList>
-    <TypeaheadMenu__MenuItem
+<styled.div>
+  <styled.ul>
+    <styled.li
       key="apple"
       onMouseMove={[Function]}
     >
-      <TypeaheadMenu__MenuItemText
+      <styled.div
         isActive={true}
         isSelected={false}
       >
         apple
-      </TypeaheadMenu__MenuItemText>
-    </TypeaheadMenu__MenuItem>
-    <TypeaheadMenu__MenuItem
+      </styled.div>
+    </styled.li>
+    <styled.li
       key="orange"
       onMouseMove={[Function]}
     >
-      <TypeaheadMenu__MenuItemText
+      <styled.div
         isActive={false}
         isSelected={false}
       >
         orange
-      </TypeaheadMenu__MenuItemText>
-    </TypeaheadMenu__MenuItem>
-    <TypeaheadMenu__MenuItem
+      </styled.div>
+    </styled.li>
+    <styled.li
       key="pear"
       onMouseMove={[Function]}
     >
-      <TypeaheadMenu__MenuItemText
+      <styled.div
         isActive={false}
         isSelected={false}
       >
         pear
-      </TypeaheadMenu__MenuItemText>
-    </TypeaheadMenu__MenuItem>
-    <TypeaheadMenu__MenuItem
+      </styled.div>
+    </styled.li>
+    <styled.li
       key="strawberry"
       onMouseMove={[Function]}
     >
-      <TypeaheadMenu__MenuItemText
+      <styled.div
         isActive={false}
         isSelected={false}
       >
         strawberry
-      </TypeaheadMenu__MenuItemText>
-    </TypeaheadMenu__MenuItem>
-    <TypeaheadMenu__MenuItem
+      </styled.div>
+    </styled.li>
+    <styled.li
       key="raspberry"
       onMouseMove={[Function]}
     >
-      <TypeaheadMenu__MenuItemText
+      <styled.div
         isActive={false}
         isSelected={false}
       >
         raspberry
-      </TypeaheadMenu__MenuItemText>
-    </TypeaheadMenu__MenuItem>
-  </TypeaheadMenu__MenuList>
-</TypeaheadMenu__Menu>
+      </styled.div>
+    </styled.li>
+  </styled.ul>
+</styled.div>
 `;
 
 exports[`TypeaheadMenu should handle the currently selected item 1`] = `
-<TypeaheadMenu__Menu>
-  <TypeaheadMenu__MenuList>
-    <TypeaheadMenu__MenuItem
+<styled.div>
+  <styled.ul>
+    <styled.li
       key="apple"
       onMouseMove={[Function]}
     >
-      <TypeaheadMenu__MenuItemText
+      <styled.div
         isActive={true}
         isSelected={false}
       >
         apple
-      </TypeaheadMenu__MenuItemText>
-    </TypeaheadMenu__MenuItem>
-    <TypeaheadMenu__MenuItem
+      </styled.div>
+    </styled.li>
+    <styled.li
       key="orange"
       onMouseMove={[Function]}
     >
-      <TypeaheadMenu__MenuItemText
+      <styled.div
         isActive={false}
         isSelected={false}
       >
         orange
-      </TypeaheadMenu__MenuItemText>
-    </TypeaheadMenu__MenuItem>
-    <TypeaheadMenu__MenuItem
+      </styled.div>
+    </styled.li>
+    <styled.li
       key="pear"
       onMouseMove={[Function]}
     >
-      <TypeaheadMenu__MenuItemText
+      <styled.div
         isActive={false}
         isSelected={true}
       >
         pear
-      </TypeaheadMenu__MenuItemText>
-    </TypeaheadMenu__MenuItem>
-    <TypeaheadMenu__MenuItem
+      </styled.div>
+    </styled.li>
+    <styled.li
       key="strawberry"
       onMouseMove={[Function]}
     >
-      <TypeaheadMenu__MenuItemText
+      <styled.div
         isActive={false}
         isSelected={false}
       >
         strawberry
-      </TypeaheadMenu__MenuItemText>
-    </TypeaheadMenu__MenuItem>
-    <TypeaheadMenu__MenuItem
+      </styled.div>
+    </styled.li>
+    <styled.li
       key="raspberry"
       onMouseMove={[Function]}
     >
-      <TypeaheadMenu__MenuItemText
+      <styled.div
         isActive={false}
         isSelected={false}
       >
         raspberry
-      </TypeaheadMenu__MenuItemText>
-    </TypeaheadMenu__MenuItem>
-  </TypeaheadMenu__MenuList>
-</TypeaheadMenu__Menu>
+      </styled.div>
+    </styled.li>
+  </styled.ul>
+</styled.div>
 `;
 
 exports[`TypeaheadMenu should handle the menu being open 1`] = `
-<TypeaheadMenu__Menu
+<styled.div
   openMenu={true}
 >
-  <TypeaheadMenu__MenuList>
-    <TypeaheadMenu__MenuItem
+  <styled.ul>
+    <styled.li
       key="apple"
       onMouseMove={[Function]}
     >
-      <TypeaheadMenu__MenuItemText
+      <styled.div
         isActive={false}
         isSelected={false}
       >
         apple
-      </TypeaheadMenu__MenuItemText>
-    </TypeaheadMenu__MenuItem>
-    <TypeaheadMenu__MenuItem
+      </styled.div>
+    </styled.li>
+    <styled.li
       key="orange"
       onMouseMove={[Function]}
     >
-      <TypeaheadMenu__MenuItemText
+      <styled.div
         isActive={false}
         isSelected={false}
       >
         orange
-      </TypeaheadMenu__MenuItemText>
-    </TypeaheadMenu__MenuItem>
-    <TypeaheadMenu__MenuItem
+      </styled.div>
+    </styled.li>
+    <styled.li
       key="pear"
       onMouseMove={[Function]}
     >
-      <TypeaheadMenu__MenuItemText
+      <styled.div
         isActive={false}
         isSelected={false}
       >
         pear
-      </TypeaheadMenu__MenuItemText>
-    </TypeaheadMenu__MenuItem>
-    <TypeaheadMenu__MenuItem
+      </styled.div>
+    </styled.li>
+    <styled.li
       key="strawberry"
       onMouseMove={[Function]}
     >
-      <TypeaheadMenu__MenuItemText
+      <styled.div
         isActive={false}
         isSelected={false}
       >
         strawberry
-      </TypeaheadMenu__MenuItemText>
-    </TypeaheadMenu__MenuItem>
-    <TypeaheadMenu__MenuItem
+      </styled.div>
+    </styled.li>
+    <styled.li
       key="raspberry"
       onMouseMove={[Function]}
     >
-      <TypeaheadMenu__MenuItemText
+      <styled.div
         isActive={false}
         isSelected={false}
       >
         raspberry
-      </TypeaheadMenu__MenuItemText>
-    </TypeaheadMenu__MenuItem>
-  </TypeaheadMenu__MenuList>
-</TypeaheadMenu__Menu>
+      </styled.div>
+    </styled.li>
+  </styled.ul>
+</styled.div>
 `;
 
 exports[`TypeaheadMenu should render 1`] = `
-<TypeaheadMenu__Menu>
-  <TypeaheadMenu__MenuList>
-    <TypeaheadMenu__MenuItem
+<styled.div>
+  <styled.ul>
+    <styled.li
       key="apple"
       onMouseMove={[Function]}
     >
-      <TypeaheadMenu__MenuItemText
+      <styled.div
         isActive={false}
         isSelected={false}
       >
         apple
-      </TypeaheadMenu__MenuItemText>
-    </TypeaheadMenu__MenuItem>
-    <TypeaheadMenu__MenuItem
+      </styled.div>
+    </styled.li>
+    <styled.li
       key="orange"
       onMouseMove={[Function]}
     >
-      <TypeaheadMenu__MenuItemText
+      <styled.div
         isActive={false}
         isSelected={false}
       >
         orange
-      </TypeaheadMenu__MenuItemText>
-    </TypeaheadMenu__MenuItem>
-    <TypeaheadMenu__MenuItem
+      </styled.div>
+    </styled.li>
+    <styled.li
       key="pear"
       onMouseMove={[Function]}
     >
-      <TypeaheadMenu__MenuItemText
+      <styled.div
         isActive={false}
         isSelected={false}
       >
         pear
-      </TypeaheadMenu__MenuItemText>
-    </TypeaheadMenu__MenuItem>
-    <TypeaheadMenu__MenuItem
+      </styled.div>
+    </styled.li>
+    <styled.li
       key="strawberry"
       onMouseMove={[Function]}
     >
-      <TypeaheadMenu__MenuItemText
+      <styled.div
         isActive={false}
         isSelected={false}
       >
         strawberry
-      </TypeaheadMenu__MenuItemText>
-    </TypeaheadMenu__MenuItem>
-    <TypeaheadMenu__MenuItem
+      </styled.div>
+    </styled.li>
+    <styled.li
       key="raspberry"
       onMouseMove={[Function]}
     >
-      <TypeaheadMenu__MenuItemText
+      <styled.div
         isActive={false}
         isSelected={false}
       >
         raspberry
-      </TypeaheadMenu__MenuItemText>
-    </TypeaheadMenu__MenuItem>
-  </TypeaheadMenu__MenuList>
-</TypeaheadMenu__Menu>
+      </styled.div>
+    </styled.li>
+  </styled.ul>
+</styled.div>
 `;

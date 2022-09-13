@@ -4,14 +4,15 @@ exports[`MetaEditor should be able to display both deleted metadata and deleted 
 <div>
   <RichTextEditor
     allowableTypes={
-      Array [
+      [
         "Custom",
         "Metadata",
+        "Variables",
       ]
     }
     autoFocus={false}
     controls={
-      Object {
+      {
         "emphasis": true,
         "piping": true,
       }
@@ -19,7 +20,7 @@ exports[`MetaEditor should be able to display both deleted metadata and deleted 
     defaultTab="variables"
     disabled={false}
     errorValidationMsg={
-      Array [
+      [
         "The answer being piped has been deleted",
         "The metadata being piped has been deleted",
       ]
@@ -28,7 +29,7 @@ exports[`MetaEditor should be able to display both deleted metadata and deleted 
     id="question-title"
     label="Question"
     maxHeight={12}
-    metadata={Array []}
+    metadata={[]}
     multiline={false}
     name="title"
     onUpdate={[MockFunction]}
@@ -44,14 +45,15 @@ exports[`MetaEditor should display the correct error message when piping answer 
 <div>
   <RichTextEditor
     allowableTypes={
-      Array [
+      [
         "Custom",
         "Metadata",
+        "Variables",
       ]
     }
     autoFocus={false}
     controls={
-      Object {
+      {
         "emphasis": true,
         "piping": true,
       }
@@ -59,7 +61,7 @@ exports[`MetaEditor should display the correct error message when piping answer 
     defaultTab="variables"
     disabled={false}
     errorValidationMsg={
-      Array [
+      [
         "The answer being piped has been deleted",
       ]
     }
@@ -67,7 +69,7 @@ exports[`MetaEditor should display the correct error message when piping answer 
     id="question-title"
     label="Question"
     maxHeight={12}
-    metadata={Array []}
+    metadata={[]}
     multiline={false}
     name="title"
     onUpdate={[MockFunction]}
@@ -83,14 +85,15 @@ exports[`MetaEditor should display the correct error message when piping answer 
 <div>
   <RichTextEditor
     allowableTypes={
-      Array [
+      [
         "Custom",
         "Metadata",
+        "Variables",
       ]
     }
     autoFocus={false}
     controls={
-      Object {
+      {
         "emphasis": true,
         "piping": true,
       }
@@ -98,7 +101,7 @@ exports[`MetaEditor should display the correct error message when piping answer 
     defaultTab="variables"
     disabled={false}
     errorValidationMsg={
-      Array [
+      [
         "The answer being piped is now later in the questionnaire",
       ]
     }
@@ -106,7 +109,7 @@ exports[`MetaEditor should display the correct error message when piping answer 
     id="question-title"
     label="Question"
     maxHeight={12}
-    metadata={Array []}
+    metadata={[]}
     multiline={false}
     name="title"
     onUpdate={[MockFunction]}
@@ -122,14 +125,15 @@ exports[`MetaEditor should display the correct error message when the definition
 <div>
   <RichTextEditor
     allowableTypes={
-      Array [
+      [
         "Custom",
         "Metadata",
+        "Variables",
       ]
     }
     autoFocus={false}
     controls={
-      Object {
+      {
         "emphasis": true,
         "piping": true,
       }
@@ -141,7 +145,7 @@ exports[`MetaEditor should display the correct error message when the definition
     id="question-title"
     label="Question"
     maxHeight={12}
-    metadata={Array []}
+    metadata={[]}
     multiline={false}
     name="title"
     onUpdate={[MockFunction]}
@@ -157,14 +161,15 @@ exports[`MetaEditor should display the correct error message when the definition
 <div>
   <RichTextEditor
     allowableTypes={
-      Array [
+      [
         "Custom",
         "Metadata",
+        "Variables",
       ]
     }
     autoFocus={false}
     controls={
-      Object {
+      {
         "emphasis": true,
         "piping": true,
       }
@@ -176,7 +181,7 @@ exports[`MetaEditor should display the correct error message when the definition
     id="question-title"
     label="Question"
     maxHeight={12}
-    metadata={Array []}
+    metadata={[]}
     multiline={false}
     name="title"
     onUpdate={[MockFunction]}
@@ -192,14 +197,15 @@ exports[`MetaEditor should display the correct error message when the descriptio
 <div>
   <RichTextEditor
     allowableTypes={
-      Array [
+      [
         "Custom",
         "Metadata",
+        "Variables",
       ]
     }
     autoFocus={false}
     controls={
-      Object {
+      {
         "emphasis": true,
         "piping": true,
       }
@@ -211,7 +217,7 @@ exports[`MetaEditor should display the correct error message when the descriptio
     id="question-title"
     label="Question"
     maxHeight={12}
-    metadata={Array []}
+    metadata={[]}
     multiline={false}
     name="title"
     onUpdate={[MockFunction]}
@@ -227,14 +233,15 @@ exports[`MetaEditor should display the correct error message when the includes/e
 <div>
   <RichTextEditor
     allowableTypes={
-      Array [
+      [
         "Custom",
         "Metadata",
+        "Variables",
       ]
     }
     autoFocus={false}
     controls={
-      Object {
+      {
         "emphasis": true,
         "piping": true,
       }
@@ -246,7 +253,7 @@ exports[`MetaEditor should display the correct error message when the includes/e
     id="question-title"
     label="Question"
     maxHeight={12}
-    metadata={Array []}
+    metadata={[]}
     multiline={false}
     name="title"
     onUpdate={[MockFunction]}
@@ -262,14 +269,15 @@ exports[`MetaEditor should display the correct error message when the title is m
 <div>
   <RichTextEditor
     allowableTypes={
-      Array [
+      [
         "Custom",
         "Metadata",
+        "Variables",
       ]
     }
     autoFocus={false}
     controls={
-      Object {
+      {
         "emphasis": true,
         "piping": true,
       }
@@ -277,7 +285,7 @@ exports[`MetaEditor should display the correct error message when the title is m
     defaultTab="variables"
     disabled={false}
     errorValidationMsg={
-      Array [
+      [
         "Enter a question title",
       ]
     }
@@ -285,7 +293,7 @@ exports[`MetaEditor should display the correct error message when the title is m
     id="question-title"
     label="Question"
     maxHeight={12}
-    metadata={Array []}
+    metadata={[]}
     multiline={false}
     name="title"
     onUpdate={[MockFunction]}
@@ -301,14 +309,15 @@ exports[`MetaEditor should render 1`] = `
 <div>
   <RichTextEditor
     allowableTypes={
-      Array [
+      [
         "Custom",
         "Metadata",
+        "Variables",
       ]
     }
     autoFocus={false}
     controls={
-      Object {
+      {
         "emphasis": true,
         "piping": true,
       }
@@ -320,7 +329,7 @@ exports[`MetaEditor should render 1`] = `
     id="question-title"
     label="Question"
     maxHeight={12}
-    metadata={Array []}
+    metadata={[]}
     multiline={false}
     name="title"
     onUpdate={[MockFunction]}
