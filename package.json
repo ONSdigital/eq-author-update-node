@@ -1,6 +1,7 @@
 {
   "name": "eq-author",
   "homepage": ".",
+  "type": "module",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -132,7 +133,7 @@
       "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
     },
     "transformIgnorePatterns": [
-      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
+      "node_modules/(?!(react-apollo))"
     ],
     "moduleNameMapper": {
       "^react-native$": "react-native-web",

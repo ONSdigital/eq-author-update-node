@@ -65,3 +65,11 @@ exports[`components/Answers/Dummy/TextArea shoulder render 1`] = `
   />
 </DocumentFragment>
 `;
+
+exports[`components/components-original/Answers/Dummy/TextArea shoulder render 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-ftvSup egjYxT"
+  />
+</DocumentFragment>
+`;
