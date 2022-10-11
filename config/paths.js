@@ -1,9 +1,9 @@
 /* eslint-disable import/unambiguous */
 "use strict";
 
-import path from "path";
-import fs from "fs";
-import "url";
+const path = require("path");
+const fs = require("fs");
+const url = require("url");
 
 // Make sure any symlinks in the project folder are resolved:
 // https://github.com/facebook/create-react-app/issues/637
@@ -24,7 +24,7 @@ function ensureSlash(inputPath, needsSlash) {
 }
 
 const getPublicUrl = (appPackageJson) =>
-  envPublicUrl || appPackageJson.homepage;
+  envPublicUrl || require(appPackageJson).homepage;
 
 // We use `PUBLIC_URL` environment variable or "homepage" field to infer
 // "public path" at which the app is served.
@@ -40,7 +40,7 @@ function getServedPath(appPackageJson) {
 }
 
 // config after eject: we're in ./config/
-export default {
+module.exports = {
   dotenv: resolveApp(".env"),
   appPath: resolveApp("."),
   appBuild: resolveApp("build"),
