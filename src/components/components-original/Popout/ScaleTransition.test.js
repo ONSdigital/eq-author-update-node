@@ -2,7 +2,7 @@ import React from "react";
 import { mount } from "enzyme";
 import ScaleTransition from "./ScaleTransition";
 
-describe("components/Popout/ScaleTransition", () => {
+describe("components/components-original/Popout/ScaleTransition", () => {
   let component;
 
   beforeEach(() => {

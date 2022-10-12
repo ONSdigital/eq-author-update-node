@@ -5,11 +5,14 @@ import ContentPickerSelect, {
   contentPickerSelectID,
   defaultContentName,
   defaultMetadataName,
-} from "components/ContentPickerSelect";
+} from "components/components-original/ContentPickerSelect";
 
 import { useTruncation } from "./useTruncation";
 
-import { ANSWER, METADATA } from "components/ContentPickerSelect/content-types";
+import {
+  ANSWER,
+  METADATA,
+} from "components/components-original/ContentPickerSelect/content-types";
 import { CURRENCY, NUMBER } from "constants/answer-types";
 
 jest.mock("./useTruncation", () => ({
@@ -138,15 +141,10 @@ describe("ContentPickerSelect", () => {
     });
 
     it("should open content picker", () => {
-      const {
-        select,
-        selectAnswer,
-        confirm,
-        getByText,
-        queryByTestId,
-      } = answerSetup({
-        selectedContentDisplayName: "Hello moto",
-      });
+      const { select, selectAnswer, confirm, getByText, queryByTestId } =
+        answerSetup({
+          selectedContentDisplayName: "Hello moto",
+        });
 
       fireEvent.click(select);
 

@@ -3,7 +3,7 @@ import { shallow } from "enzyme";
 import { render as rtlRender } from "tests/utils/rtl";
 
 import { SectionEditor } from "App/section/Design/SectionEditor";
-import RichTextEditor from "components/RichTextEditor";
+import RichTextEditor from "components/components-original/RichTextEditor";
 import { sectionErrors } from "constants/validationMessages";
 import suppressConsoleMessage from "tests/utils/supressConsol";
 

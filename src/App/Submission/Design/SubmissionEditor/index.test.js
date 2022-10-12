@@ -31,18 +31,22 @@ const renderSubmissionEditor = () => {
 };
 
 //eslint-disable-next-line react/prop-types
-jest.mock("components/RichTextEditor", () => ({ onUpdate }) => {
-  const handleInputChange = (event) =>
-    onUpdate({
-      value: event.target.value,
-    });
-  return (
-    <input
-      data-test="further-content-text-editor"
-      onChange={handleInputChange}
-    />
-  );
-});
+jest.mock(
+  "components/components-original/RichTextEditor",
+  () =>
+    ({ onUpdate }) => {
+      const handleInputChange = (event) =>
+        onUpdate({
+          value: event.target.value,
+        });
+      return (
+        <input
+          data-test="further-content-text-editor"
+          onChange={handleInputChange}
+        />
+      );
+    }
+);
 
 describe("Submission Editor", () => {
   it("should render", () => {

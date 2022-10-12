@@ -5,7 +5,7 @@ import {
   useSetNavigationCallbacksForPage,
   useNavigationCallbacks,
   useSetNavigationCallbacks,
-} from "components/NavigationCallbacks";
+} from "components/components-original/NavigationCallbacks/NavigationCallbacks";
 
 import {
   useCreateQuestionPage,

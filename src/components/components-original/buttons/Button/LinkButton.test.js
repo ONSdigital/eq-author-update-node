@@ -3,7 +3,7 @@ import { render } from "tests/utils/rtl";
 
 import LinkButton from "components/components-original/buttons/Button/LinkButton";
 
-describe("components/Button/LinkButton", () => {
+describe("components/components-original/Button/LinkButton", () => {
   it("should render", () => {
     expect(
       render(

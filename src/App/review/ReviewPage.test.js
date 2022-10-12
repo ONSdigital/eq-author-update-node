@@ -12,15 +12,19 @@ import QuestionnaireContext from "components/components-original/QuestionnaireCo
 import { publishStatusSubscription } from "components/components-original/EditorLayout/Header";
 
 //eslint-disable-next-line react/prop-types
-jest.mock("components/RichTextEditor", () => ({ onUpdate }) => {
-  const handleInputChange = (event) =>
-    onUpdate({
-      value: event.target.value,
-    });
-  return (
-    <input data-test="reject-comment-input" onChange={handleInputChange} />
-  );
-});
+jest.mock(
+  "components/components-original/RichTextEditor",
+  () =>
+    ({ onUpdate }) => {
+      const handleInputChange = (event) =>
+        onUpdate({
+          value: event.target.value,
+        });
+      return (
+        <input data-test="reject-comment-input" onChange={handleInputChange} />
+      );
+    }
+);
 
 describe("Review page", () => {
   let user, mocks, queryWasCalled, questionnaire;

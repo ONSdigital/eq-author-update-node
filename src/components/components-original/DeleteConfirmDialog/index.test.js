@@ -1,7 +1,7 @@
 import React from "react";
 import { render, fireEvent } from "tests/utils/rtl";
 
-import DeleteConfirmDialog from "components/DeleteConfirmDialog";
+import DeleteConfirmDialog from "components/components-original/DeleteConfirmDialog";
 
 describe("DeleteConfirmDialog", () => {
   let mockMutations;

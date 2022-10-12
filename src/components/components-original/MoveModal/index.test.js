@@ -6,7 +6,7 @@ const createWrapper = (props = {}, render = shallow, children = undefined) => {
   return render(<MoveModal {...props}>{children}</MoveModal>);
 };
 
-describe("components/MoveModal", () => {
+describe("components/components-original/MoveModal", () => {
   let props;
   let wrapper;
   let children;

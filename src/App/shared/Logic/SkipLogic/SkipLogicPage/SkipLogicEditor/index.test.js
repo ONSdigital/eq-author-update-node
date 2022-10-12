@@ -2,7 +2,7 @@ import React from "react";
 import { shallow } from "enzyme";
 import UnwrappedSkipLogicEditor from "./";
 
-describe("components/SkipConditionSet", () => {
+describe("components/components-original/SkipConditionSet", () => {
   const defaultProps = {
     pageId: "1",
     skipConditions: [

@@ -2,7 +2,7 @@ import React from "react";
 import { render } from "tests/utils/rtl";
 import { DialogAlertList, DialogAlert } from "./";
 
-describe("components/Modal/DialogAlert", () => {
+describe("components/components-original/Modal/DialogAlert", () => {
   it("should render an alert", () => {
     const { getByText } = render(
       <DialogAlertList>

@@ -6,7 +6,7 @@ import IconGridButton from "./IconGridButton";
 const mockFn = jest.fn();
 let wrapper;
 
-describe("components/IconGrid", function () {
+describe("components/components-original/IconGrid", function () {
   beforeEach(() => {
     wrapper = shallow(
       <IconGridButton

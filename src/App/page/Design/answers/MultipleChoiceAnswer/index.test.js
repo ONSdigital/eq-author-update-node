@@ -22,7 +22,7 @@ jest.mock("@apollo/react-hooks", () => ({
   useMutation: () => [mockUseMutation],
 }));
 
-jest.mock("components/RouterContext", () => ({
+jest.mock("components/components-original/RouterContext", () => ({
   useCurrentPageId: jest.fn(),
 }));
 

@@ -3,7 +3,7 @@ import { shallow } from "enzyme";
 
 import SlideTransition from "./";
 
-describe("components/SlideTransition", () => {
+describe("components/components-original/SlideTransition", () => {
   it("should render", () => {
     expect(
       shallow(

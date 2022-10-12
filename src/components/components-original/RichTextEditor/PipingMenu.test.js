@@ -17,11 +17,11 @@ import { buildQuestionnaire } from "tests/utils/createMockQuestionnaire";
 import { useCurrentPageId } from "components/components-original/RouterContext";
 import { useQuestionnaire } from "components/components-original/QuestionnaireContext";
 
-jest.mock("components/RouterContext", () => ({
+jest.mock("components/components-original/RouterContext", () => ({
   useCurrentPageId: jest.fn(),
 }));
 
-jest.mock("components/QuestionnaireContext", () => ({
+jest.mock("components/components-original/QuestionnaireContext", () => ({
   useQuestionnaire: jest.fn(),
 }));
 

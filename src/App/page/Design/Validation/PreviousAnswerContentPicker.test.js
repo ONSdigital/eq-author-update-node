@@ -25,11 +25,11 @@ mockQuestionnaire.sections[0].folders[0].pages[0].answers = [
   },
 ];
 
-jest.mock("components/QuestionnaireContext", () => ({
+jest.mock("components/components-original/QuestionnaireContext", () => ({
   useQuestionnaire: jest.fn(),
 }));
 
-jest.mock("components/RouterContext", () => ({
+jest.mock("components/components-original/RouterContext", () => ({
   useCurrentPageId: jest.fn(),
 }));
 

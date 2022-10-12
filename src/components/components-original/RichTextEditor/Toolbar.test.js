@@ -15,7 +15,7 @@ const shape = expect.objectContaining({
   style: expect.any(String),
 });
 
-describe("components/RichTextEditor/Toolbar", () => {
+describe("components/components-original/RichTextEditor/Toolbar", () => {
   beforeEach(() => {
     props = {
       onToggle: jest.fn(),

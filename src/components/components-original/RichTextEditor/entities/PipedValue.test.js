@@ -5,7 +5,7 @@ import PipedValueDecorator, {
   ENTITY_TYPE,
   htmlToEntity,
   findPipedEntities,
-} from "components/RichTextEditor/entities/PipedValue";
+} from "components/components-original/RichTextEditor/entities/PipedValue";
 import Raw from "draft-js-raw-content-state";
 
 // https://github.com/facebook/draft-js/issues/702

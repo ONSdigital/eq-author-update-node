@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "tests/utils/rtl";
-import ExpansionTransition from "components/MainCanvas";
+import ExpansionTransition from "components/components-original/MainCanvas";
 
 describe("ExpansionTransition", () => {
   it("should render", () => {

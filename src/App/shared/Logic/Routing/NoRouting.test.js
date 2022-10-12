@@ -2,7 +2,7 @@ import React from "react";
 import NoRouting from "./NoRouting";
 import { render, fireEvent, screen } from "tests/utils/rtl";
 
-describe("components/NoRouting", () => {
+describe("components/components-original/NoRouting", () => {
   const onAddRouting = jest.fn();
 
   it("should render with button disabled", () => {

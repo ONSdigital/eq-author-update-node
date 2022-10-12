@@ -30,7 +30,7 @@ const content = `
   </ul>
 `;
 
-describe("components/RichTextEditor", function () {
+describe("components/components-original/RichTextEditor", function () {
   beforeEach(() => {
     props = {
       onUpdate: jest.fn(),

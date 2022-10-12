@@ -7,13 +7,16 @@ import QuestionnaireContext from "components/components-original/QuestionnaireCo
 
 import { UnwrappedNavigationHeader as NavigationHeader } from "./index";
 
-jest.mock("components/NavigationCallbacks", () => ({
-  useNavigationCallbacks: () => ({
-    onAddQuestionPage: () => jest.fn(),
-    onAddFolder: jest.fn(),
-    onAddCalculatedSummaryPage: jest.fn(),
-  }),
-}));
+jest.mock(
+  "components/components-original/NavigationCallbacks/NavigationCallbacks",
+  () => ({
+    useNavigationCallbacks: () => ({
+      onAddQuestionPage: () => jest.fn(),
+      onAddFolder: jest.fn(),
+      onAddCalculatedSummaryPage: jest.fn(),
+    }),
+  })
+);
 
 jest.mock("react-router-dom", () => ({
   ...jest.requireActual("react-router-dom"),
@@ -116,11 +119,8 @@ describe("NavigationHeader", () => {
         entityName: "page",
         entityId: "1.1.1",
       }));
-      const {
-        menuButton,
-        confirmation,
-        onCreateQuestionConfirmation,
-      } = openSetup();
+      const { menuButton, confirmation, onCreateQuestionConfirmation } =
+        openSetup();
       fireEvent.click(confirmation);
       expect(onCreateQuestionConfirmation).toHaveBeenCalledTimes(1);
       expect(menuButton.getAttribute("aria-expanded")).toEqual("false");

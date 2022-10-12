@@ -3,7 +3,7 @@ import { shallow } from "enzyme";
 
 import RouteButton from "components/components-original/buttons/Button/RouteButton";
 
-describe("components/Button/RouteButton", () => {
+describe("components/components-original/Button/RouteButton", () => {
   it("should render", () => {
     expect(
       shallow(

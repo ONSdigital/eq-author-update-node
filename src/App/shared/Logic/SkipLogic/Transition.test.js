@@ -3,7 +3,7 @@ import { shallow } from "enzyme";
 
 import Transition from "./Transition";
 
-describe("components/Routing/Transition", () => {
+describe("components/components-original/Routing/Transition", () => {
   it("should render", () => {
     expect(
       shallow(

@@ -4,7 +4,7 @@ import Form from "./";
 
 let wrapper;
 const handleSubmit = jest.fn();
-describe("components/Forms/Form", () => {
+describe("components/components-original/Forms/Form", () => {
   beforeEach(() => {
     wrapper = shallow(
       <Form onSubmit={handleSubmit}>

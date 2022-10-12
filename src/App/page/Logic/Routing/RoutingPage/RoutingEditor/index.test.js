@@ -3,7 +3,7 @@ import { shallow } from "enzyme";
 import { UnwrappedRoutingEditor, LABEL_ELSE_IF, LABEL_IF } from "./";
 import RuleEditor from "./RuleEditor";
 
-describe("components/RoutingRuleSet", () => {
+describe("components/components-original/RoutingRuleSet", () => {
   let defaultProps;
   beforeEach(() => {
     defaultProps = {

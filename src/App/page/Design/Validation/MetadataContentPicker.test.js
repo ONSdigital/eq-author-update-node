@@ -4,7 +4,7 @@ import MetadataContentPicker from "./MetadataContentPicker";
 import ContentPickerSelect from "components/components-original/ContentPickerSelect";
 
 import { useQuestionnaire } from "components/components-original/QuestionnaireContext";
-jest.mock("components/Q]components-original/QuestionnaireContext", () => ({
+jest.mock("components/components-original/QuestionnaireContext", () => ({
   useQuestionnaire: () => ({
     questionnaire: {
       metadata: [

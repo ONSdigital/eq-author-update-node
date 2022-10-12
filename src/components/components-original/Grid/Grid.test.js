@@ -2,7 +2,7 @@ import React from "react";
 import { render } from "tests/utils/rtl";
 import { Grid, Column } from "./";
 
-describe("components/Grid", () => {
+describe("components/components-original/Grid", () => {
   it("should render a basic two column grid", () => {
     const { getByText } = render(
       <Grid>

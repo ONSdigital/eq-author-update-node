@@ -2,7 +2,7 @@ import React from "react";
 import { shallow, mount } from "enzyme";
 
 import { StatelessBasicAnswer } from "./";
-import WrappingInput from "components/Forms/WrappingInput";
+import WrappingInput from "components/components-original/Forms/WrappingInput";
 import { MISSING_LABEL, buildLabelError } from "constants/validationMessages";
 import { lowerCase } from "lodash";
 

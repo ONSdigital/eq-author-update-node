@@ -2,10 +2,13 @@ import React from "react";
 import { render, fireEvent } from "tests/utils/rtl";
 import { RoutingDestinationContentPicker } from "./RoutingDestinationContentPicker";
 
-import { useQuestionnaire, usePage } from "components/components-original/QuestionnaireContext";
+import {
+  useQuestionnaire,
+  usePage,
+} from "components/components-original/QuestionnaireContext";
 import { buildQuestionnaire } from "tests/utils/createMockQuestionnaire";
 
-jest.mock("components/QuestionnaireContext", () => ({
+jest.mock("components/components-original/QuestionnaireContext", () => ({
   useQuestionnaire: jest.fn(),
   usePage: jest.fn(),
 }));

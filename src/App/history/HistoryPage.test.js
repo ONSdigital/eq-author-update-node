@@ -15,13 +15,17 @@ import { publishStatusSubscription } from "components/components-original/Editor
 import { UNPUBLISHED } from "constants/publishStatus";
 
 //eslint-disable-next-line react/prop-types
-jest.mock("components/RichTextEditor", () => ({ onUpdate }) => {
-  const handleInputChange = (event) =>
-    onUpdate({
-      value: event.target.value,
-    });
-  return <input data-test="rtl-textbox" onChange={handleInputChange} />;
-});
+jest.mock(
+  "components/components-original/RichTextEditor",
+  () =>
+    ({ onUpdate }) => {
+      const handleInputChange = (event) =>
+        onUpdate({
+          value: event.target.value,
+        });
+      return <input data-test="rtl-textbox" onChange={handleInputChange} />;
+    }
+);
 
 describe("History page", () => {
   let props, questionnaireId, user, queryWasCalled, mutationWasCalled, mocks;

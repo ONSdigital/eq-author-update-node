@@ -3,9 +3,12 @@ import { UnwrappedQuestionPageEditor } from "./";
 import React from "react";
 import { shallow } from "enzyme";
 
-jest.mock("components/components-original/NavigationCallbacks", () => ({
-  useSetNavigationCallbacksForPage: () => null,
-}));
+jest.mock(
+  "components/components-original/NavigationCallbacks/NavigationCallbacks",
+  () => ({
+    useSetNavigationCallbacksForPage: () => null,
+  })
+);
 
 describe("Question Page Editor", () => {
   let wrapper;

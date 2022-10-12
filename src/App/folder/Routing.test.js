@@ -11,7 +11,7 @@ jest.mock("@apollo/react-hooks", () => ({
   useSubscription: jest.fn(),
 }));
 
-jest.mock("components/EditorLayout/Tabs", () => ({
+jest.mock("components/components-original/EditorLayout/Tabs", () => ({
   __esModule: true,
   default: () => null,
 }));

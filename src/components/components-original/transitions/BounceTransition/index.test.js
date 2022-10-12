@@ -3,7 +3,7 @@ import { shallow, mount } from "enzyme";
 
 import Transition from ".";
 
-describe("components/QuestionPageEditor/AnswerTransition", () => {
+describe("components/components-original/QuestionPageEditor/AnswerTransition", () => {
   it("should render", () => {
     expect(
       shallow(

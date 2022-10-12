@@ -18,7 +18,7 @@ window.removeEventListener = jest.fn((event) => {
   delete events[event];
 });
 
-describe("components/AppContainer", () => {
+describe("components/components-original/AppContainer", () => {
   let props, wrapper;
 
   beforeEach(() => {

@@ -5,7 +5,7 @@ import Modal, { CloseButton } from "./";
 import { Router } from "react-router-dom";
 import { createMemoryHistory } from "history";
 
-describe("components/Modal", () => {
+describe("components/components-original/Modal", () => {
   jest.useFakeTimers();
   let props;
 

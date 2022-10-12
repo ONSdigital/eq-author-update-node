@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
 
-import Button from "components/buttons/Button";
+import Button from "components/components-original/buttons/Button";
 
 import { NUMBER, CURRENCY, PERCENTAGE } from "constants/answer-types";
 import { ERR_NO_VALUE } from "constants/validationMessages";

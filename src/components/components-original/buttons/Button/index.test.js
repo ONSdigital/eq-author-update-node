@@ -2,7 +2,7 @@ import React from "react";
 import Button from "components/components-original/buttons/Button";
 import { render } from "tests/utils/rtl";
 
-describe("components/Button", () => {
+describe("components/components-original/Button", () => {
   it("renders according to variant", () => {
     render(<Button variant="primary">Primary Button</Button>).getByText(
       "Primary Button"

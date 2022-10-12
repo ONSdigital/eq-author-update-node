@@ -6,7 +6,7 @@ import { IconGridButton } from "components/components-original/IconGrid";
 let component, handleClick;
 const answerType = "TextField";
 
-describe("components/AnswerTypeButton", () => {
+describe("components/components-original/AnswerTypeButton", () => {
   beforeEach(() => {
     handleClick = jest.fn();
 

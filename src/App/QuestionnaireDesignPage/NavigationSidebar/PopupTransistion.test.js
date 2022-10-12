@@ -3,7 +3,7 @@ import { render } from "tests/utils/rtl";
 
 import PopupTransition from "./PopupTransition";
 
-describe("components/PopupTransition", () => {
+describe("components/components-original/PopupTransition", () => {
   it("should render", () => {
     expect(
       render(

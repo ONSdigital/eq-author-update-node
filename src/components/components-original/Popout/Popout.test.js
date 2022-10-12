@@ -4,7 +4,7 @@ import Popout from "./";
 
 let component, handleToggleOpen, trigger;
 
-describe("components/Popout", () => {
+describe("components/components-original/Popout", () => {
   beforeEach(() => {
     trigger = <button>Click Me</button>;
     handleToggleOpen = jest.fn();

@@ -6,7 +6,7 @@ const defaultValue = "I am some text";
 
 const handleChange = jest.fn();
 
-describe("components/Forms/Input", () => {
+describe("components/components-original/Forms/Input", () => {
   describe("Text", () => {
     let wrapper;
 

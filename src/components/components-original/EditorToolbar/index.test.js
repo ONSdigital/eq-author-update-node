@@ -10,9 +10,9 @@ import {
   buildQuestionnaire,
   buildFolders,
 } from "tests/utils/createMockQuestionnaire";
-import { useQuestionnaire } from "components/QuestionnaireContext";
+import { useQuestionnaire } from "components/components-original/QuestionnaireContext";
 
-jest.mock("components/QuestionnaireContext", () => ({
+jest.mock("components/components-original/QuestionnaireContext", () => ({
   __esModule: true,
   useQuestionnaire: jest.fn(),
 }));
