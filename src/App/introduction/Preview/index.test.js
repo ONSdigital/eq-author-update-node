@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 
-import Loading from "components/Loading";
+import Loading from "components/components-original/Loading";
 
 import { useQuery } from "@apollo/react-hooks";
 
