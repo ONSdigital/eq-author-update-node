@@ -2,6 +2,7 @@
   "name": "eq-author",
   "homepage": ".",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "dependencies": {
     "@apollo/react-testing": "^4.0.0",
@@ -66,7 +67,7 @@
   "scripts": {
     "start": "webpack serve --config ./webpack.config.js --mode development",
     "build": "webpack",
-    "test": "export NODE_ENV=test && node scripts/test.js --env=./src/tests/environments/custom-test-env.js",
+    "test": "export NODE_ENV=test && node scripts/test.cjs",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -129,7 +130,7 @@
       "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
       "^.+\\.css$": "jest-transform-css",
       "\\.(gql|graphql)$": "@graphql-tools/jest-transform",
-      "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+      "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/jest/fileTransform.cjs"
     },
     "transformIgnorePatterns": [
       "node_modules/(?!(react-apollo))"
