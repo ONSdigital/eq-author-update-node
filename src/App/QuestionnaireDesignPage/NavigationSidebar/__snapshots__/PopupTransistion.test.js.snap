@@ -44,3 +44,13 @@ exports[`components/PopupTransition should render 1`] = `
   </div>
 </DocumentFragment>
 `;
+
+exports[`components/components-original/PopupTransition should render 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-ftTHYK ebuWSB"
+  >
+    Content
+  </div>
+</DocumentFragment>
+`;

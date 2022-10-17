@@ -64,3 +64,16 @@ exports[`components/Forms/TextArea should render correctly 1`] = `
   </textarea>
 </DocumentFragment>
 `;
+
+exports[`components/components-original/Forms/TextArea should render correctly 1`] = `
+<DocumentFragment>
+  <textarea
+    class="sc-ftTHYK fiSUmf"
+    id="text"
+    name="text"
+    rows="10"
+  >
+    I am some text
+  </textarea>
+</DocumentFragment>
+`;

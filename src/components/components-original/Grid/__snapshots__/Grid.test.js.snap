@@ -80,3 +80,27 @@ exports[`components/Grid Columns should render an asymmetrical two column grid  
   </div>
 </DocumentFragment>
 `;
+
+exports[`components/components-original/Grid Columns should render an asymmetrical two column grid  1`] = `
+<DocumentFragment>
+  <div
+    class="sc-ftTHYK dUSFui"
+    data-test="grid"
+  >
+    <div
+      class="sc-pyfCe iYLEAr"
+      cols="12"
+      data-test="column"
+    >
+      Column 1
+    </div>
+    <div
+      class="sc-pyfCe dCgEnI"
+      cols="4"
+      data-test="column"
+    >
+      Column 2
+    </div>
+  </div>
+</DocumentFragment>
+`;
