@@ -1,6 +1,6 @@
 import React from "react";
 import Theme from "contexts/themeContext";
-import Button from "components-themed/buttons";
+import Button from "components/components-themed/buttons";
 import { render, screen } from "tests/utils/rtl";
 
 describe("components/components-themed/Button", () => {
