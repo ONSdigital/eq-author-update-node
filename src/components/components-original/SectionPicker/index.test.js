@@ -3,7 +3,7 @@ import React from "react";
 import { render, fireEvent } from "tests/utils/rtl";
 
 import SectionPicker from ".";
-import mockSections from "../../tests/mocks/mockSections.json";
+import mockSections from "tests/mocks/mockSections.json";
 
 describe("SectionPicker", () => {
   const defaultProps = {
