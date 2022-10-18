@@ -3,7 +3,7 @@ const path = require("path");
 const webpack = require("webpack");
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const paths = require("./config/paths");
+const paths = require("./config/paths.cjs");
 
 module.exports = {
   entry: [
@@ -39,6 +39,9 @@ module.exports = {
         test: /\.(js|mjs|jsx)$/,
         include: paths.appSrc,
         loader: require.resolve("babel-loader"),
+        resolve: {
+          fullySpecified: false,
+        },
         options: {
           plugins: [
             [

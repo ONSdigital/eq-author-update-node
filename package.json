@@ -65,7 +65,7 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "webpack serve --config ./webpack.config.js --mode development",
+    "start": "webpack serve --config ./webpack.config.cjs --mode development",
     "build": "webpack",
     "test": "export NODE_ENV=test && node scripts/test.cjs",
     "eject": "react-scripts eject"
