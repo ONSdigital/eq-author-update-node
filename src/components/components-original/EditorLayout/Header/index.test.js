@@ -2,7 +2,7 @@ import React from "react";
 
 import { render, flushPromises, act } from "tests/utils/rtl";
 
-import QuestionnaireContext from "components/QuestionnaireContext";
+import QuestionnaireContext from "components/components-original/QuestionnaireContext";
 import { MeContext } from "App/MeContext";
 import Header, { publishStatusSubscription } from "./";
 

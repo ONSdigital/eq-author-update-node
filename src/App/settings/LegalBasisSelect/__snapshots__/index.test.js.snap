@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LegalBasisField should render 1`] = `
-<Radio__RadioField>
-  <LegalBasisSelect__StyledLabel>
+<styled.div>
+  <Styled(Label)>
     Legal basis
-  </LegalBasisSelect__StyledLabel>
+  </Styled(Label)>
   <p>
     The legal basis appears on the survey introduction page.
   </p>
@@ -15,9 +15,9 @@ exports[`LegalBasisField should render 1`] = `
     selected={true}
     value="NOTICE_1"
   >
-    <Radio__RadioDescription>
+    <styled.span>
       Section 1 of the Statistics of Trade Act 1947.
-    </Radio__RadioDescription>
+    </styled.span>
   </LegalOption>
   <LegalOption
     key="NOTICE_2"
@@ -26,9 +26,9 @@ exports[`LegalBasisField should render 1`] = `
     selected={false}
     value="NOTICE_2"
   >
-    <Radio__RadioDescription>
+    <styled.span>
       Sections 2 and 3 of the Statistics of Trade Act 1947.
-    </Radio__RadioDescription>
+    </styled.span>
   </LegalOption>
   <LegalOption
     key="NOTICE_3"
@@ -37,9 +37,9 @@ exports[`LegalBasisField should render 1`] = `
     selected={false}
     value="NOTICE_3"
   >
-    <Radio__RadioDescription>
+    <styled.span>
       Sections 3 and 4 of the Statistics of Trade Act 1947.
-    </Radio__RadioDescription>
+    </styled.span>
   </LegalOption>
   <LegalOption
     key="NOTICE_NI"
@@ -48,9 +48,9 @@ exports[`LegalBasisField should render 1`] = `
     selected={false}
     value="NOTICE_NI"
   >
-    <Radio__RadioDescription>
+    <styled.span>
       Article 5 of the Statistics of Trade and Employment (Northern Ireland) Order 1988.
-    </Radio__RadioDescription>
+    </styled.span>
   </LegalOption>
   <LegalOption
     key="NOTICE_FUELS"
@@ -59,9 +59,9 @@ exports[`LegalBasisField should render 1`] = `
     selected={false}
     value="NOTICE_FUELS"
   >
-    <Radio__RadioDescription>
+    <styled.span>
       Petroleum Act 1998 and Section 1 of the Statistics of Trade Act 1947.
-    </Radio__RadioDescription>
+    </styled.span>
   </LegalOption>
   <LegalOption
     key="VOLUNTARY"
@@ -70,9 +70,9 @@ exports[`LegalBasisField should render 1`] = `
     selected={false}
     value="VOLUNTARY"
   >
-    <Radio__RadioDescription>
+    <styled.span>
       Voluntary
-    </Radio__RadioDescription>
+    </styled.span>
   </LegalOption>
-</Radio__RadioField>
+</styled.div>
 `;

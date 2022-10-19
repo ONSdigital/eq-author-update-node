@@ -1,250 +1,148 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MultipleChoiceAnswer Option should render answer when it has one 1`] = `
-<MultipleChoiceAnswer__OptionItem
+<styled.div
   error={true}
 >
-  <MultipleChoiceAnswer__Input
+  <styled.input
     error={true}
     type="Checkbox"
   />
-  <MultipleChoiceAnswer__OptionLabel>
+  <styled.label>
     Missing label
-  </MultipleChoiceAnswer__OptionLabel>
-  <MultipleChoiceAnswer__OtherField>
-    <MultipleChoiceAnswer__OtherLabel />
-    <MultipleChoiceAnswer__TextInput
+  </styled.label>
+  <styled.div>
+    <styled.div />
+    <styled.input
       type="text"
     />
-  </MultipleChoiceAnswer__OtherField>
-</MultipleChoiceAnswer__OptionItem>
+  </styled.div>
+</styled.div>
 `;
 
 exports[`MultipleChoiceAnswer Option should render checkbox options 1`] = `
-<MultipleChoiceAnswer__OptionItem
+<styled.div
   error={true}
 >
-  <MultipleChoiceAnswer__Input
+  <styled.input
     error={true}
     type="Checkbox"
   />
-  <MultipleChoiceAnswer__OptionLabel>
+  <styled.label>
     Missing label
-  </MultipleChoiceAnswer__OptionLabel>
-</MultipleChoiceAnswer__OptionItem>
+  </styled.label>
+</styled.div>
 `;
 
 exports[`MultipleChoiceAnswer Option should render label when it has one 1`] = `
-<MultipleChoiceAnswer__OptionItem
+<styled.div
   error={false}
 >
-  <MultipleChoiceAnswer__Input
+  <styled.input
     error={false}
     type="Checkbox"
   />
-  <MultipleChoiceAnswer__OptionLabel>
+  <styled.label>
     Option label
-  </MultipleChoiceAnswer__OptionLabel>
-</MultipleChoiceAnswer__OptionItem>
+  </styled.label>
+</styled.div>
 `;
 
 exports[`MultipleChoiceAnswer Option should render radio options 1`] = `
-<MultipleChoiceAnswer__OptionItem
+<styled.div
   error={true}
 >
-  <MultipleChoiceAnswer__Input
+  <styled.input
     error={true}
     type="Radio"
   />
-  <MultipleChoiceAnswer__OptionLabel>
+  <styled.label>
     Missing label
-  </MultipleChoiceAnswer__OptionLabel>
-</MultipleChoiceAnswer__OptionItem>
+  </styled.label>
+</styled.div>
 `;
 
 exports[`MultipleChoiceAnswer should render Input 1`] = `
-<StyledComponent
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "MultipleChoiceAnswer__Input-sc-1jty9me-1",
-        "isStatic": false,
-        "rules": Array [
-          "width:20px;height:20px;appearance:none;border:1px solid #9b9b9b;padding:0.5em;background:#eee;box-shadow:inset 0 0 0 3px white;pointer-events:none;position:absolute;top:1em;left:1em;",
-          [Function],
-          ";",
-          [Function],
-          ";",
-        ],
-      },
-      "displayName": "MultipleChoiceAnswer__Input",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "MultipleChoiceAnswer__Input-sc-1jty9me-1",
-      "target": "input",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
+<input
+  className="sc-ftvSup koJFQt"
 />
 `;
 
 exports[`MultipleChoiceAnswer should render Input with radio and error 1`] = `
-<StyledComponent
-  error={true}
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "MultipleChoiceAnswer__Input-sc-1jty9me-1",
-        "isStatic": false,
-        "rules": Array [
-          "width:20px;height:20px;appearance:none;border:1px solid #9b9b9b;padding:0.5em;background:#eee;box-shadow:inset 0 0 0 3px white;pointer-events:none;position:absolute;top:1em;left:1em;",
-          [Function],
-          ";",
-          [Function],
-          ";",
-        ],
-      },
-      "displayName": "MultipleChoiceAnswer__Input",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "MultipleChoiceAnswer__Input-sc-1jty9me-1",
-      "target": "input",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
+<input
+  className="sc-ftvSup hhwUzp"
   type="Radio"
 />
 `;
 
 exports[`MultipleChoiceAnswer should render OptionItem 1`] = `
-<StyledComponent
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "MultipleChoiceAnswer__OptionItem-sc-1jty9me-4",
-        "isStatic": false,
-        "rules": Array [
-          "font-size:1em;background:#fff;border:1px solid ",
-          "#999999",
-          ";border-radius:0.2em;width:fit-content;min-width:20em;max-width:100%;display:block;overflow:hidden;position:relative;margin-bottom:0.25em;word-wrap:break-word;",
-          [Function],
-          ";",
-        ],
-      },
-      "displayName": "MultipleChoiceAnswer__OptionItem",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "MultipleChoiceAnswer__OptionItem-sc-1jty9me-4",
-      "target": "div",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
+<div
+  className="sc-kDDrLX bUeZDx"
 />
 `;
 
 exports[`MultipleChoiceAnswer should render OptionItem with error 1`] = `
-<StyledComponent
-  error={true}
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "MultipleChoiceAnswer__OptionItem-sc-1jty9me-4",
-        "isStatic": false,
-        "rules": Array [
-          "font-size:1em;background:#fff;border:1px solid ",
-          "#999999",
-          ";border-radius:0.2em;width:fit-content;min-width:20em;max-width:100%;display:block;overflow:hidden;position:relative;margin-bottom:0.25em;word-wrap:break-word;",
-          [Function],
-          ";",
-        ],
-      },
-      "displayName": "MultipleChoiceAnswer__OptionItem",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "MultipleChoiceAnswer__OptionItem-sc-1jty9me-4",
-      "target": "div",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
+<div
+  className="sc-kDDrLX eGCEkw"
 />
 `;
 
 exports[`MultipleChoiceAnswer should render checkboxes 1`] = `
-<Field>
-  <MultipleChoiceAnswer__Legend>
+<styled.div>
+  <styled.div>
     Foo
-  </MultipleChoiceAnswer__Legend>
+  </styled.div>
   <Option
     key="1"
     option={
-      Object {
+      {
         "id": "1",
       }
     }
     type="Checkbox"
   />
-</Field>
+</styled.div>
 `;
 
 exports[`MultipleChoiceAnswer should render mutually exclusive when it has one 1`] = `
-<Field>
-  <MultipleChoiceAnswer__Legend>
+<styled.div>
+  <styled.div>
     Foo
-  </MultipleChoiceAnswer__Legend>
+  </styled.div>
   <Option
     key="1"
     option={
-      Object {
+      {
         "id": "1",
       }
     }
     type="Checkbox"
   />
-  <MultipleChoiceAnswer__MutuallyExclusiveOption>
-    <MultipleChoiceAnswer__MutuallyExclusiveOptionTitle>
+  <styled.div>
+    <styled.div>
       Or
-    </MultipleChoiceAnswer__MutuallyExclusiveOptionTitle>
+    </styled.div>
     <Option
       option={
-        Object {
+        {
           "id": "3",
         }
       }
       type="Checkbox"
     />
-  </MultipleChoiceAnswer__MutuallyExclusiveOption>
-</Field>
+  </styled.div>
+</styled.div>
 `;
 
 exports[`MultipleChoiceAnswer should render other when it has one 1`] = `
-<Field>
-  <MultipleChoiceAnswer__Legend>
+<styled.div>
+  <styled.div>
     Foo
-  </MultipleChoiceAnswer__Legend>
+  </styled.div>
   <Option
     key="1"
     option={
-      Object {
+      {
         "id": "1",
       }
     }
@@ -252,15 +150,15 @@ exports[`MultipleChoiceAnswer should render other when it has one 1`] = `
   />
   <Option
     answer={
-      Object {
+      {
         "id": 2,
         "type": "TextField",
       }
     }
     key="2"
     option={
-      Object {
-        "additionalAnswer": Object {
+      {
+        "additionalAnswer": {
           "id": 2,
           "type": "TextField",
         },
@@ -269,22 +167,22 @@ exports[`MultipleChoiceAnswer should render other when it has one 1`] = `
     }
     type="Radio"
   />
-</Field>
+</styled.div>
 `;
 
 exports[`MultipleChoiceAnswer should render radio 1`] = `
-<Field>
-  <MultipleChoiceAnswer__Legend>
+<styled.div>
+  <styled.div>
     Foo
-  </MultipleChoiceAnswer__Legend>
+  </styled.div>
   <Option
     key="1"
     option={
-      Object {
+      {
         "id": "1",
       }
     }
     type="Radio"
   />
-</Field>
+</styled.div>
 `;

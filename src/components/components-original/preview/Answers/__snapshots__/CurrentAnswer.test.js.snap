@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Currency Answer should render 1`] = `
-<Field>
+<styled.div>
   <Label
     description="Description"
   >
@@ -10,5 +10,5 @@ exports[`Currency Answer should render 1`] = `
   <InputWithUnit
     unit="£"
   />
-</Field>
+</styled.div>
 `;

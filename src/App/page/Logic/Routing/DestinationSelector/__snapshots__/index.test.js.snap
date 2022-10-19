@@ -1,31 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/RoutingRuleDestinationSelector should render 1`] = `
+exports[`components/components-original/RoutingRuleDestinationSelector should render 1`] = `
 <Fragment>
-  <DestinationSelector__RoutingRuleResult
+  <styled.div
     key="test-select"
   >
-    <Grid
+    <styled.div
       align="center"
       fillHeight={true}
       horizontalAlign="start"
     >
-      <Column
+      <styled.div
         cols={5}
         gutters={false}
       >
-        <DestinationSelector__Label
+        <styled.label
           disabled={false}
           htmlFor="test-select"
         >
           Test
            
-          <DestinationSelector__Goto>
+          <styled.span>
             Go to: 
-          </DestinationSelector__Goto>
-        </DestinationSelector__Label>
-      </Column>
-      <Column
+          </styled.span>
+        </styled.label>
+      </styled.div>
+      <styled.div
         cols={7}
         gutters={false}
       >
@@ -37,15 +37,15 @@ exports[`components/RoutingRuleDestinationSelector should render 1`] = `
           onSubmit={[Function]}
           pageId="1"
           selected={
-            Object {
-              "logicalDestination": Object {
+            {
+              "logicalDestination": {
                 "destinationType": "NextPage",
               },
             }
           }
         />
-      </Column>
-    </Grid>
-  </DestinationSelector__RoutingRuleResult>
+      </styled.div>
+    </styled.div>
+  </styled.div>
 </Fragment>
 `;

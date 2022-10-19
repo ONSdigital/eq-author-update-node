@@ -25,13 +25,16 @@ jest.mock("@apollo/react-hooks", () => ({
   useQuery: jest.fn(),
 }));
 
-jest.mock("components/components-original/NavigationCallbacks", () => ({
-  __esModule: true,
-  useNavigationCallbacks: jest.fn(() => ({
-    onAddQuestionPage: jest.fn(),
-  })),
-  useSetNavigationCallbacksForPage: jest.fn(() => null),
-}));
+jest.mock(
+  "components/components-original/NavigationCallbacks/NavigationCallbacks",
+  () => ({
+    __esModule: true,
+    useNavigationCallbacks: jest.fn(() => ({
+      onAddQuestionPage: jest.fn(),
+    })),
+    useSetNavigationCallbacksForPage: jest.fn(() => null),
+  })
+);
 
 useQuery.mockImplementation(() => ({
   data: undefined,
@@ -79,7 +82,7 @@ describe("PageRoute", () => {
     });
 
     it("should render a calculatedSummaryPage editor once loaded", () => {
-      jest.mock("components/RichTextEditor", () => <></>);
+      jest.mock("components/components-original/RichTextEditor", () => <></>);
       const page = {
         ...buildPages()[0],
         pageType: "CalculatedSummaryPage",

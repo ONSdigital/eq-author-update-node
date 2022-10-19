@@ -3,7 +3,7 @@ import { render, fireEvent } from "tests/utils/rtl";
 
 import AnswerTypeGrid, { buttons } from "./AnswerTypeGrid";
 
-describe("components/AnswerTypeGrid", () => {
+describe("components/components-original/AnswerTypeGrid", () => {
   let handleClose, handleSelect;
 
   beforeEach(() => {

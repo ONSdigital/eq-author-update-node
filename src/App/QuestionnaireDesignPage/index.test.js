@@ -27,12 +27,15 @@ console.log(
   `Warn: there are manually suppressed warnings or errors in this test file due to dependencies needing updates - See EAR-1095`
 );
 
-jest.mock("components/BaseLayout/PermissionsBanner", () => ({
-  __esModule: true,
-  default: () => <></>,
-}));
+jest.mock(
+  "components/components-original/BaseLayout/PermissionsBanner",
+  () => ({
+    __esModule: true,
+    default: () => <></>,
+  })
+);
 
-jest.mock("components/EditorLayout/Header", () => ({
+jest.mock("components/components-original/EditorLayout/Header", () => ({
   __esModule: true,
   default: () => <></>,
 }));

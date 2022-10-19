@@ -5,7 +5,7 @@ exports[`Custom Editor should render 1`] = `
   disabled={false}
   last={false}
 >
-  <CustomEditor__LargerNumber
+  <Styled(Number)
     data-test="total-validation-number-input"
     default={null}
     hasError={1}

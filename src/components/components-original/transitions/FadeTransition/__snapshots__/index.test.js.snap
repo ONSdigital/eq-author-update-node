@@ -36,3 +36,13 @@ exports[`components/FadeTransition should render 1`] = `
   </div>
 </DocumentFragment>
 `;
+
+exports[`components/components-original/FadeTransition should render 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-ftTHYK bONbRM"
+  >
+    Content
+  </div>
+</DocumentFragment>
+`;

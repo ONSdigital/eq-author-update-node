@@ -1,24 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/MoveModal should render 1`] = `
-<MoveModal__StyledModal
+<Styled(Modal)
   data={
-    Object {
+    {
       "test": "move-modal",
     }
   }
   isOpen={true}
   onClose={[MockFunction]}
 >
-  <DialogHeader___default>
-    <DialogMessage__Message>
-      <MoveModal__CenteredHeading>
+  <styled.header>
+    <styled.div>
+      <Styled(styled.h2)>
         Modal title
-      </MoveModal__CenteredHeading>
-    </DialogMessage__Message>
-  </DialogHeader___default>
+      </Styled(styled.h2)>
+    </styled.div>
+  </styled.header>
   <p>
     Modal content
   </p>
-</MoveModal__StyledModal>
+</Styled(Modal)>
 `;

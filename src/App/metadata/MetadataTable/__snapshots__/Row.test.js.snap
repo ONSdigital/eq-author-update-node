@@ -1,51 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MetadataTable should correctly render different types of metadata 1`] = `
-<TableRow
+<styled.tr
   data-test="metadata-table-row"
 >
-  <TableColumn>
+  <styled.td>
     <KeySelect
       defaultValue="tx_id"
       name="key"
       onChange={[MockFunction]}
       onUpdate={[MockFunction]}
-      usedKeys={Array []}
+      usedKeys={[]}
     />
-  </TableColumn>
-  <TableColumn>
-    <TableInput
+  </styled.td>
+  <styled.td>
+    <Styled(withChangeHandler(undefined))
       id="metadata-alias-column"
       name="alias"
       onBlur={[MockFunction]}
       onChange={[MockFunction]}
       value="test_alias"
     />
-  </TableColumn>
-  <TableColumn>
+  </styled.td>
+  <styled.td>
     <Select
       name="type"
       onChange={[MockFunction]}
       onUpdate={[MockFunction]}
       options={
-        Array [
-          Object {
+        [
+          {
             "label": "Text",
             "value": "Text",
           },
-          Object {
+          {
             "label": "Text (Optional)",
             "value": "Text_Optional",
           },
-          Object {
+          {
             "label": "Date",
             "value": "Date",
           },
-          Object {
+          {
             "label": "Language",
             "value": "Language",
           },
-          Object {
+          {
             "label": "Region",
             "value": "Region",
           },
@@ -53,80 +53,80 @@ exports[`MetadataTable should correctly render different types of metadata 1`] =
       }
       value="Text"
     />
-  </TableColumn>
-  <TableColumn>
-    <TableInput
+  </styled.td>
+  <styled.td>
+    <Styled(withChangeHandler(undefined))
       id="metadata-value-column"
       name="textValue"
       onBlur={[MockFunction]}
       onChange={[MockFunction]}
       value="text"
     />
-  </TableColumn>
-  <TableColumn>
+  </styled.td>
+  <styled.td>
     <FallbackSelect
       name="fallbackKey"
       onChange={[MockFunction]}
       onUpdate={[MockFunction]}
-      options={Array []}
+      options={[]}
     />
-  </TableColumn>
-  <TableColumn>
-    <DeleteRowButton
+  </styled.td>
+  <styled.td>
+    <Styled(DeleteButton)
       data-test="metadata-delete-row"
       onClick={[Function]}
       size="medium"
     />
-  </TableColumn>
-</TableRow>
+  </styled.td>
+</styled.tr>
 `;
 
 exports[`MetadataTable should correctly render different types of metadata 2`] = `
-<TableRow
+<styled.tr
   data-test="metadata-table-row"
 >
-  <TableColumn>
+  <styled.td>
     <KeySelect
       defaultValue="iat"
       name="key"
       onChange={[MockFunction]}
       onUpdate={[MockFunction]}
-      usedKeys={Array []}
+      usedKeys={[]}
     />
-  </TableColumn>
-  <TableColumn>
-    <TableInput
+  </styled.td>
+  <styled.td>
+    <Styled(withChangeHandler(undefined))
       id="metadata-alias-column"
       name="alias"
       onBlur={[MockFunction]}
       onChange={[MockFunction]}
       value="date_alias"
     />
-  </TableColumn>
-  <TableColumn>
+  </styled.td>
+  <styled.td>
     <Select
       name="type"
       onChange={[MockFunction]}
       onUpdate={[MockFunction]}
       options={
-        Array [
-          Object {
+        [
+          {
             "label": "Text",
             "value": "Text",
           },
-          Object {
+          {
             "label": "Text (Optional)",
             "value": "Text_Optional",
           },
-          Object {
+          {
             "label": "Date",
             "value": "Date",
           },
-          Object {
+          {
             "label": "Language",
             "value": "Language",
           },
-          Object {
+          {
             "label": "Region",
             "value": "Region",
           },
@@ -134,80 +134,80 @@ exports[`MetadataTable should correctly render different types of metadata 2`] =
       }
       value="Date"
     />
-  </TableColumn>
-  <TableColumn>
-    <TableInputDate
+  </styled.td>
+  <styled.td>
+    <Styled(Styled(withChangeHandler(undefined)))
       name="dateValue"
       onBlur={[MockFunction]}
       onChange={[MockFunction]}
       type="date"
       value="2018-09-17"
     />
-  </TableColumn>
-  <TableColumn>
+  </styled.td>
+  <styled.td>
     <FallbackSelect
       name="fallbackKey"
       onChange={[MockFunction]}
       onUpdate={[MockFunction]}
-      options={Array []}
+      options={[]}
     />
-  </TableColumn>
-  <TableColumn>
-    <DeleteRowButton
+  </styled.td>
+  <styled.td>
+    <Styled(DeleteButton)
       data-test="metadata-delete-row"
       onClick={[Function]}
       size="medium"
     />
-  </TableColumn>
-</TableRow>
+  </styled.td>
+</styled.tr>
 `;
 
 exports[`MetadataTable should correctly render different types of metadata 3`] = `
-<TableRow
+<styled.tr
   data-test="metadata-table-row"
 >
-  <TableColumn>
+  <styled.td>
     <KeySelect
       defaultValue="iat"
       name="key"
       onChange={[MockFunction]}
       onUpdate={[MockFunction]}
-      usedKeys={Array []}
+      usedKeys={[]}
     />
-  </TableColumn>
-  <TableColumn>
-    <TableInput
+  </styled.td>
+  <styled.td>
+    <Styled(withChangeHandler(undefined))
       id="metadata-alias-column"
       name="alias"
       onBlur={[MockFunction]}
       onChange={[MockFunction]}
       value="region_alias"
     />
-  </TableColumn>
-  <TableColumn>
+  </styled.td>
+  <styled.td>
     <Select
       name="type"
       onChange={[MockFunction]}
       onUpdate={[MockFunction]}
       options={
-        Array [
-          Object {
+        [
+          {
             "label": "Text",
             "value": "Text",
           },
-          Object {
+          {
             "label": "Text (Optional)",
             "value": "Text_Optional",
           },
-          Object {
+          {
             "label": "Date",
             "value": "Date",
           },
-          Object {
+          {
             "label": "Language",
             "value": "Language",
           },
-          Object {
+          {
             "label": "Region",
             "value": "Region",
           },
@@ -215,31 +215,31 @@ exports[`MetadataTable should correctly render different types of metadata 3`] =
       }
       value="Region"
     />
-  </TableColumn>
-  <TableColumn>
+  </styled.td>
+  <styled.td>
     <Select
       name="regionValue"
       onChange={[MockFunction]}
       onUpdate={[MockFunction]}
       options={
-        Array [
-          Object {
+        [
+          {
             "label": "GB_ENG",
             "value": "GB_ENG",
           },
-          Object {
+          {
             "label": "GB_GBN",
             "value": "GB_GBN",
           },
-          Object {
+          {
             "label": "GB_NIR",
             "value": "GB_NIR",
           },
-          Object {
+          {
             "label": "GB_SCT",
             "value": "GB_SCT",
           },
-          Object {
+          {
             "label": "GB_WLS",
             "value": "GB_WLS",
           },
@@ -247,71 +247,71 @@ exports[`MetadataTable should correctly render different types of metadata 3`] =
       }
       value="GB_ENG"
     />
-  </TableColumn>
-  <TableColumn>
+  </styled.td>
+  <styled.td>
     <FallbackSelect
       name="fallbackKey"
       onChange={[MockFunction]}
       onUpdate={[MockFunction]}
-      options={Array []}
+      options={[]}
     />
-  </TableColumn>
-  <TableColumn>
-    <DeleteRowButton
+  </styled.td>
+  <styled.td>
+    <Styled(DeleteButton)
       data-test="metadata-delete-row"
       onClick={[Function]}
       size="medium"
     />
-  </TableColumn>
-</TableRow>
+  </styled.td>
+</styled.tr>
 `;
 
 exports[`MetadataTable should correctly render different types of metadata 4`] = `
-<TableRow
+<styled.tr
   data-test="metadata-table-row"
 >
-  <TableColumn>
+  <styled.td>
     <KeySelect
       defaultValue="iat"
       name="key"
       onChange={[MockFunction]}
       onUpdate={[MockFunction]}
-      usedKeys={Array []}
+      usedKeys={[]}
     />
-  </TableColumn>
-  <TableColumn>
-    <TableInput
+  </styled.td>
+  <styled.td>
+    <Styled(withChangeHandler(undefined))
       id="metadata-alias-column"
       name="alias"
       onBlur={[MockFunction]}
       onChange={[MockFunction]}
       value="language_alias"
     />
-  </TableColumn>
-  <TableColumn>
+  </styled.td>
+  <styled.td>
     <Select
       name="type"
       onChange={[MockFunction]}
       onUpdate={[MockFunction]}
       options={
-        Array [
-          Object {
+        [
+          {
             "label": "Text",
             "value": "Text",
           },
-          Object {
+          {
             "label": "Text (Optional)",
             "value": "Text_Optional",
           },
-          Object {
+          {
             "label": "Date",
             "value": "Date",
           },
-          Object {
+          {
             "label": "Language",
             "value": "Language",
           },
-          Object {
+          {
             "label": "Region",
             "value": "Region",
           },
@@ -319,19 +319,19 @@ exports[`MetadataTable should correctly render different types of metadata 4`] =
       }
       value="Language"
     />
-  </TableColumn>
-  <TableColumn>
+  </styled.td>
+  <styled.td>
     <Select
       name="languageValue"
       onChange={[MockFunction]}
       onUpdate={[MockFunction]}
       options={
-        Array [
-          Object {
+        [
+          {
             "label": "en",
             "value": "en",
           },
-          Object {
+          {
             "label": "cy",
             "value": "cy",
           },
@@ -339,71 +339,71 @@ exports[`MetadataTable should correctly render different types of metadata 4`] =
       }
       value="cy"
     />
-  </TableColumn>
-  <TableColumn>
+  </styled.td>
+  <styled.td>
     <FallbackSelect
       name="fallbackKey"
       onChange={[MockFunction]}
       onUpdate={[MockFunction]}
-      options={Array []}
+      options={[]}
     />
-  </TableColumn>
-  <TableColumn>
-    <DeleteRowButton
+  </styled.td>
+  <styled.td>
+    <Styled(DeleteButton)
       data-test="metadata-delete-row"
       onClick={[Function]}
       size="medium"
     />
-  </TableColumn>
-</TableRow>
+  </styled.td>
+</styled.tr>
 `;
 
 exports[`MetadataTable should render 1`] = `
-<TableRow
+<styled.tr
   data-test="metadata-table-row"
 >
-  <TableColumn>
+  <styled.td>
     <KeySelect
       defaultValue="tx_id"
       name="key"
       onChange={[MockFunction]}
       onUpdate={[MockFunction]}
-      usedKeys={Array []}
+      usedKeys={[]}
     />
-  </TableColumn>
-  <TableColumn>
-    <TableInput
+  </styled.td>
+  <styled.td>
+    <Styled(withChangeHandler(undefined))
       id="metadata-alias-column"
       name="alias"
       onBlur={[MockFunction]}
       onChange={[MockFunction]}
       value="test_alias"
     />
-  </TableColumn>
-  <TableColumn>
+  </styled.td>
+  <styled.td>
     <Select
       name="type"
       onChange={[MockFunction]}
       onUpdate={[MockFunction]}
       options={
-        Array [
-          Object {
+        [
+          {
             "label": "Text",
             "value": "Text",
           },
-          Object {
+          {
             "label": "Text (Optional)",
             "value": "Text_Optional",
           },
-          Object {
+          {
             "label": "Date",
             "value": "Date",
           },
-          Object {
+          {
             "label": "Language",
             "value": "Language",
           },
-          Object {
+          {
             "label": "Region",
             "value": "Region",
           },
@@ -411,30 +411,30 @@ exports[`MetadataTable should render 1`] = `
       }
       value="Text"
     />
-  </TableColumn>
-  <TableColumn>
-    <TableInput
+  </styled.td>
+  <styled.td>
+    <Styled(withChangeHandler(undefined))
       id="metadata-value-column"
       name="textValue"
       onBlur={[MockFunction]}
       onChange={[MockFunction]}
       value="text"
     />
-  </TableColumn>
-  <TableColumn>
+  </styled.td>
+  <styled.td>
     <FallbackSelect
       name="fallbackKey"
       onChange={[MockFunction]}
       onUpdate={[MockFunction]}
-      options={Array []}
+      options={[]}
     />
-  </TableColumn>
-  <TableColumn>
-    <DeleteRowButton
+  </styled.td>
+  <styled.td>
+    <Styled(DeleteButton)
       data-test="metadata-delete-row"
       onClick={[Function]}
       size="medium"
     />
-  </TableColumn>
-</TableRow>
+  </styled.td>
+</styled.tr>
 `;

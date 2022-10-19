@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "tests/utils/rtl";
-import { UnconnectedOfflineBanner } from "components/OfflineBanner";
+import { UnconnectedOfflineBanner } from "components/components-original/OfflineBanner";
 
 describe("OfflineBanner", () => {
   let renderComponent;

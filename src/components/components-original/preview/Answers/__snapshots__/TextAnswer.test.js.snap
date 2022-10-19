@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TextAnswer should render 1`] = `
-<Field>
+<styled.div>
   <Label
     description="description"
   >
     label
   </Label>
-  <TextAnswer__TextInput
+  <Styled(styled.input)
     type="text"
   />
-</Field>
+</styled.div>
 `;

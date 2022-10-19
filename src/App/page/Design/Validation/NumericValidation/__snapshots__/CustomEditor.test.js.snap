@@ -8,11 +8,11 @@ exports[`Custom Editor should render 1`] = `
     name="inclusive"
     onChange={[MockFunction]}
   >
-    <CustomEditor__StyledNumber
+    <Styled(Number)
       data-test="numeric-value-input"
       default={null}
       hasError={
-        Object {
+        {
           "errorCode": "ERR_NO_VALUE",
           "field": "custom",
           "id": "minValue-0efd3ed1-8e0d-4b0c-9e39-59010751dbdf-custom",
@@ -29,8 +29,8 @@ exports[`Custom Editor should render 1`] = `
       value={null}
     />
   </FieldWithInclude>
-  <CustomEditor__StyledError>
+  <Styled(ValidationError)>
     Value is required
-  </CustomEditor__StyledError>
+  </Styled(ValidationError)>
 </Fragment>
 `;

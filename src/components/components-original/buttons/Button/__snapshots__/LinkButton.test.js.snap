@@ -60,3 +60,18 @@ exports[`components/Button/LinkButton should render 1`] = `
   </a>
 </DocumentFragment>
 `;
+
+exports[`components/components-original/Button/LinkButton should render 1`] = `
+<DocumentFragment>
+  <a
+    class="sc-pyfCe cGdElK"
+    href="/test"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <div>
+      Content
+    </div>
+  </a>
+</DocumentFragment>
+`;

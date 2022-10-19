@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Duration should render 1`] = `
-<Grid
+<styled.div
   align="top"
   fillHeight={true}
   horizontalAlign="start"
 >
-  <Column
+  <styled.div
     cols={2}
   >
-    <Duration__DurationNumber
+    <Styled(Number)
       hasError={
-        Object {
+        {
           "_typename": "ValidationError",
           "errorCode": "ERR_NO_VALUE",
           "field": "earliestDate",
@@ -27,11 +27,11 @@ exports[`Duration should render 1`] = `
       onChange={[MockFunction]}
       value={null}
     />
-  </Column>
-  <Column
+  </styled.div>
+  <styled.div
     cols={4}
   >
-    <withChangeHandler(Select__SimpleSelect)
+    <withChangeHandler(styled.select)
       id="foobar-unit"
       name="foobar.unit"
       onBlur={[MockFunction]}
@@ -56,7 +56,7 @@ exports[`Duration should render 1`] = `
       >
         years
       </option>
-    </withChangeHandler(Select__SimpleSelect)>
-  </Column>
-</Grid>
+    </withChangeHandler(styled.select)>
+  </styled.div>
+</styled.div>
 `;

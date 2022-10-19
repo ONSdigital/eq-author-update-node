@@ -71,3 +71,14 @@ exports[`components/TextButton renders 1`] = `
   </button>
 </DocumentFragment>
 `;
+
+exports[`components/components-original/TextButton renders 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-bcXHqe sc-gswNZR htbWtu bDkEUI"
+    type="button"
+  >
+    TextButton
+  </button>
+</DocumentFragment>
+`;

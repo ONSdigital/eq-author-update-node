@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ValidationView should render children when enabled 1`] = `
-<ValidationView__Container>
-  <ValidationView__InlineField
+<styled.div>
+  <Styled(Field)
     data-test="validation-view-toggle"
   >
     <ToggleSwitch
@@ -12,31 +12,31 @@ exports[`ValidationView should render children when enabled 1`] = `
       name="ValidationView1"
       onChange={[MockFunction]}
     />
-  </ValidationView__InlineField>
+  </Styled(Field)>
   <TransitionGroup
     childFactory={[Function]}
     component="div"
   >
-    <FadeTransition
+    <Styled(CSSTransition)
       enter={true}
       exit={false}
       in={false}
       key="validation-enabled-true"
       timeout={250}
     >
-      <ValidationView__ValidationContainer>
+      <Styled(styled.div)>
         <div>
           Children
         </div>
-      </ValidationView__ValidationContainer>
-    </FadeTransition>
+      </Styled(styled.div)>
+    </Styled(CSSTransition)>
   </TransitionGroup>
-</ValidationView__Container>
+</styled.div>
 `;
 
 exports[`ValidationView should render disabled messaged when disabled 1`] = `
-<ValidationView__Container>
-  <ValidationView__InlineField
+<styled.div>
+  <Styled(Field)
     data-test="validation-view-toggle"
   >
     <ToggleSwitch
@@ -46,24 +46,24 @@ exports[`ValidationView should render disabled messaged when disabled 1`] = `
       name="ValidationView2"
       onChange={[MockFunction]}
     />
-  </ValidationView__InlineField>
+  </Styled(Field)>
   <TransitionGroup
     childFactory={[Function]}
     component="div"
   >
-    <FadeTransition
+    <Styled(CSSTransition)
       enter={true}
       exit={false}
       in={false}
       key="validation-enabled-false"
       timeout={250}
     >
-      <ValidationView__ValidationContainer>
+      <Styled(styled.div)>
         <div>
           Children
         </div>
-      </ValidationView__ValidationContainer>
-    </FadeTransition>
+      </Styled(styled.div)>
+    </Styled(CSSTransition)>
   </TransitionGroup>
-</ValidationView__Container>
+</styled.div>
 `;

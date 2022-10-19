@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/Modal should render its children 1`] = `
-<Modal__StyledModal
+<Styled(ReactModalAdapter)
   alias="Subheading"
   closeTimeoutMS={300}
   description="Description"
@@ -12,15 +12,15 @@ exports[`components/Modal should render its children 1`] = `
   shouldCloseOnOverlayClick={true}
   title="Modal title"
 >
-  <Modal__StyledScrollPane>
-    <Modal__CloseButton
+  <Styled(ScrollPane)>
+    <Styled(CloseButton)
       onClick={[MockFunction]}
     >
       ×
-    </Modal__CloseButton>
+    </Styled(CloseButton)>
     <p>
       Modal content
     </p>
-  </Modal__StyledScrollPane>
-</Modal__StyledModal>
+  </Styled(ScrollPane)>
+</Styled(ReactModalAdapter)>
 `;

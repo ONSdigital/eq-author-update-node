@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Editor Editor Component should autoFocus the title when there is not one 1`] = `
-<Editor__Wrapper>
+<styled.div>
   <RichTextEditor
     autoFocus={true}
     controls={
-      Object {
+      {
         "bold": true,
         "emphasis": true,
         "piping": true,
@@ -24,14 +24,14 @@ exports[`Editor Editor Component should autoFocus the title when there is not on
     testSelector="txt-confirmation-title"
     value={null}
   />
-  <Editor__OptionsWrapper>
-    <withValidationError(UnwrappedConfirmationOption)
+  <styled.div>
+    <withValidationError(undefined)
       confirmationoption={
-        Object {
+        {
           "description": "Positive description",
           "id": "1",
           "label": "Positive label",
-          "validationErrorInfo": Array [],
+          "validationErrorInfo": [],
         }
       }
       data-test="positive-input"
@@ -41,21 +41,21 @@ exports[`Editor Editor Component should autoFocus the title when there is not on
       onChange={[MockFunction]}
       onUpdate={[MockFunction]}
       value={
-        Object {
+        {
           "description": "Positive description",
           "id": "1",
           "label": "Positive label",
-          "validationErrorInfo": Array [],
+          "validationErrorInfo": [],
         }
       }
     />
-    <Editor__MarginLessConfirmationOption
+    <Styled(withValidationError(undefined))
       confirmationoption={
-        Object {
+        {
           "description": "Negative description",
           "id": "2",
           "label": "Negative label",
-          "validationErrorInfo": Array [],
+          "validationErrorInfo": [],
         }
       }
       data-test="negative-input"
@@ -64,24 +64,24 @@ exports[`Editor Editor Component should autoFocus the title when there is not on
       onChange={[MockFunction]}
       onUpdate={[MockFunction]}
       value={
-        Object {
+        {
           "description": "Negative description",
           "id": "2",
           "label": "Negative label",
-          "validationErrorInfo": Array [],
+          "validationErrorInfo": [],
         }
       }
     />
-  </Editor__OptionsWrapper>
-</Editor__Wrapper>
+  </styled.div>
+</styled.div>
 `;
 
 exports[`Editor Editor Component should render 1`] = `
-<Editor__Wrapper>
+<styled.div>
   <RichTextEditor
     autoFocus={false}
     controls={
-      Object {
+      {
         "bold": true,
         "emphasis": true,
         "piping": true,
@@ -100,14 +100,14 @@ exports[`Editor Editor Component should render 1`] = `
     testSelector="txt-confirmation-title"
     value="My first confirmation"
   />
-  <Editor__OptionsWrapper>
-    <withValidationError(UnwrappedConfirmationOption)
+  <styled.div>
+    <withValidationError(undefined)
       confirmationoption={
-        Object {
+        {
           "description": "Positive description",
           "id": "1",
           "label": "Positive label",
-          "validationErrorInfo": Array [],
+          "validationErrorInfo": [],
         }
       }
       data-test="positive-input"
@@ -117,21 +117,21 @@ exports[`Editor Editor Component should render 1`] = `
       onChange={[MockFunction]}
       onUpdate={[MockFunction]}
       value={
-        Object {
+        {
           "description": "Positive description",
           "id": "1",
           "label": "Positive label",
-          "validationErrorInfo": Array [],
+          "validationErrorInfo": [],
         }
       }
     />
-    <Editor__MarginLessConfirmationOption
+    <Styled(withValidationError(undefined))
       confirmationoption={
-        Object {
+        {
           "description": "Negative description",
           "id": "2",
           "label": "Negative label",
-          "validationErrorInfo": Array [],
+          "validationErrorInfo": [],
         }
       }
       data-test="negative-input"
@@ -140,14 +140,14 @@ exports[`Editor Editor Component should render 1`] = `
       onChange={[MockFunction]}
       onUpdate={[MockFunction]}
       value={
-        Object {
+        {
           "description": "Negative description",
           "id": "2",
           "label": "Negative label",
-          "validationErrorInfo": Array [],
+          "validationErrorInfo": [],
         }
       }
     />
-  </Editor__OptionsWrapper>
-</Editor__Wrapper>
+  </styled.div>
+</styled.div>
 `;

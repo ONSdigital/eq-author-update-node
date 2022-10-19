@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Loading should render  1`] = `
-<Loading__Container
+<styled.div
   data-test="loading"
   height="auto"
 >
   <Delay
     delay={250}
   >
-    <Loading__StyledIcon />
-    <Loading__Message>
+    <Styled(Component) />
+    <styled.p>
       Loading…
-    </Loading__Message>
+    </styled.p>
   </Delay>
-</Loading__Container>
+</styled.div>
 `;

@@ -3,7 +3,7 @@ import { render } from "tests/utils/rtl";
 
 import FadeTransition from "./";
 
-describe("components/FadeTransition", () => {
+describe("components/components-original/FadeTransition", () => {
   it("should render", () => {
     expect(
       render(

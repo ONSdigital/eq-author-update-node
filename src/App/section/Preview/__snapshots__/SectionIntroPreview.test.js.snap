@@ -1,63 +1,63 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SectionIntroPreview should render an error when the content is missing 1`] = `
-<SectionIntroPreview__Wrapper>
-  <SectionIntroPreview__TitleBlock>
+<styled.div>
+  <styled.h1>
     <div
       dangerouslySetInnerHTML={
-        Object {
+        {
           "__html": "<p>title</p>",
         }
       }
     />
-  </SectionIntroPreview__TitleBlock>
-  <Error
+  </styled.h1>
+  <styled.div
     data-test="no-content"
     large={true}
     margin={false}
   >
     Missing Introduction Content
-  </Error>
-</SectionIntroPreview__Wrapper>
+  </styled.div>
+</styled.div>
 `;
 
 exports[`SectionIntroPreview should render an error when the title is missing 1`] = `
-<SectionIntroPreview__Wrapper>
-  <SectionIntroPreview__TitleBlock>
-    <Error
+<styled.div>
+  <styled.h1>
+    <styled.div
       data-test="no-title"
       margin={true}
     >
       Missing Introduction Title
-    </Error>
-  </SectionIntroPreview__TitleBlock>
-  <SectionIntroPreview__ContentBlock
+    </styled.div>
+  </styled.h1>
+  <styled.div
     dangerouslySetInnerHTML={
-      Object {
+      {
         "__html": "<h2>Content</h2>",
       }
     }
   />
-</SectionIntroPreview__Wrapper>
+</styled.div>
 `;
 
 exports[`SectionIntroPreview should render with all content 1`] = `
-<SectionIntroPreview__Wrapper>
-  <SectionIntroPreview__TitleBlock>
+<styled.div>
+  <styled.h1>
     <div
       dangerouslySetInnerHTML={
-        Object {
+        {
           "__html": "<p>title</p>",
         }
       }
     />
-  </SectionIntroPreview__TitleBlock>
-  <SectionIntroPreview__ContentBlock
+  </styled.h1>
+  <styled.div
     dangerouslySetInnerHTML={
-      Object {
+      {
         "__html": "<h2>Content</h2>",
       }
     }
   />
-</SectionIntroPreview__Wrapper>
+</styled.div>
 `;

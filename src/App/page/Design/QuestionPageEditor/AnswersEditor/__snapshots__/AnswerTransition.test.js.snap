@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/QuestionPageEditor/AnswerTransition should render 1`] = `
-<AnswerTransition__AnswerTransitionWrapper
+exports[`components/components-original/QuestionPageEditor/AnswerTransition should render 1`] = `
+<Styled(CSSTransition)
   timeout={200}
 >
   <div>
@@ -9,5 +9,5 @@ exports[`components/QuestionPageEditor/AnswerTransition should render 1`] = `
       Content
     </div>
   </div>
-</AnswerTransition__AnswerTransitionWrapper>
+</Styled(CSSTransition)>
 `;

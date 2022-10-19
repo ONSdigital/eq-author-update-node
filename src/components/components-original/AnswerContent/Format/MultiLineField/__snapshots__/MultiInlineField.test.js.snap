@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MultiLineLabel should render 1`] = `
-<MultiLineField__StyledMultiLineField
+<Styled(Field)
   key="1"
 >
   <Label
@@ -11,10 +11,10 @@ exports[`MultiLineLabel should render 1`] = `
   >
     Label
   </Label>
-  <MultiLineField__MultiLineControl>
+  <styled.div>
     <input
       type="text"
     />
-  </MultiLineField__MultiLineControl>
-</MultiLineField__StyledMultiLineField>
+  </styled.div>
+</Styled(Field)>
 `;

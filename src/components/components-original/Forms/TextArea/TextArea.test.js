@@ -4,7 +4,7 @@ import TextArea from "./";
 
 const defaultValue = "I am some text";
 
-describe("components/Forms/TextArea", () => {
+describe("components/components-original/Forms/TextArea", () => {
   let changeHandler;
 
   beforeEach(() => {

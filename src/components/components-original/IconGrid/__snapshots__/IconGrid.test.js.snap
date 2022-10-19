@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`IconGrid should render 1`] = `
-<IconGrid__Menu
+<styled.div
   role="menu"
 >
   Child
-</IconGrid__Menu>
+</styled.div>
 `;

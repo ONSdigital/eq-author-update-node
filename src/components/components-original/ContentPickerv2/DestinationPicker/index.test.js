@@ -11,9 +11,9 @@ import {
 
 import { destinationKey } from "constants/destinationKey";
 
-import { useQuestionnaire } from "components/QuestionnaireContext";
+import { useQuestionnaire } from "components/components-original/QuestionnaireContext";
 
-jest.mock("components/QuestionnaireContext", () => ({
+jest.mock("components/components-original/QuestionnaireContext", () => ({
   useQuestionnaire: jest.fn(),
 }));
 

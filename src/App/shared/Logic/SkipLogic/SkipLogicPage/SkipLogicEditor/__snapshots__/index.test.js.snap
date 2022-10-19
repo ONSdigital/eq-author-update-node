@@ -12,9 +12,9 @@ exports[`components/SkipConditionSet should render children 1`] = `
     >
       <SkipConditionEditor
         expressionGroup={
-          Object {
-            "expressions": Array [
-              Object {
+          {
+            "expressions": [
+              {
                 "id": "3",
               },
             ],
@@ -28,8 +28,8 @@ exports[`components/SkipConditionSet should render children 1`] = `
       />
     </Transition>
   </TransitionGroup>
-  <SkipLogicEditor__Footer />
-  <SkipLogicEditor__AddSkipConditionButton
+  <styled.div />
+  <Styled(styled.button)
     data-test="btn-add-skip-condition"
     onClick={[MockFunction]}
     small={true}
@@ -37,6 +37,6 @@ exports[`components/SkipConditionSet should render children 1`] = `
     variant="secondary"
   >
     Add OR statement
-  </SkipLogicEditor__AddSkipConditionButton>
+  </Styled(styled.button)>
 </Fragment>
 `;

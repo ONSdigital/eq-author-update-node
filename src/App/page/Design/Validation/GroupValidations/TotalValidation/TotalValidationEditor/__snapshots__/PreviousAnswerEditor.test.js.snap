@@ -7,7 +7,7 @@ exports[`TotalValidation: Previous Answer Editor should render 1`] = `
 >
   <PreviousAnswerContentPicker
     allowedAnswerTypes={
-      Array [
+      [
         undefined,
       ]
     }

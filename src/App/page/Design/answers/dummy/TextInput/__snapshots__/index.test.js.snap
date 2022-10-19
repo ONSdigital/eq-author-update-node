@@ -67,3 +67,11 @@ exports[`components/Answers/Dummy/TextInput shoulder render 1`] = `
   />
 </DocumentFragment>
 `;
+
+exports[`components/components-original/Answers/Dummy/TextInput shoulder render 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-ftvSup jDGsbm"
+  />
+</DocumentFragment>
+`;

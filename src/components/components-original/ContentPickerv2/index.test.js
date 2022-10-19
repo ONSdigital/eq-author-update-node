@@ -5,16 +5,16 @@ import {
   METADATA,
   VARIABLES,
   DESTINATION,
-} from "components/ContentPickerSelect/content-types";
+} from "components/components-original/ContentPickerSelect/content-types";
 
 import ContentPicker from "./";
 
 import { EndOfQuestionnaire, NextPage } from "constants/destinations";
 import { destinationKey } from "constants/destinationKey";
 
-import { useQuestionnaire } from "components/QuestionnaireContext";
+import { useQuestionnaire } from "components/components-original/QuestionnaireContext";
 
-jest.mock("components/QuestionnaireContext", () => ({
+jest.mock("components/components-original/QuestionnaireContext", () => ({
   useQuestionnaire: jest.fn(),
 }));
 

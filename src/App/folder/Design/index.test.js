@@ -34,9 +34,12 @@ jest.mock("hooks/useCreateFolder", () => ({
   useCreatePageWithFolder: jest.fn(),
 }));
 
-jest.mock("components/NavigationCallbacks", () => ({
-  useSetNavigationCallbacks: jest.fn(),
-}));
+jest.mock(
+  "components/components-original/NavigationCallbacks/NavigationCallbacks",
+  () => ({
+    useSetNavigationCallbacks: jest.fn(),
+  })
+);
 
 jest.mock("App/MeContext", () => ({
   useMe: () => mockUseMe,

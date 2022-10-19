@@ -3,7 +3,7 @@
 exports[`withFetchAnswers should render 1`] = `
 <div
   client={
-    Object {
+    {
       "query": [MockFunction],
       "readQuery": [MockFunction],
     }

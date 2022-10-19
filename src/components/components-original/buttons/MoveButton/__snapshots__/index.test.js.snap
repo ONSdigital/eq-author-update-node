@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MoveButton should render 1`] = `
-<MoveButton__Button
+<styled.button
   color="secondary"
   onClick={[MockFunction]}
 >
   Some content
-</MoveButton__Button>
+</styled.button>
 `;

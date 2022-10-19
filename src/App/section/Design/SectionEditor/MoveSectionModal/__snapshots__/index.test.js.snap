@@ -6,32 +6,32 @@ exports[`MoveSectionModal should render 1`] = `
   onClose={[MockFunction]}
   onMoveSection={[MockFunction]}
   questionnaire={
-    Object {
+    {
       "displayName": "questionnaire",
       "id": "questionnaire",
-      "sections": Array [
-        Object {
+      "sections": [
+        {
           "displayName": "Section 1",
-          "folders": Array [
-            Object {
+          "folders": [
+            {
               "alias": "Folder 1.1",
               "displayName": "Folder 1.1",
               "enabled": false,
               "id": "1.1",
-              "pages": Array [
-                Object {
+              "pages": [
+                {
                   "additionalInfoContent": "",
                   "additionalInfoEnabled": false,
                   "additionalInfoLabel": "",
                   "alias": "1.1.1",
-                  "answers": Array [],
+                  "answers": [],
                   "definitionContent": "",
                   "definitionEnabled": false,
                   "definitionLabel": "",
                   "description": "",
                   "descriptionEnabled": false,
                   "displayName": "Page 1.1.1",
-                  "folder": Object {
+                  "folder": {
                     "id": "1",
                     "position": 0,
                   },
@@ -40,28 +40,28 @@ exports[`MoveSectionModal should render 1`] = `
                   "id": "1.1.1",
                   "pageType": "QuestionPage",
                   "position": 0,
-                  "section": Object {
+                  "section": {
                     "displayName": "",
                     "id": "1",
                     "position": 0,
-                    "questionnaire": Object {
-                      "metadata": Array [],
+                    "questionnaire": {
+                      "metadata": [],
                     },
                   },
                   "title": "Page 1.1.1",
-                  "validationErrorInfo": Object {
-                    "errors": Array [],
+                  "validationErrorInfo": {
+                    "errors": [],
                     "totalCount": 2,
                   },
                 },
               ],
               "position": 0,
-              "section": Object {
+              "section": {
                 "id": "1",
               },
-              "validationErrorInfo": Object {
+              "validationErrorInfo": {
                 "__typename": "ValidationErrorInfo",
-                "errors": Array [],
+                "errors": [],
                 "id": "1.1-validationErrorInfo",
                 "totalCount": 0,
               },
@@ -70,32 +70,32 @@ exports[`MoveSectionModal should render 1`] = `
           "id": "1",
           "position": 0,
           "title": "Section 1",
-          "validationErrorInfo": Object {
+          "validationErrorInfo": {
             "totalCount": 0,
           },
         },
-        Object {
+        {
           "displayName": "Section 2",
-          "folders": Array [
-            Object {
+          "folders": [
+            {
               "alias": "Folder 2.1",
               "displayName": "Folder 2.1",
               "enabled": false,
               "id": "2.1",
-              "pages": Array [
-                Object {
+              "pages": [
+                {
                   "additionalInfoContent": "",
                   "additionalInfoEnabled": false,
                   "additionalInfoLabel": "",
                   "alias": "2.1.1",
-                  "answers": Array [],
+                  "answers": [],
                   "definitionContent": "",
                   "definitionEnabled": false,
                   "definitionLabel": "",
                   "description": "",
                   "descriptionEnabled": false,
                   "displayName": "Page 2.1.1",
-                  "folder": Object {
+                  "folder": {
                     "id": "1",
                     "position": 0,
                   },
@@ -104,28 +104,28 @@ exports[`MoveSectionModal should render 1`] = `
                   "id": "2.1.1",
                   "pageType": "QuestionPage",
                   "position": 0,
-                  "section": Object {
+                  "section": {
                     "displayName": "",
                     "id": "2",
                     "position": 0,
-                    "questionnaire": Object {
-                      "metadata": Array [],
+                    "questionnaire": {
+                      "metadata": [],
                     },
                   },
                   "title": "Page 2.1.1",
-                  "validationErrorInfo": Object {
-                    "errors": Array [],
+                  "validationErrorInfo": {
+                    "errors": [],
                     "totalCount": 2,
                   },
                 },
               ],
               "position": 0,
-              "section": Object {
+              "section": {
                 "id": "1",
               },
-              "validationErrorInfo": Object {
+              "validationErrorInfo": {
                 "__typename": "ValidationErrorInfo",
-                "errors": Array [],
+                "errors": [],
                 "id": "2.1-validationErrorInfo",
                 "totalCount": 0,
               },
@@ -134,7 +134,7 @@ exports[`MoveSectionModal should render 1`] = `
           "id": "2",
           "position": 1,
           "title": "Section 2",
-          "validationErrorInfo": Object {
+          "validationErrorInfo": {
             "totalCount": 0,
           },
         },
@@ -143,28 +143,28 @@ exports[`MoveSectionModal should render 1`] = `
     }
   }
   section={
-    Object {
+    {
       "displayName": "Section 1",
-      "folders": Array [
-        Object {
+      "folders": [
+        {
           "alias": "Folder 1.1",
           "displayName": "Folder 1.1",
           "enabled": false,
           "id": "1.1",
-          "pages": Array [
-            Object {
+          "pages": [
+            {
               "additionalInfoContent": "",
               "additionalInfoEnabled": false,
               "additionalInfoLabel": "",
               "alias": "1.1.1",
-              "answers": Array [],
+              "answers": [],
               "definitionContent": "",
               "definitionEnabled": false,
               "definitionLabel": "",
               "description": "",
               "descriptionEnabled": false,
               "displayName": "Page 1.1.1",
-              "folder": Object {
+              "folder": {
                 "id": "1",
                 "position": 0,
               },
@@ -173,28 +173,28 @@ exports[`MoveSectionModal should render 1`] = `
               "id": "1.1.1",
               "pageType": "QuestionPage",
               "position": 0,
-              "section": Object {
+              "section": {
                 "displayName": "",
                 "id": "1",
                 "position": 0,
-                "questionnaire": Object {
-                  "metadata": Array [],
+                "questionnaire": {
+                  "metadata": [],
                 },
               },
               "title": "Page 1.1.1",
-              "validationErrorInfo": Object {
-                "errors": Array [],
+              "validationErrorInfo": {
+                "errors": [],
                 "totalCount": 2,
               },
             },
           ],
           "position": 0,
-          "section": Object {
+          "section": {
             "id": "1",
           },
-          "validationErrorInfo": Object {
+          "validationErrorInfo": {
             "__typename": "ValidationErrorInfo",
-            "errors": Array [],
+            "errors": [],
             "id": "1.1-validationErrorInfo",
             "totalCount": 0,
           },
@@ -203,7 +203,7 @@ exports[`MoveSectionModal should render 1`] = `
       "id": "1",
       "position": 0,
       "title": "Section 1",
-      "validationErrorInfo": Object {
+      "validationErrorInfo": {
         "totalCount": 0,
       },
     }
@@ -213,29 +213,29 @@ exports[`MoveSectionModal should render 1`] = `
   <PositionModal
     onMove={[Function]}
     options={
-      Array [
-        Object {
+      [
+        {
           "displayName": "Section 1",
-          "folders": Array [
-            Object {
+          "folders": [
+            {
               "alias": "Folder 1.1",
               "displayName": "Folder 1.1",
               "enabled": false,
               "id": "1.1",
-              "pages": Array [
-                Object {
+              "pages": [
+                {
                   "additionalInfoContent": "",
                   "additionalInfoEnabled": false,
                   "additionalInfoLabel": "",
                   "alias": "1.1.1",
-                  "answers": Array [],
+                  "answers": [],
                   "definitionContent": "",
                   "definitionEnabled": false,
                   "definitionLabel": "",
                   "description": "",
                   "descriptionEnabled": false,
                   "displayName": "Page 1.1.1",
-                  "folder": Object {
+                  "folder": {
                     "id": "1",
                     "position": 0,
                   },
@@ -244,28 +244,28 @@ exports[`MoveSectionModal should render 1`] = `
                   "id": "1.1.1",
                   "pageType": "QuestionPage",
                   "position": 0,
-                  "section": Object {
+                  "section": {
                     "displayName": "",
                     "id": "1",
                     "position": 0,
-                    "questionnaire": Object {
-                      "metadata": Array [],
+                    "questionnaire": {
+                      "metadata": [],
                     },
                   },
                   "title": "Page 1.1.1",
-                  "validationErrorInfo": Object {
-                    "errors": Array [],
+                  "validationErrorInfo": {
+                    "errors": [],
                     "totalCount": 2,
                   },
                 },
               ],
               "position": 0,
-              "section": Object {
+              "section": {
                 "id": "1",
               },
-              "validationErrorInfo": Object {
+              "validationErrorInfo": {
                 "__typename": "ValidationErrorInfo",
-                "errors": Array [],
+                "errors": [],
                 "id": "1.1-validationErrorInfo",
                 "totalCount": 0,
               },
@@ -274,32 +274,32 @@ exports[`MoveSectionModal should render 1`] = `
           "id": "1",
           "position": 0,
           "title": "Section 1",
-          "validationErrorInfo": Object {
+          "validationErrorInfo": {
             "totalCount": 0,
           },
         },
-        Object {
+        {
           "displayName": "Section 2",
-          "folders": Array [
-            Object {
+          "folders": [
+            {
               "alias": "Folder 2.1",
               "displayName": "Folder 2.1",
               "enabled": false,
               "id": "2.1",
-              "pages": Array [
-                Object {
+              "pages": [
+                {
                   "additionalInfoContent": "",
                   "additionalInfoEnabled": false,
                   "additionalInfoLabel": "",
                   "alias": "2.1.1",
-                  "answers": Array [],
+                  "answers": [],
                   "definitionContent": "",
                   "definitionEnabled": false,
                   "definitionLabel": "",
                   "description": "",
                   "descriptionEnabled": false,
                   "displayName": "Page 2.1.1",
-                  "folder": Object {
+                  "folder": {
                     "id": "1",
                     "position": 0,
                   },
@@ -308,28 +308,28 @@ exports[`MoveSectionModal should render 1`] = `
                   "id": "2.1.1",
                   "pageType": "QuestionPage",
                   "position": 0,
-                  "section": Object {
+                  "section": {
                     "displayName": "",
                     "id": "2",
                     "position": 0,
-                    "questionnaire": Object {
-                      "metadata": Array [],
+                    "questionnaire": {
+                      "metadata": [],
                     },
                   },
                   "title": "Page 2.1.1",
-                  "validationErrorInfo": Object {
-                    "errors": Array [],
+                  "validationErrorInfo": {
+                    "errors": [],
                     "totalCount": 2,
                   },
                 },
               ],
               "position": 0,
-              "section": Object {
+              "section": {
                 "id": "1",
               },
-              "validationErrorInfo": Object {
+              "validationErrorInfo": {
                 "__typename": "ValidationErrorInfo",
-                "errors": Array [],
+                "errors": [],
                 "id": "2.1-validationErrorInfo",
                 "totalCount": 0,
               },
@@ -338,35 +338,35 @@ exports[`MoveSectionModal should render 1`] = `
           "id": "2",
           "position": 1,
           "title": "Section 2",
-          "validationErrorInfo": Object {
+          "validationErrorInfo": {
             "totalCount": 0,
           },
         },
       ]
     }
     selected={
-      Object {
+      {
         "displayName": "Section 1",
-        "folders": Array [
-          Object {
+        "folders": [
+          {
             "alias": "Folder 1.1",
             "displayName": "Folder 1.1",
             "enabled": false,
             "id": "1.1",
-            "pages": Array [
-              Object {
+            "pages": [
+              {
                 "additionalInfoContent": "",
                 "additionalInfoEnabled": false,
                 "additionalInfoLabel": "",
                 "alias": "1.1.1",
-                "answers": Array [],
+                "answers": [],
                 "definitionContent": "",
                 "definitionEnabled": false,
                 "definitionLabel": "",
                 "description": "",
                 "descriptionEnabled": false,
                 "displayName": "Page 1.1.1",
-                "folder": Object {
+                "folder": {
                   "id": "1",
                   "position": 0,
                 },
@@ -375,28 +375,28 @@ exports[`MoveSectionModal should render 1`] = `
                 "id": "1.1.1",
                 "pageType": "QuestionPage",
                 "position": 0,
-                "section": Object {
+                "section": {
                   "displayName": "",
                   "id": "1",
                   "position": 0,
-                  "questionnaire": Object {
-                    "metadata": Array [],
+                  "questionnaire": {
+                    "metadata": [],
                   },
                 },
                 "title": "Page 1.1.1",
-                "validationErrorInfo": Object {
-                  "errors": Array [],
+                "validationErrorInfo": {
+                  "errors": [],
                   "totalCount": 2,
                 },
               },
             ],
             "position": 0,
-            "section": Object {
+            "section": {
               "id": "1",
             },
-            "validationErrorInfo": Object {
+            "validationErrorInfo": {
               "__typename": "ValidationErrorInfo",
-              "errors": Array [],
+              "errors": [],
               "id": "1.1-validationErrorInfo",
               "totalCount": 0,
             },
@@ -405,7 +405,7 @@ exports[`MoveSectionModal should render 1`] = `
         "id": "1",
         "position": 0,
         "title": "Section 1",
-        "validationErrorInfo": Object {
+        "validationErrorInfo": {
           "totalCount": 0,
         },
       }

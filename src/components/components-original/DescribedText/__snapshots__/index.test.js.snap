@@ -9,8 +9,8 @@ exports[`DescribedText should render as just text if no description provided 1`]
 exports[`DescribedText should render with a text and description when description is provided 1`] = `
 <span>
   Label things
-  <DescribedText__Description>
+  <styled.span>
     I describe it
-  </DescribedText__Description>
+  </styled.span>
 </span>
 `;

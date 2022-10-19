@@ -1,50 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Toast Transition should render 1`] = `
-<StyledComponent
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "_foldedDefaultProps": Object {
-        "in": false,
-        "timeout": 500,
-      },
-      "attrs": Array [
-        Object {
-          "classNames": "toast",
-        },
-      ],
-      "componentStyle": ComponentStyle {
-        "componentId": "Transition__ToastTransition-sc-1xaajqs-0",
-        "isStatic": false,
-        "rules": Array [
-          "transition-property:transform,opacity;transition-duration:",
-          [Function],
-          "ms;&.toast-enter{opacity:0;transform:translateY(50%);transition-timing-function:cubic-bezier(0.73,0.02,0.32,1.49);transition-delay:",
-          [Function],
-          "ms;}&.toast-enter.toast-enter-active{opacity:1;transform:translateY(0);}&.toast-exit{opacity:1;transform:translateY(0);transition-timing-function:cubic-bezier(0.75,-0.44,0.24,1);}&.toast-exit.toast-exit-active{opacity:0;transform:translateY(-50%);}",
-        ],
-      },
-      "displayName": "Transition__ToastTransition",
-      "foldedComponentIds": Array [],
-      "propTypes": Object {
-        "children": [Function],
-        "timeout": [Function],
-      },
-      "render": [Function],
-      "styledComponentId": "Transition__ToastTransition-sc-1xaajqs-0",
-      "target": [Function],
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
+<CSSTransition
+  className="sc-bczRLJ eYkwke"
+  classNames="toast"
   in={false}
   timeout={500}
 >
   <div>
     Content
   </div>
-</StyledComponent>
+</CSSTransition>
 `;

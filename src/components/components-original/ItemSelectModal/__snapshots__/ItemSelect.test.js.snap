@@ -2,7 +2,7 @@
 
 exports[`PositionModal/ItemSelect Option should render 1`] = `
 <div>
-  <VisuallyHidden
+  <styled.input
     checked={true}
     id="test"
     name="bar"
@@ -10,18 +10,18 @@ exports[`PositionModal/ItemSelect Option should render 1`] = `
     type="radio"
     value="foo"
   />
-  <ItemSelect__Label
+  <styled.label
     htmlFor="test"
     selected={true}
   >
-    <ItemSelect__IndentIcon
-      icon={[Function]}
+    <Styled(IconText)
+      icon="SvgrURL"
     >
-      <Truncated>
+      <styled.span>
         bar
-      </Truncated>
-    </ItemSelect__IndentIcon>
-  </ItemSelect__Label>
+      </styled.span>
+    </Styled(IconText)>
+  </styled.label>
 </div>
 `;
 

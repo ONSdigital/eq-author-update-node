@@ -2,7 +2,7 @@
 
 exports[`Custom Editor should render 1`] = `
 <Fragment>
-  <components__DateInput
+  <Styled(withChangeHandler(undefined))
     data-test="custom-date-input"
     invalid={false}
     max="9999-12-30"

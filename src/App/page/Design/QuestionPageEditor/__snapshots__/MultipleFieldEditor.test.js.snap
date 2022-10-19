@@ -2,15 +2,15 @@
 
 exports[`MultipleFieldEditor should render 1`] = `
 <Fragment>
-  <MultipleFieldEditor__Label>
+  <styled.div>
     foobar
-  </MultipleFieldEditor__Label>
-  <MultipleFieldEditor__Content>
-    <MultipleFieldEditor__Padding>
+  </styled.div>
+  <styled.div>
+    <styled.div>
       <p>
         Test
       </p>
-    </MultipleFieldEditor__Padding>
-  </MultipleFieldEditor__Content>
+    </styled.div>
+  </styled.div>
 </Fragment>
 `;

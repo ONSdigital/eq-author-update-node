@@ -59,7 +59,7 @@ const categoryFilter = (options, query) => {
   return [common];
 };
 
-describe("components/Autocomplete", () => {
+describe("components/components-original/Autocomplete", () => {
   let props, mocks;
 
   const Component = (props) => {
