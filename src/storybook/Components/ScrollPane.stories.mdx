@@ -1,0 +1,98 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+
+import ScrollPane from "components/components-original/ScrollPane";
+import { NavLink } from "react-router-dom";
+const exampleText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id`;
+
+<Meta
+  title="Components/Scroll Pane"
+  component={ScrollPane}
+  decorators={[
+    (Story) => (
+      <div
+        style={{
+          height: "150px",
+          width: "300px",
+          border: "2px solid #e1e4e8",
+          borderRadius: "6px",
+          padding: "50px",
+        }}
+      >
+        {Story()}
+      </div>
+    ),
+  ]}
+/>
+
+# Scroll Pane
+
+Hide overflowing content and make it scrollable.
+
+## Example
+
+<Canvas>
+  <Story
+    name="Default"
+    args={{ children: exampleText }}
+    parameters={{ actions: { disabled: true } }}
+  >
+    {(args) => <ScrollPane {...args} />}
+  </Story>
+</Canvas>
+
+## When to use this component
+
+Use scrollpanes when the content within a container exceeds the height of the container.
+Use them sparingly as multiple scroll panes can frustrate and confuse users. Check if another option is more suitable first e.g. expanding a small container so users can see all of the content in one go.
+
+## When not to use this component
+
+Don’t use them inside an already scrollable area.
+
+## How to use this component
+
+The scroll pane component needs to be wrapped in a container that has a set height and width to enable scrolling within itself.
+The design of the scrollpane is set by the browser (don’t add any custom styling).
+
+## Variants
+
+### ScrollToTop
+
+This variant makes use of the `scrollToTop` property.
+
+When a user clicks on a link, this will return the scroll pane to the top of it's content.
+
+A link has been added to show case the functionality.
+
+<Canvas>
+  <Story
+    name="Scroll to top"
+    args={{ children: exampleText, scrollToTop: true }}
+    parameters={{ actions: { disabled: true } }}
+  >
+    {(args) => {
+      return (
+        <>
+          <ScrollPane {...args} style={{ marginBottom: "10px" }} />
+          <NavLink to={"#"} title={"Hello"} data-test="nav-link">
+            Return to top of content
+          </NavLink>
+        </>
+      );
+    }}
+  </Story>
+</Canvas>
+
+## Accessibility
+
+Keyboard-only users can use the space bar and up/down arrows to scroll around the page.
+Scrollable areas should be used sparingly because:
+- the additional action that scrolling requires can be difficult for users with motor skill impairments
+- low-literacy users can't easily reacquire their position in the text after it moves
+- elderly users often have trouble getting to the right spot in scrolling menus and other small scrolling items.
+
+## Research
+
+- [Scrolling and scrollbars](https://www.nngroup.com/articles/scrolling-and-scrollbars/)
+- [Avoid inline scroll areas](https://baymard.com/blog/inline-scroll-areas)
+
