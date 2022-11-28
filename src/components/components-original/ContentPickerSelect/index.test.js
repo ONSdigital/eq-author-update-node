@@ -148,8 +148,8 @@ describe("ContentPickerSelect", () => {
 
       fireEvent.click(select);
 
-      expect(getByText(selectAnswer)).toBeVisible();
-      expect(queryByTestId("no-previous-answers")).toBeVisible();
+      expect(getByText(selectAnswer)).toBeTruthy();
+      expect(queryByTestId("no-previous-answers")).toBeTruthy();
       expect(getByText(confirm)).toBeDisabled();
     });
 
@@ -160,8 +160,8 @@ describe("ContentPickerSelect", () => {
 
       fireEvent.click(select);
 
-      expect(getByText(selectAnswer)).toBeVisible();
-      expect(queryByTestId("no-previous-answers")).toBeVisible();
+      expect(getByText(selectAnswer)).toBeTruthy();
+      expect(queryByTestId("no-previous-answers")).toBeTruthy();
 
       fireEvent.click(getByText("Cancel"));
 

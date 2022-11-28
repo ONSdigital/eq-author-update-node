@@ -1,0 +1,93 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+import styled from "styled-components";
+import NavigationItem from "../../components/components-original/NavItem";
+import NavItem from "../../components/components-original/NavItem";
+import { ReactComponent as IconQuestionPage } from "assets/icon-questionpage.svg?inline";
+import CollapsibleNavItem from "../../components/components-original/CollapsibleNavItem";
+import ExampleContainer from "./ExampleContainer";
+import Theme from "contexts/themeContext";
+
+<Meta title="Components/Navigation Item" component={NavigationItem} />
+
+# Navigation Item
+
+## Example
+
+<Canvas>
+  <Story name="Primary">
+    <ExampleContainer>
+      <NavigationItem
+        title="Lorem ipsum dolor sit amet"
+        icon={IconQuestionPage}
+        titleUrl="/"
+      >
+        Inctum, laoreet enim a
+      </NavigationItem>
+    </ExampleContainer>
+  </Story>
+</Canvas>
+
+## Variants
+
+<Canvas>
+  <Story name="Disabled">
+    <ExampleContainer>
+      <NavigationItem
+        title="Lorem ipsum dolor sit amet"
+        titleUrl="/"
+        icon={IconQuestionPage}
+        disabled
+      >
+        Inctum, laoreet enim a
+      </NavigationItem>
+    </ExampleContainer>
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Bordered">
+    <ExampleContainer>
+      <NavigationItem
+        title="Lorem ipsum dolor sit amet"
+        titleUrl="/"
+        icon={IconQuestionPage}
+        bordered
+      >
+        Inctum, laoreet enim a
+      </NavigationItem>
+    </ExampleContainer>
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Error">
+    <ExampleContainer style={{ boxSizing: "border-box" }}>
+      <NavItem
+        title="Lorem ipsum dolor sit amet"
+        titleUrl="/"
+        icon={IconQuestionPage}
+        errorCount={3}
+      >
+        Inctum, laoreet enim a
+      </NavItem>
+    </ExampleContainer>
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Unread Comment">
+    <ExampleContainer style={{ boxSizing: "border-box" }}>
+      <Theme>
+        <NavItem
+          title="Lorem ipsum dolor sit amet"
+          titleUrl="/"
+          icon={IconQuestionPage}
+          unreadComment
+          errorCount={1}
+        >
+          Inctum, laoreet enim a
+        </NavItem>
+      </Theme>
+    </ExampleContainer>
+  </Story>
+</Canvas>

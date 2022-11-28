@@ -32,7 +32,7 @@ describe("PositionModal", () => {
 
   it("should open when clicked", () => {
     fireEvent.click(screen.getByText(/Section 1/));
-    expect(screen.getByTestId("section-item-select")).toBeVisible();
+    expect(screen.getByTestId("section-item-select")).toBeTruthy();
   });
 
   it("should close on select", async () => {
